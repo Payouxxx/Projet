@@ -1,0 +1,9 @@
+JOURNAL
+
+SEMAINE 1
+-code de la partie 1
+-éxécution correcte
+
+SEMAINE 2
+-légers problemes de compilation 
+concernant les inclusions
