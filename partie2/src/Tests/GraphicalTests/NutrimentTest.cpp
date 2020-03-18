@@ -5,7 +5,7 @@
  * NutrimentTest FOR STEP2
  */
 
-#include <Application.hpp>
+#include <../Application.hpp>
 #include <Lab/Nutriment.hpp>
 
 class NutrimentTest : public Application
@@ -44,19 +44,19 @@ void NutrimentTest::onEvent(sf::Event event, sf::RenderWindow&)
             break;
 
         case sf::Keyboard::N:
-			/*
+
 			  lastCreated = new Nutriment(NUT_QTY, getCursorPositionInView());
 			  getEnv().addNutriment(lastCreated);
-			*/
+
             break;
 
         // to test takeQuantity
         case sf::Keyboard::T:
-			/*
+
             if (lastCreated != nullptr) {
                 lastCreated->takeQuantity(15);
             }
-			*/
+
             break;
         }
     }

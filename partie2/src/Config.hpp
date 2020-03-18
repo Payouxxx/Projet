@@ -9,7 +9,7 @@
 #include <string>
 #include "JSON/JSON.hpp"
 #include <SFML/Graphics.hpp>
-
+;
 // Define resources location
 std::string const RES_LOCATION = "../res/";
 
