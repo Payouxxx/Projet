@@ -5,5 +5,5 @@ SEMAINE 1
 -éxécution correcte
 
 SEMAINE 2
--légers problemes de compilation 
-concernant les inclusions
+-mardi : partie2 en cours, PetriDish et Lab
+-mercredi : partie2 en cours, Nutriments
