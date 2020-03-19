@@ -7,3 +7,4 @@ SEMAINE 1
 SEMAINE 2
 -mardi : partie2 en cours, PetriDish et Lab
 -mercredi : partie2 en cours, Nutriments
+-jeudi : partie2 finie (compilation et exécution fonctionnent)
