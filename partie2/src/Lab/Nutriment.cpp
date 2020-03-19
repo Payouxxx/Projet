@@ -3,11 +3,13 @@
 #include "Utility/Utility.hpp"
 #include <string>
 #include <cmath>
+#include "../Config.hpp"
 
 using namespace std;
 
 Nutriment::Nutriment(Quantity rayon, Vec2d centre)
     : CircularBody(centre, rayon), quantite(rayon) {}
+
 
 Quantity Nutriment::takeQuantity(Quantity q) {
     /* si la quantité demandée est inférieure ou egale à celle disponible
@@ -18,11 +20,13 @@ Quantity Nutriment::takeQuantity(Quantity q) {
 */
     if(q<=quantite) {
         quantite -= q;
+        setRadius(quantite);
         return q;
     }
     else {
         q=quantite;
         quantite=0.0;
+        setRadius(quantite);
         return q;
     }
 }
@@ -51,3 +55,19 @@ void Nutriment::drawOn(sf::RenderTarget& target) const{
 j::Value const& Nutriment::getConfig() const {
     return getAppConfig()["nutriments"];
 }
+
+
+void Nutriment::update(sf::Time dt) {
+    while (quantite<=2*getConfig()["quantity"]["max"].toDouble()) {
+        if(getAppEnv().getTemperature()<=getAppConfig()["nutriments"]["growth"]["max temperature"].toDouble() and getAppEnv().getTemperature()>=getAppConfig()["nutriments"]["growth"]["min temperature"].toDouble()) {
+            double speed(getConfig()["growth"]["speed"].toDouble());
+            auto growth = speed * dt.asSeconds();
+            if(getAppEnv().contains(CircularBody(this->getPosition(), quantite+growth))) {
+                quantite +=growth;
+                setRadius(quantite);
+            }
+        }
+    }
+}
+
+

@@ -18,14 +18,20 @@ public:
     void update(sf::Time dt);
     void drawOn(sf::RenderTarget& targetWindow) const;
     void reset();
+    double getTemperature() const;
+    void increaseTemperature();
+    void decreaseTemperature();
+    void resetTemperature();
 
-    PetriDish(Vec2d centre, double r) : CircularBody(centre, r) {}
+    PetriDish(Vec2d centre, double r);
     PetriDish(const PetriDish&) = delete; //empecher la copie
     PetriDish& operator= (const PetriDish&) = delete; //empecher l'affectation
     ~PetriDish();
+
 private:
     std::vector<Bacterium*> faune;
     std::vector<Nutriment*> food;
+    double temperature;
 };
 
 #endif // PETRIDISH_HPP

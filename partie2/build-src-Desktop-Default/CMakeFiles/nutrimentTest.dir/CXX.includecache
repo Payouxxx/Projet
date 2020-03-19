@@ -175,6 +175,8 @@ string
 -
 cmath
 -
+../Config.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Config.hpp
 
 /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Lab/Nutriment.hpp
 Lab/CircularBody.hpp
@@ -191,6 +193,8 @@ PetriDish.hpp
 /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Utility/Utility.hpp
 Nutriment.hpp
 /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Lab/Nutriment.hpp
+../Application.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Application.hpp
 
 /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie2/src/Lab/PetriDish.hpp
 iostream

@@ -72,28 +72,26 @@
 ##Q2.9
 
 
-- La méthode onEvent de NutrimentTest a besoin d'un sf::Event en argument donc il nous faut une méthode dans la classe Lab qui retournera un sf::Event afin de faire fonctionner l'affichage via cette méthode onEvent. On peut modifier la méthode DrawOn en ajoutant un type de retour qui sera sf::Event correspondant à un KeyPressed (on appuie sur une touche).
-
-
 - Il nous faut une méthode addNutriment dans la classe Lab pour pouvoir correspondre au code de NutrimentTest. De plus la méthode onEvent de NutrimentTest a besoin d'un sf::Event en argument donc il nous faut une méthode dans la classe Lab qui retournera un sf::Event afin de faire fonctionner l'affichage via cette méthode onEvent, il faudrait donc modifier la méthode DrawOn de la classe PetriDish pour que les nutriments se dessinent d'eux même.
 
 *************************************************
-##Q
+##Q2.10
 
 
-- réponse à la question 
-
-*************************************************
-##Q
-
-
-- réponse à la question 
+- La fonction getAppEnv retourne un Lab donc on peut utiliser un getTempérature dans la classe Lab utilisant le getTemperature de la boite de pétri pour accéder à la température de la boite sans donner d'accès à la boite de Pétri entière.
 
 *************************************************
-##Q
+##Q2.11
 
 
-- réponse à la question 
+- il faut modifier les méthodes update de Lab et PetriDish qui doivent appeler la méthode update de Nutriments. Nous avions cependant déjà effectué les liens entre ces méthodes et la question nous a beacoup perturbée.
+
+*************************************************
+##Q2.12
+
+
+- Il faut ajouter des méthodes increaseTemperature et decreaseTempertature dans les classes Lab et PetriDish pour modifier la température.
+- on peut de plus ajouter dans le fichier Application dans la gestion de la touche C pour pouvoir mieux recharger la configuration, en ajoutant un appel à une fonction réinitialisant la tepérature qui serait dans PetriDish et dans Lab.
 
 *************************************************
 ##Q

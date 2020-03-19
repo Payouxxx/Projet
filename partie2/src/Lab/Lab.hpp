@@ -13,6 +13,10 @@ public:
     Lab();
     bool contains(const CircularBody& corps) const;
     void addNutriment(Nutriment* n);
+    double getTemperature() const;
+    void increaseTemperature();
+    void decreaseTemperature();
+    void resetTemperature();
 private:
     PetriDish boite;
 }

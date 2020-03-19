@@ -27,3 +27,19 @@ bool Lab::contains(const CircularBody& corps) const {
 void Lab::addNutriment(Nutriment* n){
     boite.addNutriment(n);
 }
+
+double Lab::getTemperature() const {
+    return boite.getTemperature();
+}
+
+void Lab::increaseTemperature(){
+    boite.increaseTemperature();
+}
+
+void Lab::decreaseTemperature(){
+    boite.decreaseTemperature();
+}
+
+void Lab::resetTemperature() {
+    boite.resetTemperature();
+}

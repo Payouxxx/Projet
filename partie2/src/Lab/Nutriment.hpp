@@ -12,8 +12,11 @@ public:
     void setQuantity(Quantity q);
     void drawOn(sf::RenderTarget& target) const;
     j::Value const& getConfig() const;
+    void update(sf::Time dt);
+
 private:
     Quantity quantite;
 };
+
 
 #endif // NUTRIMENT_HPP
