@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-class Lab{
+class Lab : public Drawable, public Updatable{
 public:
     void update(sf::Time dt);
     void drawOn(sf::RenderTarget& targetWindow) const;

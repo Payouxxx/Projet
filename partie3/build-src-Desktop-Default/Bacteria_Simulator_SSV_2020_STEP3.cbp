@@ -276,6 +276,18 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp">
 			<Option target="nutrimentTest"/>
 		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentA.cpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentA.hpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.cpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.hpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.cpp">
 			<Option target="nutrimentTest"/>
 		</Unit>

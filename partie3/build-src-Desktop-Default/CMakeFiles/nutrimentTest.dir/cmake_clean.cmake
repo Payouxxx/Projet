@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nutrimentTest.dir/Lab/CircularBody.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/Lab.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/Nutriment.cpp.o"
+  "CMakeFiles/nutrimentTest.dir/Lab/NutrimentA.cpp.o"
+  "CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/PetriDish.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/bacterium.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Utility/DiffEqSolver.cpp.o"

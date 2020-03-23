@@ -19,7 +19,7 @@ bool PetriDish::addNutriment(Nutriment* n) {
 
 void PetriDish::update(sf::Time dt) {
         for(auto nutriment : food) {
-            nutriment->update(dt);
+            if (nutriment != nullptr) nutriment->update(dt);
         }
 }
 
@@ -28,7 +28,7 @@ void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
     targetWindow.draw(border);
 
     for (auto n : food) {
-        n->drawOn(targetWindow);
+        if (n != nullptr) n->drawOn(targetWindow);
     }
 }
 

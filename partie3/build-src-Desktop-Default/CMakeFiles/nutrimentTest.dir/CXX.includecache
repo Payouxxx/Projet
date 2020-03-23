@@ -66,6 +66,14 @@ JSON/JSON.hpp
 SFML/Graphics.hpp
 -
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+SFML/Graphics.hpp
+-
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
+SFML/System.hpp
+-
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.cpp
 JSON/JSON.hpp
 -
@@ -187,6 +195,42 @@ Lab/CircularBody.hpp
 -
 SFML/Graphics.hpp
 -
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentA.cpp
+NutrimentA.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentA.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
+../Config.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Config.hpp
+JSON/JSONImpl.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/JSON/JSONImpl.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentA.hpp
+Nutriment.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.cpp
+NutrimentB.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
+../Config.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Config.hpp
+JSON/JSONImpl.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/JSON/JSONImpl.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.hpp
+Nutriment.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.cpp
 PetriDish.hpp
@@ -213,10 +257,20 @@ SFML/Graphics.hpp
 -
 CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.cpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.hpp
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
+CircularBody.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp
 Random/Random.hpp

@@ -7,12 +7,12 @@
 #include "bacterium.hpp"
 #include <SFML/Graphics.hpp>
 #include "CircularBody.hpp"
+#include "../Interface/Drawable.hpp"
+#include "../Interface/Updatable.hpp"
 
-class PetriDish : public CircularBody
+class PetriDish : public CircularBody, public Drawable, public Updatable
 {
 public:
-    //faire évoluer les bactéries ici:
-    // code pour ajouter les nutriments ici :
     bool addBacterium(Bacterium* b);
     bool addNutriment(Nutriment* n);
     void update(sf::Time dt);

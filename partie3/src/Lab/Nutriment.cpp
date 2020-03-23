@@ -54,9 +54,7 @@ void Nutriment::drawOn(sf::RenderTarget& target) const{
        }
 }
 
-j::Value const& Nutriment::getConfig() const {
-    return getAppConfig()["nutriments"];
-}
+
 
 
 void Nutriment::update(sf::Time dt) {

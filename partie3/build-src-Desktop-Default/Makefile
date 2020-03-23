@@ -399,6 +399,60 @@ Lab/Nutriment.cpp.s:
 	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/Nutriment.cpp.s
 .PHONY : Lab/Nutriment.cpp.s
 
+Lab/NutrimentA.o: Lab/NutrimentA.cpp.o
+
+.PHONY : Lab/NutrimentA.o
+
+# target to build an object file
+Lab/NutrimentA.cpp.o:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentA.cpp.o
+.PHONY : Lab/NutrimentA.cpp.o
+
+Lab/NutrimentA.i: Lab/NutrimentA.cpp.i
+
+.PHONY : Lab/NutrimentA.i
+
+# target to preprocess a source file
+Lab/NutrimentA.cpp.i:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentA.cpp.i
+.PHONY : Lab/NutrimentA.cpp.i
+
+Lab/NutrimentA.s: Lab/NutrimentA.cpp.s
+
+.PHONY : Lab/NutrimentA.s
+
+# target to generate assembly for a file
+Lab/NutrimentA.cpp.s:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentA.cpp.s
+.PHONY : Lab/NutrimentA.cpp.s
+
+Lab/NutrimentB.o: Lab/NutrimentB.cpp.o
+
+.PHONY : Lab/NutrimentB.o
+
+# target to build an object file
+Lab/NutrimentB.cpp.o:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.o
+.PHONY : Lab/NutrimentB.cpp.o
+
+Lab/NutrimentB.i: Lab/NutrimentB.cpp.i
+
+.PHONY : Lab/NutrimentB.i
+
+# target to preprocess a source file
+Lab/NutrimentB.cpp.i:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.i
+.PHONY : Lab/NutrimentB.cpp.i
+
+Lab/NutrimentB.s: Lab/NutrimentB.cpp.s
+
+.PHONY : Lab/NutrimentB.s
+
+# target to generate assembly for a file
+Lab/NutrimentB.cpp.s:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.s
+.PHONY : Lab/NutrimentB.cpp.s
+
 Lab/PetriDish.o: Lab/PetriDish.cpp.o
 
 .PHONY : Lab/PetriDish.o
@@ -798,6 +852,12 @@ help:
 	@echo "... Lab/Nutriment.o"
 	@echo "... Lab/Nutriment.i"
 	@echo "... Lab/Nutriment.s"
+	@echo "... Lab/NutrimentA.o"
+	@echo "... Lab/NutrimentA.i"
+	@echo "... Lab/NutrimentA.s"
+	@echo "... Lab/NutrimentB.o"
+	@echo "... Lab/NutrimentB.i"
+	@echo "... Lab/NutrimentB.s"
 	@echo "... Lab/PetriDish.o"
 	@echo "... Lab/PetriDish.i"
 	@echo "... Lab/PetriDish.s"
