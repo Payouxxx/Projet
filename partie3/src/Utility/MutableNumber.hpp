@@ -6,21 +6,21 @@ class MutableNumber {
 private:
     double value;
     double pMutation; //probabilité : double positif entre 0 et 1
-    bool borneInf;
-    bool borneSup;
     double sigma;
+    bool borneInf;
     double min;
+    bool borneSup;
     double max;
 public:
-    MutableNumber(double val, double p, bool Inf, bool Sup, double std, double min, double max);
+    MutableNumber(double val, double p, double std, bool Inf=false, double min=0, bool Sup=false, double max=0);
     MutableNumber(const j::Value &config);
     double get() const;
     void set(double val); //modifie la valeur tout en restant entre min et max
     void mutate(); //entraine un changement de la valeur selon un nombre tiré aléatoirement
-    MutableNumber probability(double initialValue, double mutationProbability, double sigma);
-    MutableNumber probability(j::Value const& config);
-    MutableNumber positive(double initialValue, double mutationProbability, double sigma, bool hasMax, double max);
-    MutableNumber positive(j::Value const& config, bool hasMax, double max);
+    static MutableNumber probability(double initialValue, double mutationProbability, double sigma);
+    static MutableNumber probability(j::Value const& config);
+    static MutableNumber positive(double initialValue, double mutationProbability, double sigma, bool hasMax=false, double max=0);
+    static MutableNumber positive(j::Value const& config, bool hasMax=false, double max=0);
 };
 
 #endif // MUTABLENUMBER_HPP
