@@ -127,7 +127,7 @@
 ##Q3.6
 
 
-- La méthode setValue() peut s'occuper du plafonnage de l'attribut value.
+- La méthode setValue() peut s'occuper du plafonnage de l'attribut value. Cette méthode est ensuite appelée dans mutate() et dans le constructeur.
 
 *************************************************
 ##Q

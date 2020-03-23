@@ -441,6 +441,8 @@ MutableColor.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
 iostream
 -
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility/Utility.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
 MutableNumber.hpp
@@ -463,12 +465,16 @@ Random/Random.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Config.hpp
 Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility/Utility.hpp
+../Utility/Types.hpp
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
 JSON/JSONImpl.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/JSON/JSONImpl.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp
+MutableNumber.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.cpp
 Utility/Utility.hpp

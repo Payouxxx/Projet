@@ -1,10 +1,12 @@
 #include "MutableColor.hpp"
 #include <iostream>
+#include "Utility/Utility.hpp"
 
 using namespace std;
 
 MutableColor::MutableColor(const j::Value &config)
-    : RGBA({config["r"], config["g"], config["b"], config["a"]})
+    : RGBA({MutableNumber(config["r"]), MutableNumber(config["g"]),
+      MutableNumber(config["b"]), MutableNumber(config["a"])})
 {}
 
 void MutableColor::mutate()

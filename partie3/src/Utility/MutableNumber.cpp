@@ -4,16 +4,22 @@
 #include "../Application.hpp"
 #include "../Config.hpp"
 #include "Utility/Utility.hpp"
+#include <../Utility/Types.hpp>
 
 using namespace std;
 
-MutableNumber::MutableNumber(double val, double p, bool Inf, bool Sup, double std, double min, double max)
-    :value(val), pMutation(p), borneInf(Inf), borneSup(Sup), sigma(std), min(min), max(max) {}
+MutableNumber::MutableNumber(double val, double p, double std, bool Inf, double min, bool Sup, double max)
+    :value(val), pMutation(p), sigma(std), borneInf(Inf), min(min), borneSup(Sup), max(max) {}
 
 MutableNumber::MutableNumber(const j::Value &config)
-    :value(config["initial"].toDouble()), pMutation(config["rate"].toDouble()), borneInf(config["clamp min"].toBool()),
-      borneSup(config["clamp max"].toBool()), sigma(config["sigma"].toDouble()), min(config["min"].toDouble()), max(config["max"].toDouble())
-{set(config["initial"].toDouble());}
+    : value(config["initial"].toDouble()),
+      pMutation(config["rate"].toDouble()),
+      sigma(config["sigma"].toDouble()),
+      borneInf(config["clamp min"].toBool()),
+      min(config["min"].toDouble()),
+      borneSup(config["clamp max"].toBool()),
+      max(config["max"].toDouble())
+{}
 
 double MutableNumber::get() const
 {
@@ -23,10 +29,10 @@ double MutableNumber::get() const
 void MutableNumber::set(double val)
 {
     value = val;
-    if(value<min){
+    if (borneInf and value<min){
         value = min;
     }
-    if(value>max){
+    if (borneSup and value>max){
         value = max;
     }
 }
@@ -34,30 +40,28 @@ void MutableNumber::set(double val)
 void MutableNumber::mutate()
 {
     if(bernoulli(pMutation)) {
-        value += normal(0, sigma*sigma);
+        set(value += normal(0, sigma*sigma));
     }
 }
 
 MutableNumber MutableNumber::probability(const j::Value &config)
 {
-    MutableNumber new;
-    return new;
+    MutableNumber nom(config);
+    nom.set(nom.value);
+    return nom;
 }
 
 MutableNumber MutableNumber::probability(double initialValue, double mutationProbability, double sigma)
 {
-    MutableNumber new;
-    return new;
+    return MutableNumber(initialValue, mutationProbability, sigma, true, 0, true, 1);
 }
 
 MutableNumber MutableNumber::positive(double initialValue, double mutationProbability, double sigma, bool hasMax, double max)
 {
-    MutableNumber new;
-    return new;
+    return MutableNumber(initialValue, mutationProbability, sigma, true, 0, hasMax, max);
 }
 
 MutableNumber MutableNumber::positive(const j::Value &config, bool hasMax, double max)
 {
-    MutableNumber new;
-    return new;
+    return MutableNumber(config["initial"].toDouble(), config["rate"].toDouble(), config["sigma"].toDouble(), true, 0, hasMax, max);
 }
