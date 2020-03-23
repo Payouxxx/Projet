@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Random/Random.hpp"
 #include "../Application.hpp"
+#include "../Config.hpp"
+#include "Utility/Utility.hpp"
 
 using namespace std;
 
@@ -11,14 +13,14 @@ MutableNumber::MutableNumber(double val, double p, bool Inf, bool Sup, double st
 MutableNumber::MutableNumber(const j::Value &config)
     :value(config["initial"].toDouble()), pMutation(config["rate"].toDouble()), borneInf(config["clamp min"].toBool()),
       borneSup(config["clamp max"].toBool()), sigma(config["sigma"].toDouble()), min(config["min"].toDouble()), max(config["max"].toDouble())
-{setValue(config["initial"].toDouble());}
+{set(config["initial"].toDouble());}
 
-double MutableNumber::getValue() const
+double MutableNumber::get() const
 {
     return value;
 }
 
-void MutableNumber::setValue(double val)
+void MutableNumber::set(double val)
 {
     value = val;
     if(value<min){
@@ -36,4 +38,26 @@ void MutableNumber::mutate()
     }
 }
 
+MutableNumber MutableNumber::probability(const j::Value &config)
+{
+    MutableNumber new;
+    return new;
+}
 
+MutableNumber MutableNumber::probability(double initialValue, double mutationProbability, double sigma)
+{
+    MutableNumber new;
+    return new;
+}
+
+MutableNumber MutableNumber::positive(double initialValue, double mutationProbability, double sigma, bool hasMax, double max)
+{
+    MutableNumber new;
+    return new;
+}
+
+MutableNumber MutableNumber::positive(const j::Value &config, bool hasMax, double max)
+{
+    MutableNumber new;
+    return new;
+}

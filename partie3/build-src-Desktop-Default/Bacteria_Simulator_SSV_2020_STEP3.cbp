@@ -27,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="application-run">
 				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
 				<Option type="4"/>
@@ -141,6 +151,58 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="mutableTest">
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/mutableTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 mutableTest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mutableTest/fast">
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/mutableTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 mutableTest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="nutrimentTest">
 				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/nutrimentTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
@@ -193,20 +255,11 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/extlib/Catch/include/catch.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.cpp">
 			<Option target="nutrimentTest"/>
@@ -229,39 +282,47 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONImpl.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONImpl.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONSerialiser.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONSerialiser.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.cpp">
 			<Option target="circularBodyTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp">
 			<Option target="circularBodyTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Lab.cpp">
@@ -303,21 +364,25 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/GraphicalTests/NutrimentTest.cpp">
@@ -326,13 +391,18 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/UnitTests/CatchTests.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/UnitTests/CheckUtility.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/UnitTests/CircularBodyTest.cpp">
 			<Option target="circularBodyTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/UnitTests/MutablePropertyTest.cpp">
+			<Option target="mutableTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Tests/UnitTests/Vec2dTest.cpp">
 			<Option target="vec2dTest"/>
@@ -340,51 +410,73 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Constants.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/DiffEqSolver.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/DiffEqSolver.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp">
+			<Option target="circularBodyTest"/>
+			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp">
+			<Option target="circularBodyTest"/>
+			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Vec2d.cpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Vec2d.hpp">
 			<Option target="circularBodyTest"/>
 			<Option target="vec2dTest"/>
+			<Option target="mutableTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/CMakeLists.txt">

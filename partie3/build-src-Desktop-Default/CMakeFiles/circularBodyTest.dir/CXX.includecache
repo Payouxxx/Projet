@@ -436,6 +436,20 @@ SFML/System.hpp
 functional
 -
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp
+MutableColor.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
+iostream
+-
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
+MutableNumber.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
+array
+-
+SFML/Graphics.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/SFML/Graphics.hpp
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.cpp
 MutableNumber.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
@@ -445,14 +459,14 @@ Random/Random.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Random/Random.hpp
 ../Application.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
-
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
-JSON/JSONImpl.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/JSON/JSONImpl.hpp
 ../Config.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Config.hpp
 Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility/Utility.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
+JSON/JSONImpl.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/JSON/JSONImpl.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp
 

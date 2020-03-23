@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/vec2dTest.dir/Tests/UnitTests/Vec2dTest.cpp.o"
   "CMakeFiles/vec2dTest.dir/Tests/UnitTests/CatchTests.cpp.o"
   "CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o"
+  "CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o"
   "CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o"
   "CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o"
   "CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o"

@@ -129,9 +129,33 @@ CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o.provides: CMakeFiles/vec2dTe
 CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o.provides.build: CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o
 
 
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp
+
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp > CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.i
+
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.cpp -o CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.s
+
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.requires:
+
+.PHONY : CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.requires
+
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.provides: CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/vec2dTest.dir/build.make CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.provides.build
+.PHONY : CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.provides
+
+CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.provides.build: CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o
+
+
 CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.cpp
 
 CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.cpp
 
 CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o.provides.build: CMakeFiles/vec2dT
 
 CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Vec2d.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Vec2d.cpp
 
 CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o.provides.build: CMakeFiles/vec2dTes
 
 CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.cpp
 
 CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/vec2dTest.dir/JSON/JSON.cpp.o.provides.build: CMakeFiles/vec2dTest.di
 
 CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONImpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONImpl.cpp
 
 CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/vec2dTest.dir/JSON/JSONImpl.cpp.o.provides.build: CMakeFiles/vec2dTes
 
 CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONSerialiser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONSerialiser.cpp
 
 CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/vec2dTest.dir/JSON/JSONSerialiser.cpp.o.provides.build: CMakeFiles/ve
 
 CMakeFiles/vec2dTest.dir/Random/Random.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/Random/Random.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/vec2dTest.dir/Random/Random.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/vec2dTest.dir/Random/Random.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Random/Random.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp
 
 CMakeFiles/vec2dTest.dir/Random/Random.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/vec2dTest.dir/Random/Random.cpp.o.provides.build: CMakeFiles/vec2dTes
 
 CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.o: CMakeFiles/vec2dTest.dir/flags.make
 CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.cpp
 
 CMakeFiles/vec2dTest.dir/Random/RandomGenerator.cpp.i: cmake_force
@@ -326,6 +350,7 @@ vec2dTest_OBJECTS = \
 "CMakeFiles/vec2dTest.dir/Tests/UnitTests/Vec2dTest.cpp.o" \
 "CMakeFiles/vec2dTest.dir/Tests/UnitTests/CatchTests.cpp.o" \
 "CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o" \
+"CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o" \
 "CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o" \
 "CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o" \
 "CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o" \
@@ -341,6 +366,7 @@ vec2dTest_EXTERNAL_OBJECTS =
 vec2dTest: CMakeFiles/vec2dTest.dir/Tests/UnitTests/Vec2dTest.cpp.o
 vec2dTest: CMakeFiles/vec2dTest.dir/Tests/UnitTests/CatchTests.cpp.o
 vec2dTest: CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o
+vec2dTest: CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o
 vec2dTest: CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o
 vec2dTest: CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o
 vec2dTest: CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o
@@ -354,7 +380,7 @@ vec2dTest: /usr/local/lib/libsfml-graphics.so.2.5.1
 vec2dTest: /usr/local/lib/libsfml-window.so.2.5.1
 vec2dTest: /usr/local/lib/libsfml-system.so.2.5.1
 vec2dTest: CMakeFiles/vec2dTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable vec2dTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable vec2dTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vec2dTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -365,6 +391,7 @@ CMakeFiles/vec2dTest.dir/build: vec2dTest
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Tests/UnitTests/Vec2dTest.cpp.o.requires
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Tests/UnitTests/CatchTests.cpp.o.requires
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Utility/DiffEqSolver.cpp.o.requires
+CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Utility/MutableColor.cpp.o.requires
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o.requires
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Utility/Utility.cpp.o.requires
 CMakeFiles/vec2dTest.dir/requires: CMakeFiles/vec2dTest.dir/Utility/Vec2d.cpp.o.requires
