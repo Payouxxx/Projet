@@ -124,10 +124,10 @@
 - réponse à la question 
 
 *************************************************
-##Q3.6
+##Q
 
 
-- La méthode setValue() peut s'occuper du plafonnage de l'attribut value.
+- réponse à la question 
 
 *************************************************
 ##Q

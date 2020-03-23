@@ -4,6 +4,7 @@
 #include "PetriDish.hpp"
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include "NutrimentGenerator.hpp"
 
 class Lab : public Drawable, public Updatable{
 public:
@@ -19,6 +20,7 @@ public:
     void resetTemperature();
 private:
     PetriDish boite;
-};
+    NutrimentGenerator automatique;
+}
 
 #endif // LAB_HPP

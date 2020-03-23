@@ -59,7 +59,7 @@ void Nutriment::drawOn(sf::RenderTarget& target) const{
 
 void Nutriment::update(sf::Time dt) {
     if (quantite<=2*getConfig()["quantity"]["max"].toDouble()) {
-        if(getAppEnv().getTemperature()<=getAppConfig()["nutriments"]["growth"]["max temperature"].toDouble() and getAppEnv().getTemperature()>=getAppConfig()["nutriments"]["growth"]["min temperature"].toDouble()) {
+        if(getAppEnv().getTemperature()<= getConfig()["growth"]["max temperature"].toDouble() and getAppEnv().getTemperature()>=getConfig()["growth"]["min temperature"].toDouble()) {
             double speed(getConfig()["growth"]["speed"].toDouble());
             auto growth = speed * dt.asSeconds();
             if(getAppEnv().contains(CircularBody(this->getPosition(), quantite+growth))) {

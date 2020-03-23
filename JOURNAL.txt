@@ -2,9 +2,12 @@ JOURNAL
 
 SEMAINE 1
 -code de la partie 1
--éxécution correcte
+-exécution correcte
 
 SEMAINE 2
 -mardi : partie2 en cours, PetriDish et Lab
 -mercredi : partie2 en cours, Nutriments
 -jeudi : partie2 finie (compilation et exécution fonctionnent)
+
+SEMAINE 3
+-lundi : deux premieres étapes de lapartie3, codage des classes Nutriments A et B, NutrimentGenerator et [je connais pas tes classes Claire]

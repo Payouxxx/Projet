@@ -10,6 +10,7 @@ void Lab::drawOn(sf::RenderTarget &targetWindow) const {
 
 void Lab::update(sf::Time dt) {
     boite.update(dt);
+    automatique.update(dt);
 }
 
 Lab::Lab() :
@@ -17,6 +18,7 @@ Lab::Lab() :
 {}
 
 void Lab::reset(){
+    automatique.reset();
     boite.reset();
 }
 
