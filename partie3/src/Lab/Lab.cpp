@@ -42,4 +42,4 @@ void Lab::decreaseTemperature(){
 
 void Lab::resetTemperature() {
     boite.resetTemperature();
-}
+};

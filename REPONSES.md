@@ -94,10 +94,28 @@
 - on peut de plus ajouter dans le fichier Application dans la gestion de la touche C (ligne 487 du cpp) pour pouvoir mieux recharger la configuration, en ajoutant un appel à une fonction réinitialisant la tepérature qui serait dans PetriDish et dans Lab.
 
 *************************************************
-##Q
+##Q3.1
 
 
-- réponse à la question 
+- les classes Nutriment, PetriDish, Lab et Bacterium pourraient hériter de ces deux classes.
+
+*************************************************
+##Q3.2
+
+
+- DrawOn et update des nouvelles sous classes doivent être redéfinies et leurs définitions doivent être adaptées pour si le Nutriment est un NutimentA ou un NutrimentB. 
+
+*************************************************
+##Q3.3
+
+
+- La méthode getConfig doit être définie comme virtuelle pure dans la classe Nutriment pour ne pas être définie concretement. Elle doit donc être redéfinie dans les sous classes pour ne pas prendre dans "nutriments" mais dans "nutriment A" ou "nutriment B" selon la sous classe.
+
+*************************************************
+##Q3.4
+
+
+- La méthode getConfig redéfinie permet de changer les caractéristiques des nutriments en recherchant les caractéristiques spécifiques dans le fichier app.json une fois redéfinie comme fait dans la question 3.3 sans changer les méhodes DrawOn et update qui utilisent cette méthode AppConfig.
 
 *************************************************
 ##Q
@@ -116,5 +134,13 @@
 
 
 - réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
 
 *************************************************
