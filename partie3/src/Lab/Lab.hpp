@@ -19,6 +19,6 @@ public:
     void resetTemperature();
 private:
     PetriDish boite;
-}
+};
 
 #endif // LAB_HPP
