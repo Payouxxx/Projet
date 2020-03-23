@@ -130,10 +130,10 @@
 - La méthode setValue() peut s'occuper du plafonnage de l'attribut value. Cette méthode est ensuite appelée dans mutate() et dans le constructeur.
 
 *************************************************
-##Q
+##Q3.7
 
 
-- réponse à la question 
+- Pour ne pas avoir à créer une instance systématiquement, nous avons mis en "static" les méthodes probability et positif.
 
 *************************************************
 ##Q
