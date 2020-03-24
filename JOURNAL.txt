@@ -10,4 +10,4 @@ SEMAINE 2
 -jeudi : partie2 finie (compilation et exécution fonctionnent)
 
 SEMAINE 3
--lundi : deux premieres étapes de lapartie3, codage des classes Nutriments A et B, NutrimentGenerator et [je connais pas tes classes Claire]
+-lundi : deux premieres étapes de la partie 3, codage des classes Nutriments A et B, NutrimentGenerator et MutableNumber ainsi que MutableColor. L'execution graphique est bien celle attendue et les tests pour MutableTest sont tous passés.
