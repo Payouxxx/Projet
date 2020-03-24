@@ -124,16 +124,16 @@
 - réponse à la question 
 
 *************************************************
-##Q
+##Q3.6
 
 
-- réponse à la question 
+- La méthode set() peut s'occuper du plafonnage de l'attribut value entre les bornes min et max si elles sont effectives.
 
 *************************************************
-##Q
+##Q3.7
 
 
-- réponse à la question 
+- Il faut mettre les 2 méthodes probability et les 2 positive en "static" dans le header de la classe pour ne pas créér de nouvelle instance à chaque appel de ces méthodes. 
 
 *************************************************
 ##Q
