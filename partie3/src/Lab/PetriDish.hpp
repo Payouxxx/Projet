@@ -15,9 +15,11 @@ class PetriDish : public CircularBody, public Drawable, public Updatable
 public:
     bool addBacterium(Bacterium* b);
     bool addNutriment(Nutriment* n);
+
     void update(sf::Time dt);
     void drawOn(sf::RenderTarget& targetWindow) const;
     void reset();
+
     double getTemperature() const;
     void increaseTemperature();
     void decreaseTemperature();
@@ -28,6 +30,7 @@ public:
     PetriDish& operator= (const PetriDish&) = delete; //empecher l'affectation
     ~PetriDish();
 
+    Nutriment* getNutrimentColliding(CircularBody const& body);
 private:
     std::vector<Bacterium*> faune;
     std::vector<Nutriment*> food;

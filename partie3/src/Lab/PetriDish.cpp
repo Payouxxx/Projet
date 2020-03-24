@@ -24,7 +24,7 @@ void PetriDish::update(sf::Time dt) {
 }
 
 void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
-    auto border = buildAnnulus(getPosition(), getRadius(), sf::Color::Cyan, 5);
+    auto border = buildAnnulus(getPosition(), getRadius(), sf::Color::White, 5);
     targetWindow.draw(border);
 
     for (auto n : food) {
@@ -68,4 +68,19 @@ PetriDish::~PetriDish(){
         delete nutriment;
         nutriment = nullptr;
     }
+}
+
+
+bool PetriDish::addBacterium(Bacterium *b)
+{
+    if (contains(*b)) {
+        faune.push_back(b);
+    }
+    return contains(*b);
+}
+
+
+Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
+{
+    for (auto )
 }

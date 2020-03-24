@@ -27,8 +27,8 @@ bool Lab::contains(const CircularBody& corps) const {
 }
 
 void Lab::addNutriment(Nutriment* n){
-    boite.addNutriment(n);
-}
+    if (!boite.addNutriment(n)) delete n;
+}//si pas possible d'ajouter alors supprimé de la zone mémoire
 
 double Lab::getTemperature() const {
     return boite.getTemperature();
@@ -45,3 +45,21 @@ void Lab::decreaseTemperature(){
 void Lab::resetTemperature() {
     boite.resetTemperature();
 };
+
+
+void Lab::addBacterium(Bacterium *b)
+{
+    if (!boite.addBacterium(b)) delete b;
+} //si pas possible d'ajouter alors supprimé de la zone mémoire
+
+
+bool Lab::doesCollideWithDish(CircularBody const& body) const
+{
+    return boite.isColliding(body);
+}
+
+
+Nutriment* Lab::getNutrimentColliding(CircularBody const& body)
+{
+    if (boite.)
+}
