@@ -349,6 +349,12 @@
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentB.hpp">
 			<Option target="nutrimentTest"/>
 		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentGenerator.cpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentGenerator.hpp">
+			<Option target="nutrimentTest"/>
+		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.cpp">
 			<Option target="nutrimentTest"/>
 		</Unit>

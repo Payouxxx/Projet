@@ -478,6 +478,33 @@ Lab/NutrimentB.cpp.s:
 	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.s
 .PHONY : Lab/NutrimentB.cpp.s
 
+Lab/NutrimentGenerator.o: Lab/NutrimentGenerator.cpp.o
+
+.PHONY : Lab/NutrimentGenerator.o
+
+# target to build an object file
+Lab/NutrimentGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentGenerator.cpp.o
+.PHONY : Lab/NutrimentGenerator.cpp.o
+
+Lab/NutrimentGenerator.i: Lab/NutrimentGenerator.cpp.i
+
+.PHONY : Lab/NutrimentGenerator.i
+
+# target to preprocess a source file
+Lab/NutrimentGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentGenerator.cpp.i
+.PHONY : Lab/NutrimentGenerator.cpp.i
+
+Lab/NutrimentGenerator.s: Lab/NutrimentGenerator.cpp.s
+
+.PHONY : Lab/NutrimentGenerator.s
+
+# target to generate assembly for a file
+Lab/NutrimentGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/Lab/NutrimentGenerator.cpp.s
+.PHONY : Lab/NutrimentGenerator.cpp.s
+
 Lab/PetriDish.o: Lab/PetriDish.cpp.o
 
 .PHONY : Lab/PetriDish.o
@@ -968,6 +995,9 @@ help:
 	@echo "... Lab/NutrimentB.o"
 	@echo "... Lab/NutrimentB.i"
 	@echo "... Lab/NutrimentB.s"
+	@echo "... Lab/NutrimentGenerator.o"
+	@echo "... Lab/NutrimentGenerator.i"
+	@echo "... Lab/NutrimentGenerator.s"
 	@echo "... Lab/PetriDish.o"
 	@echo "... Lab/PetriDish.i"
 	@echo "... Lab/PetriDish.s"

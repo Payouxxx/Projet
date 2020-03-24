@@ -345,6 +345,8 @@ SFML/Graphics.hpp
 -
 vector
 -
+NutrimentGenerator.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentGenerator.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp
 Lab/CircularBody.hpp
@@ -355,6 +357,12 @@ SFML/Graphics.hpp
 -
 ../Interface/Drawable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentGenerator.hpp
+SFML/Graphics.hpp
+-
 ../Interface/Updatable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
 
