@@ -1,6 +1,6 @@
 #Projet programmation orientée objet (SSV)
 
-##REPONSES du groupe *No groupe* (*Claire Payoux* & *Florence Crozat*) 
+##REPONSES du groupe *28* (*Claire Payoux* & *Florence Crozat*) 
 
 *************************************************
 ##Q1.1
@@ -118,10 +118,10 @@
 - La méthode getConfig redéfinie permet de changer les caractéristiques des nutriments en recherchant les caractéristiques spécifiques dans le fichier app.json une fois redéfinie comme fait dans la question 3.3 sans changer les méhodes DrawOn et update qui utilisent cette méthode AppConfig.
 
 *************************************************
-##Q
+##Q3.5
 
 
-- réponse à la question 
+- Il faut ajouter à la méthode update de Lab un appel à la méthode update de l'attribut de type NutrimentGenerator pour générer automatiquement des nutriments.
 
 *************************************************
 ##Q3.6
@@ -142,5 +142,57 @@
 - réponse à la question 
 
 *************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
 
 *************************************************

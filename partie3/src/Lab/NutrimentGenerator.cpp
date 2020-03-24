@@ -21,7 +21,8 @@ void NutrimentGenerator::update(Time dt){
         bool A(bernoulli(getAppConfig()["generator"]["nutriment"]["prob"].toDouble()));
 
         //position aléatoire du centre suivant loi normale
-        Vec2d centreAleatoire(normal(getApp().getLabSize()/2, getApp().getLabSize()/4));
+        Vec2d tailleEnv(getApp().getLabSize());
+        Vec2d centreAleatoire(normal(tailleEnv.x/2.0, tailleEnv.x/4.0*tailleEnv.x/4.0), normal(tailleEnv.y/2.0, tailleEnv.y/4.0*tailleEnv.x/4.0));
         Nutriment* nouveau;
         if (A) { //génère A par le pointeur nouveau
             Quantity qte(uniform(getShortConfig().nutrimentA_min_qty, getShortConfig().nutrimentA_max_qty));
@@ -32,8 +33,6 @@ void NutrimentGenerator::update(Time dt){
             nouveau = new NutrimentB(qte, centreAleatoire);
         }
         getAppEnv().addNutriment(nouveau);
-        cerr << nouveau->getPosition() << endl; //toujours le même centre
-        //test quantité et nutriment A ou B ok
     }
 }
 
