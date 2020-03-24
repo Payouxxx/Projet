@@ -1,4 +1,4 @@
-JOURNAL
+﻿JOURNAL
 
 SEMAINE 1
 -code de la partie 1
@@ -11,3 +11,4 @@ SEMAINE 2
 
 SEMAINE 3
 -lundi : deux premieres étapes de la partie 3, codage des classes Nutriments A et B, NutrimentGenerator et MutableNumber ainsi que MutableColor. L'execution graphique est bien celle attendue et les tests pour MutableTest sont tous passés.
+-mardi : début de l'étape 3, création des classes Bacterium et SimpleBacterium.

@@ -136,40 +136,40 @@
 - Il faut mettre les 2 méthodes probability et les 2 positive en "static" dans le header de la classe pour ne pas créér de nouvelle instance à chaque appel de ces méthodes. 
 
 *************************************************
-##Q
+##Q3.8
 
 
-- réponse à la question 
-
-*************************************************
-##Q
-
-
-- réponse à la question 
+- La classe Bacterium hérite de CirularBody et des classes Drawable et Updatable car Bacterium utilise une méthode update et drawOn. Au niveau des attributs, Bacterium a besoin d'une énergie modélisée comme une "Quantity" (=double), un Vec2d pour sa direction, un booléen pour savoir si elle est en abstinence ou non. Un MutableColor pour la couleur de la bactérie et une liste de paramètres mutables modélisés à l'aide d'un sf::map<string, MutableNumber>. Pour les méthodes, il y a bien sur update et drawOn, mais aussi une méthode alive permettant de savoir si la bactérie est encore en vie, une méthode clone qui lors de la divison scinde en 2 la bactérie et une méthode move pour le déplacement de la bactérie en fonction du temps.
 
 *************************************************
-##Q
+##Q3.9
 
 
-- réponse à la question 
-
-*************************************************
-##Q
-
-
-- réponse à la question 
+- La méthode Bacterium::move(sf::Time dt) aurait besoin d'être virtuelle pure car elle diffère pour chaque type de bactérie et la méthode Bacterium::clone() devrait aussi être virtuelle car toutes les bacteries ne se divisent pas de la meme façon et chaque bactérie ne peut se divisier qu'en 2 autres bacteries de même type. Update et drawOn sont des virtuelles héritées de Drawable et Updatable.
 
 *************************************************
-##Q
+##Q3.10
 
 
-- réponse à la question 
+- La méthode getConfig pour la classe Bacterium doit être virtuelle pure car elle doit s'adapter automatiquement à la nature réelle de l'instance pointée par b. 
 
 *************************************************
-##Q
+##Q3.11
 
 
-- réponse à la question 
+- On retrouve la couleur SFML de la bactérie en faisant appel à la méthode get() de la classe MutableColor sur l'attribut "couleur" de la bacterie.
+
+*************************************************
+##Q3.12
+
+
+- Non ça n'est pas un frein car la méthode move() est une méthode virtuelle.
+
+*************************************************
+##Q3.13
+
+
+- Pour coder la méthode Lab::getNutrimentColliding(CircularBody const& body), il faut créer une nouvelle méthode dans la classe PetriDish PetriDish::getNutrimentColliding(CircularBody const& body) puis l'appeler dans le Lab.
 
 *************************************************
 ##Q
