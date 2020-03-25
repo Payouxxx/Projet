@@ -293,15 +293,16 @@ CMakeFiles/vec2dTest.dir/Utility/MutableNumber.cpp.o
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSON.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/JSON/JSONImpl.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Lab.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/NutrimentGenerator.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.hpp
- /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Constants.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.cpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp

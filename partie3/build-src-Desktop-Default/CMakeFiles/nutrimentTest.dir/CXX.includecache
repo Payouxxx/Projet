@@ -144,6 +144,34 @@ stdexcept
 string
 -
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.cpp
+Bacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
+JSON/JSONImpl.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/JSON/JSONImpl.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
+cmath
+-
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
+CircularBody.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
+Utility/MutableColor.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/MutableColor.hpp
+Utility/Types.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Types.hpp
+string
+-
+SFML/Graphics.hpp
+-
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.cpp
 CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
@@ -265,6 +293,8 @@ Nutriment.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
 JSON/JSONImpl.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/JSON/JSONImpl.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.hpp
 iostream
@@ -273,8 +303,8 @@ vector
 -
 Nutriment.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Nutriment.hpp
-bacterium.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.hpp
+Bacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
 SFML/Graphics.hpp
 -
 CircularBody.hpp
@@ -284,15 +314,15 @@ CircularBody.hpp
 ../Interface/Updatable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
 
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.cpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.cpp
+SimpleBacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
 
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/bacterium.hpp
-../Interface/Drawable.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Drawable.hpp
-../Interface/Updatable.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Interface/Updatable.hpp
-CircularBody.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/CircularBody.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
+Bacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp
 Random/Random.hpp

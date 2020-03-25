@@ -105,8 +105,8 @@ bool PetriDish::addBacterium(Bacterium *b)
 
 Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
 {
-        for (auto& n : food) {
-            if (body.isColliding(*n)) return n;
+        for (auto& nutriments : food) {
+            if ((*nutriments)&(body)) return nutriments;
             //retourne seulement
             //le premier nutriment en collision avec
             //la bactérie passée en paramètre

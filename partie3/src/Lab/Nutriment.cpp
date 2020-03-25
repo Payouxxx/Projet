@@ -15,10 +15,7 @@ Nutriment::Nutriment(Quantity rayon, Vec2d centre)
 Quantity Nutriment::takeQuantity(Quantity q) {
     /* si la quantité demandée est inférieure ou egale à celle disponible
      * on la prélève et la renvoie
-     *
-     * sinon on prélève toute la quantité présente
-     *
-*/
+     * sinon on prélève toute la quantité présente */
     if(q<=quantite) {
         quantite -= q;
         setRadius(quantite);
@@ -28,7 +25,6 @@ Quantity Nutriment::takeQuantity(Quantity q) {
         q=quantite;
         quantite=0.0;
         setRadius(quantite);
-        // supression du nutriment même si température ?
         return q;
     }
 }
@@ -49,7 +45,7 @@ void Nutriment::drawOn(sf::RenderTarget& target) const{
 
     if(isDebugOn()){
            int a(floor(quantite)); //affichage d'entier et pas de double
-           sf::Text const text = buildText(to_string(a), getPosition(), getAppFont(), 15, sf::Color::Black);
+           sf::Text const text = buildText(to_string(a), Vec2d(getPosition().x, getPosition().y + getRadius()), getAppFont(), 15, sf::Color::Black);
            target.draw(text);
        }
 }

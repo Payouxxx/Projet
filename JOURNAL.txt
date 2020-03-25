@@ -12,3 +12,4 @@ SEMAINE 2
 SEMAINE 3
 -lundi : deux premieres étapes de la partie 3, codage des classes Nutriments A et B, NutrimentGenerator et MutableNumber ainsi que MutableColor. L'execution graphique est bien celle attendue et les tests pour MutableTest sont tous passés.
 -mardi : début de l'étape 3, création des classes Bacterium et SimpleBacterium.
+-mercredi : nous avons réglé le problème de la méthode takeQuantity de la classe Nutriments. Fin de l'étape 3, les bactéries se créent bien et disparaissent tout comme les nutriments.

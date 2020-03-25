@@ -28,7 +28,7 @@ void Bacterium::drawOn(sf::RenderTarget &targetWindow) const
 
     if(isDebugOn()){
            int a(floor(energie)); //affichage d'entier et pas de double
-           sf::Text const text = buildText(to_string(a), getPosition(), getAppFont(), 15, sf::Color::Black);
+           sf::Text const text = buildText(to_string(a), Vec2d(getPosition().x, getPosition().y + getRadius()), getAppFont(), 15, sf::Color::Black);
            targetWindow.draw(text);
        }
 }
@@ -42,8 +42,8 @@ void Bacterium::update(sf::Time dt)
     }
     if (getAppEnv().getNutrimentColliding(*this) != nullptr) {
         if (!abstinence and compteur>=getDelay()){
+            energie += (getAppEnv().getNutrimentColliding(*this)->takeQuantity(getConfig()["meal"]["max"].toDouble()));
             compteur = sf::Time::Zero;
-            energie += getAppEnv().getNutrimentColliding(*this)->takeQuantity(getConfig()["meal"]["max"].toDouble());
             //ajout à l'energie de la bactérie de la quantité
             //max de nutriment qu'elle peut prélever
         }

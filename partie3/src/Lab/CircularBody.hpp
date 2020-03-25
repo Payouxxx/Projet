@@ -34,7 +34,7 @@ private:
 
 };
 
-bool operator>(const CircularBody& body1, const CircularBody& body2);
-bool operator&(const CircularBody& body1, const CircularBody& body2);
+bool operator>(const CircularBody& body1, const CircularBody& body2); //operateur d'appartenace (circularbody)
+bool operator&(const CircularBody& body1, const CircularBody& body2); //opérateur de collision
 bool operator>(const CircularBody& body1, const Vec2d& point) ;
 std::ostream& operator<<(std::ostream& sortie, const CircularBody& other);
