@@ -18,6 +18,7 @@ bool PetriDish::addNutriment(Nutriment* n) {
     return contains(*n);
 }
 
+// IMPORTANCE DE PASSER LES POINTEURS PAR REFERENCE DANS LES BOUCLES
 void PetriDish::update(sf::Time dt) {
         for(auto& nutriment : food) {
             if (nutriment->getRadius()==0) {
