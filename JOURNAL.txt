@@ -6,7 +6,7 @@ SEMAINE 1
 
 SEMAINE 2
 -mardi : partie2 en cours, PetriDish et Lab
--mercredi : partie2 en cours, Nutriments
+-mercredi : partie2 en cours, Nutriments (pour la méthode takeQuantity nous avons du delete le nutriment (pointeur) lorsque la quantité arrivait à 0 sinon dès qu'on augmente la température au dessus du seuil, le nutriment qui est sensé avoir disparu se remet à grandir.
 -jeudi : partie2 finie (compilation et exécution fonctionnent)
 
 SEMAINE 3

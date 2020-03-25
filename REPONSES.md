@@ -18,7 +18,7 @@
 ##Q1.3
 
 
-- Les arguments de méthodes justifiant un passage par référence constante sont tous les arguments   qui n'ont pas a etre modifiés par la méthode et qui risquent de prendre de la mémoire (classes par exemple).
+- Les arguments de méthodes justifiant un passage par référence constante sont tous les arguments qui n'ont pas a etre modifiés par la méthode et qui risquent de prendre de la mémoire (classes par exemple).
 
 *************************************************
 ##Q1.4
@@ -172,16 +172,16 @@
 - Pour coder la méthode Lab::getNutrimentColliding(CircularBody const& body), il faut créer une nouvelle méthode dans la classe PetriDish PetriDish::getNutrimentColliding(CircularBody const& body) puis l'appeler dans le Lab.
 
 *************************************************
-##Q
+##Q3.14
 
 
-- réponse à la question 
+- Il faut modifier PetriDish::update(sf::Time dt) afin de pouvoir appeler la méthode Bacterium::update(sf::Time dt) sur toutes les bactéries de PetriDish.
 
 *************************************************
-##Q
+##Q3.15
 
 
-- réponse à la question 
+- Pour faire en sorte que les bactéries et sources de nutriments meurent/disparaissent si leur énergie/quantité devient nulle, nous avons modifié la méthode PetriDish::update(sf::Time) en effectuant un test pour chaque nutriment/bactérie afin de vérifier leur état de quantité/énérgie et de les transformer en nullptr si vide/morte. Puis nous avons erase les nullptr de nos vecteurs de nutriments et bacteries.
 
 *************************************************
 ##Q
