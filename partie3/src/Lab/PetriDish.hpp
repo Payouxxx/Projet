@@ -4,7 +4,7 @@
 #include<iostream>
 #include <vector>
 #include "Nutriment.hpp"
-#include "bacterium.hpp"
+#include "Bacterium.hpp"
 #include <SFML/Graphics.hpp>
 #include "CircularBody.hpp"
 #include "../Interface/Drawable.hpp"

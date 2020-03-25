@@ -18,18 +18,20 @@ public:
     virtual Bacterium* clone() const =0;
     bool alive() const;
     virtual j::Value& getConfig() const =0;
+    void consumeEnergy(Quantity qt);
 
     Quantity getEnergieMin() const;
     sf::Time getDelay() const;
     Quantity getConsumption() const;
 
-    Bacterium(Vec2d position, double rayon, Quantity nrj, Vec2d dir, MutableColor color);
+    Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color);
 
 private:
     Quantity energie;
     Vec2d direction;
     MutableColor couleur;
     bool abstinence;
+    sf::Time compteur; //temps entre 2 consommation nutriments
     std::map<std::string, MutableNumber> parametres;
 };
 

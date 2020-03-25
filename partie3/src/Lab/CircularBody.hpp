@@ -14,8 +14,11 @@ public:
     double getRadius()const;
 
     bool contains(const CircularBody& other)const;
+    // true si instance contient CircularBody (other dans instance)
     bool isColliding(const CircularBody& other)const;
+    // true si CircularBody en collision avec instance
     bool contains(const Vec2d& point)const;
+    // true si l'instance contient le point
 
     CircularBody& operator =(const CircularBody& other);
     CircularBody& move(const Vec2d& add); //ajout d'une position

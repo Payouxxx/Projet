@@ -27,7 +27,7 @@ Quantity Nutriment::takeQuantity(Quantity q) {
     else {
         q=quantite;
         quantite=0.0;
-        delete(this); //corrupted size vs. previous size
+        setRadius(quantite);
         // supression du nutriment même si température ?
         return q;
     }

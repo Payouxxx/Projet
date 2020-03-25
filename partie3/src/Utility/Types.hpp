@@ -10,6 +10,8 @@
 
 using Quantity   = double;
 using Uid        = unsigned int; ///< Unique Identifier, @see createUid()
+using probabilite = MutableNumber;
+using positif = MutableNumber;
 
 #endif // INFOSV_TYPES_HPP
 

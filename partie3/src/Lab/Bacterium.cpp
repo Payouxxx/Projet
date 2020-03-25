@@ -1,4 +1,4 @@
-#include "bacterium.hpp"
+#include "Bacterium.hpp"
 #include "../Application.hpp"
 #include "JSON/JSONImpl.hpp"
 #include "Utility/Utility.hpp"
@@ -11,12 +11,13 @@ bool Bacterium::alive() const
     return (energie>0); //retourne true si en vie
 }
 
-Bacterium::Bacterium(Vec2d position, double rayon, Quantity nrj, Vec2d dir, MutableColor color)
+Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color)
     : CircularBody(position, rayon),
       energie(nrj),
       direction(dir),
       couleur(color),
-      abstinence(false)
+      abstinence(false),
+      compteur(sf::Time::Zero)
 {} //pas d'initialisation des paramètres : liste vide ?
 
 
@@ -35,10 +36,18 @@ void Bacterium::drawOn(sf::RenderTarget &targetWindow) const
 void Bacterium::update(sf::Time dt)
 {
     move(dt);
+    compteur += dt;
     if (getAppEnv().doesCollideWithDish(*this)) {
         -direction; //inverse direction
     }
-    if (getAppEnv().)
+    if (getAppEnv().getNutrimentColliding(*this) != nullptr) {
+        if (!abstinence and compteur>=getDelay()){
+            compteur = sf::Time::Zero;
+            energie += getAppEnv().getNutrimentColliding(*this)->takeQuantity(getConfig()["meal"]["max"].toDouble());
+            //ajout à l'energie de la bactérie de la quantité
+            //max de nutriment qu'elle peut prélever
+        }
+    }
 }
 
 
@@ -57,4 +66,11 @@ sf::Time Bacterium::getDelay() const
 Quantity Bacterium::getConsumption() const
 {
     return getConfig()["energy"]["consumption factor"].toDouble();
+}
+
+
+
+void Bacterium::consumeEnergy(Quantity qt)
+{
+    energie -= qt;
 }

@@ -3,6 +3,7 @@
 #include "Nutriment.hpp"
 #include "../Application.hpp"
 #include "JSON/JSONImpl.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -18,17 +19,38 @@ bool PetriDish::addNutriment(Nutriment* n) {
 }
 
 void PetriDish::update(sf::Time dt) {
-        for(auto nutriment : food) {
+        for(auto& nutriment : food) {
+            if (nutriment->getRadius()==0) {
+                delete nutriment;
+                nutriment=nullptr;
+            }
+            //si la quantité (=rayon) vaut zéro le nutriment est supprimé
             if (nutriment != nullptr) nutriment->update(dt);
         }
+        food.erase(remove(food.begin(), food.end(), nullptr), food.end());
+        //enleve tous les pointeurs nuls d'un coup dans food
+
+        for (auto& bacterie : faune) {
+            if (!bacterie->alive()) {
+                delete bacterie;
+                bacterie=nullptr;
+            }
+            //si morte la bactérie doit disparaitre
+            if (bacterie != nullptr) bacterie->update(dt);
+        }
+        faune.erase(remove(faune.begin(), faune.end(), nullptr), faune.end());
+        //enleve tous les pointeurs nuls d'un coup dans faune
 }
 
 void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
     auto border = buildAnnulus(getPosition(), getRadius(), sf::Color::White, 5);
     targetWindow.draw(border);
 
-    for (auto n : food) {
+    for (auto& n : food) {
         if (n != nullptr) n->drawOn(targetWindow);
+    }
+    for (auto& b : faune) {
+        if (b != nullptr) b->drawOn(targetWindow);
     }
 }
 
@@ -82,5 +104,11 @@ bool PetriDish::addBacterium(Bacterium *b)
 
 Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
 {
-    for (auto )
+        for (auto& n : food) {
+            if (body.isColliding(*n)) return n;
+            //retourne seulement
+            //le premier nutriment en collision avec
+            //la bactérie passée en paramètre
+        }
+    return nullptr; //si n'a rien retourné avant
 }

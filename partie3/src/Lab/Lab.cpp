@@ -10,7 +10,7 @@ void Lab::drawOn(sf::RenderTarget &targetWindow) const {
 
 void Lab::update(sf::Time dt) {
     boite.update(dt);
-    automatique.update(dt);
+    automatique.update(dt); //nutrimentGenerator
 }
 
 Lab::Lab() :
@@ -61,5 +61,6 @@ bool Lab::doesCollideWithDish(CircularBody const& body) const
 
 Nutriment* Lab::getNutrimentColliding(CircularBody const& body)
 {
-    if (boite.)
+    return boite.getNutrimentColliding(body);
 }
+
