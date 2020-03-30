@@ -184,6 +184,42 @@
 - Pour faire en sorte que les bactéries et sources de nutriments meurent/disparaissent si leur énergie/quantité devient nulle, nous avons modifié la méthode PetriDish::update(sf::Time) en effectuant un test pour chaque nutriment/bactérie afin de vérifier leur état de quantité/énérgie et de les transformer en nullptr si vide/morte. Puis nous avons erase les nullptr de nos vecteurs de nutriments et bacteries.
 
 *************************************************
+##Q3.16
+
+
+- La classe SimpleBacatrium doit hériter de la classe DiffEqFonction pour hériter de la méthode virtuelle pure f calculant la force, qui devra être redéfinie. 
+
+*************************************************
+##Q3.17
+
+
+- Il faudrait déclarer et initialiser le temps t dans une méthode pouvant utiliser un déplacement en fonction du temps, par conséquent t devrait être un attribut de la classe SimpleBacterium qui sera incrémenté dans une méthode SimpleBacterium::updateFlagelle qui serait appelée dans la méthode update redéfinie dans SimpleBacterium.
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
 ##Q
 
 
