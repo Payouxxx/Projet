@@ -3,6 +3,7 @@
 #include "JSON/JSONImpl.hpp"
 #include "Utility/Utility.hpp"
 #include <cmath>
+#include "Utility/Vec2d.hpp"
 
 using namespace std;
 
@@ -38,7 +39,7 @@ void Bacterium::update(sf::Time dt)
     move(dt);
     compteur += dt;
     if (getAppEnv().doesCollideWithDish(*this)) {
-        -direction; //inverse direction
+        direction = -(direction); //inverse direction
     }
     if (getAppEnv().getNutrimentColliding(*this) != nullptr) {
         if (!abstinence and compteur>=getDelay()){
@@ -68,9 +69,12 @@ Quantity Bacterium::getConsumption() const
     return getConfig()["energy"]["consumption factor"].toDouble();
 }
 
-
-
 void Bacterium::consumeEnergy(Quantity qt)
 {
     energie -= qt;
+}
+
+Vec2d Bacterium::getDirection()const
+{
+    return direction;
 }

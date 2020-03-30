@@ -1,6 +1,8 @@
 #include "Lab.hpp"
 #include "../Application.hpp"
 #include "../Utility/Utility.hpp"
+#include <iostream>
+#include "Utility/Vec2d.hpp"
 
 using namespace std;
 
@@ -55,7 +57,7 @@ void Lab::addBacterium(Bacterium *b)
 
 bool Lab::doesCollideWithDish(CircularBody const& body) const
 {
-    return boite.isColliding(body);
+    return (boite&body and !(boite>body));
 }
 
 

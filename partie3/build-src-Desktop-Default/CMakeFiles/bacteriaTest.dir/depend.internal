@@ -987,7 +987,10 @@ CMakeFiles/bacteriaTest.dir/Lab/SimpleBacterium.cpp.o
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.cpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/RandomGenerator.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Constants.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/DiffEqSolver.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp

@@ -155,6 +155,8 @@ Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
 cmath
 -
+Utility/Vec2d.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Vec2d.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
 ../Interface/Drawable.hpp
@@ -191,6 +193,10 @@ Lab.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
 ../Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.hpp
+iostream
+-
+Utility/Vec2d.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Vec2d.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Lab.hpp
 PetriDish.hpp
@@ -319,10 +325,18 @@ SimpleBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
 ../Application.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Application.hpp
+Random/Random.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Random/Random.hpp
+Utility/Vec2d.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Vec2d.hpp
+cmath
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
 Bacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Bacterium.hpp
+Utility/DiffEqSolver.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/DiffEqSolver.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Random/Random.cpp
 Random/Random.hpp
