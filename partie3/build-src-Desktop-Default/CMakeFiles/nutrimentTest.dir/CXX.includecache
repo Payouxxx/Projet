@@ -301,6 +301,8 @@ JSON/JSONImpl.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/JSON/JSONImpl.hpp
 iostream
 -
+cmath
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/PetriDish.hpp
 iostream
@@ -335,6 +337,8 @@ Utility/Constants.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Constants.hpp
 Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
 Bacterium.hpp

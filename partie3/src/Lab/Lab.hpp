@@ -11,6 +11,7 @@ public:
     void update(sf::Time dt);
     void drawOn(sf::RenderTarget& targetWindow) const;
     void reset();
+    void resetControls();
     Lab();
     bool contains(const CircularBody& corps) const;
 
@@ -22,8 +23,14 @@ public:
     void decreaseTemperature();
     void resetTemperature();
 
+    double getGradientExponent() const;
+    void increaseGradientExponent();
+    void decreaseGradientExponent();
+    void resetGradientExponent();
+
     bool doesCollideWithDish(CircularBody const& body) const;
     Nutriment* getNutrimentColliding(CircularBody const& body);
+    double getPositionScore(const Vec2d&p) const;
 private:
     PetriDish boite;
     NutrimentGenerator automatique;

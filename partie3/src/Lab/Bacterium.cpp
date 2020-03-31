@@ -85,6 +85,11 @@ double Bacterium::getAngleDir() const
     return angleDir;
 }
 
+double Bacterium::getScore() const
+{
+    return getAppEnv().getPositionScore(getPosition());
+}
+
 //setter
 
 void Bacterium::setAngleDir(double angle)

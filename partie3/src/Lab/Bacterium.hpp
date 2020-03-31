@@ -12,8 +12,8 @@
 class Bacterium : public CircularBody, public Drawable, public Updatable
 {
 public:
-    void drawOn(sf::RenderTarget& targetWindow) const;
-    void update(sf::Time dt);
+    virtual void drawOn(sf::RenderTarget& targetWindow) const;
+    virtual void update(sf::Time dt);
     virtual void move(sf::Time dt) =0;
     virtual Bacterium* clone() const =0;
     bool alive() const;
@@ -26,6 +26,7 @@ public:
     Vec2d getDirection()const;
     double getAngleDir()const;
     void setAngleDir(double angle);
+    double getScore() const;
 
     Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color);
 
@@ -37,6 +38,7 @@ private:
     sf::Time compteur; //temps entre 2 consommation nutriments
     std::map<std::string, MutableNumber> parametres;
     double angleDir;
+    double pBasculement;
 
 };
 

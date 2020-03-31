@@ -5,6 +5,7 @@
 #include <cmath>
 #include "Utility/Constants.hpp"
 #include "Utility/Utility.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -47,6 +48,9 @@ void SimpleBacterium::move(sf::Time dt)
         consumeEnergy(getConsumption()*length.length());
     }
     //La vitesse ne varie pas car la force est nulle
+
+    //Basculement
+
 }
 
 void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
@@ -57,10 +61,11 @@ void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
         float x = static_cast<float>(-i * getRadius() / 10.0);
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
         set_of_points.append({{x,y}, sf::Color::Black});
+        cout << i << endl;
     }
     auto transform = sf::Transform(); // déclare une matrice de transformation
     transform.translate(getPosition()+Vec2d(getRadius(),getRadius()));
-    transform.rotate((getDirection().angle())/DEG_TO_RAD);
+    transform.rotate((getAngleDir())/DEG_TO_RAD);
 
     targetWindow.draw(set_of_points, transform);
 }

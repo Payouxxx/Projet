@@ -4,12 +4,15 @@
 #include "../Application.hpp"
 #include "JSON/JSONImpl.hpp"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-PetriDish:: PetriDish(Vec2d centre, double r) : CircularBody(centre, r),
-temperature(getAppConfig()["petri dish"]["temperature"]["default"].toDouble()) {}
-
+PetriDish:: PetriDish(Vec2d centre, double r)
+    : CircularBody(centre, r),
+      temperature(getAppConfig()["petri dish"]["temperature"]["default"].toDouble()),
+      puissance((getAppConfig()["petri dish"]["gradient"]["exponent"]["max"].toDouble() + getAppConfig()["petri dish"]["gradient"]["exponent"]["min"].toDouble())/2)
+{}
 
 bool PetriDish::addNutriment(Nutriment* n) {
     if (contains(*n)) {
@@ -19,6 +22,7 @@ bool PetriDish::addNutriment(Nutriment* n) {
 }
 
 // IMPORTANCE DE PASSER LES POINTEURS PAR REFERENCE DANS LES BOUCLES
+
 void PetriDish::update(sf::Time dt) {
         for(auto& nutriment : food) {
             if (nutriment->getRadius()==0) {
@@ -113,3 +117,33 @@ Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
         }
     return nullptr; //si n'a rien retourné avant
 }
+
+double PetriDish::getPositionScore(const Vec2d &p) const
+{
+    double somme(0.0);
+    for(auto& n : food){
+        somme += (n->getRadius()*2)/(pow(distance(p,n->getPosition()), puissance));
+        }
+    return somme;
+}
+
+double PetriDish::getGradientExponent() const
+{
+    return puissance;
+}
+
+void PetriDish::increaseGradientExponent()
+{
+    puissance += getAppConfig()["petri dish"]["gradient"]["exponent"]["delta"].toDouble();
+}
+
+void PetriDish::decreaseGradientExponent()
+{
+    puissance -= getAppConfig()["petri dish"]["gradient"]["exponent"]["delta"].toDouble();
+}
+
+void PetriDish::resetGradientExponent()
+{
+    puissance = (getAppConfig()["petri dish"]["gradient"]["exponent"]["max"].toDouble() + getAppConfig()["petri dish"]["gradient"]["exponent"]["min"].toDouble())/2;
+}
+

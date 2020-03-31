@@ -32,6 +32,8 @@ void Lab::addNutriment(Nutriment* n){
     if (!boite.addNutriment(n)) delete n;
 }//si pas possible d'ajouter alors supprimé de la zone mémoire
 
+//TEMPERATURE
+
 double Lab::getTemperature() const {
     return boite.getTemperature();
 }
@@ -65,4 +67,52 @@ Nutriment* Lab::getNutrimentColliding(CircularBody const& body)
 {
     return boite.getNutrimentColliding(body);
 }
+
+//GRADIENT EXPONENT
+
+double Lab::getPositionScore(const Vec2d& p) const
+{
+    return boite.getPositionScore(p);
+}
+
+double Lab::getGradientExponent() const
+{
+    return boite.getGradientExponent();
+}
+
+void Lab::increaseGradientExponent()
+{
+    return boite.increaseGradientExponent();
+}
+
+void Lab::decreaseGradientExponent()
+{
+    return boite.decreaseGradientExponent();
+}
+
+void Lab::resetGradientExponent()
+{
+    boite.resetGradientExponent();
+}
+
+void Lab::resetControls()
+{
+    resetTemperature();
+    resetGradientExponent();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

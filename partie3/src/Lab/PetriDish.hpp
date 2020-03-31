@@ -31,10 +31,18 @@ public:
     ~PetriDish();
 
     Nutriment* getNutrimentColliding(CircularBody const& body);
+    double getPositionScore(const Vec2d& p) const;
+
+    double getGradientExponent() const;
+    void increaseGradientExponent();
+    void decreaseGradientExponent();
+    void resetGradientExponent();
+
 private:
     std::vector<Bacterium*> faune;
     std::vector<Nutriment*> food;
     double temperature;
+    double puissance;
 };
 
 #endif // PETRIDISH_HPP

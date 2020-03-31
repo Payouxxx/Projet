@@ -485,8 +485,8 @@ void Application::handleEvent(sf::Event event, sf::RenderWindow& window)
         case sf::Keyboard::C:
 			delete mConfig;
             mConfig = new Config(mAppDirectory + mCfgFile); // reconstruct
-            getEnv().reset(); //resetControls normalement
-            getEnv().resetTemperature();
+            getEnv().resetControls(); //reset Temperature and gradient exponent
+
             break;
 
         // Toggle pause for simulation
