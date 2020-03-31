@@ -61,7 +61,6 @@ void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
         float x = static_cast<float>(-i * getRadius() / 10.0);
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
         set_of_points.append({{x,y}, sf::Color::Black});
-        cout << i << endl;
     }
     auto transform = sf::Transform(); // déclare une matrice de transformation
     transform.translate(getPosition()+Vec2d(getRadius(),getRadius()));

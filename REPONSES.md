@@ -193,7 +193,31 @@
 ##Q3.17
 
 
-- Il faudrait déclarer et initialiser le temps t dans une méthode pouvant utiliser un déplacement en fonction du temps, par conséquent t devrait être un attribut de la classe SimpleBacterium qui sera incrémenté dans une méthode SimpleBacterium::updateFlagelle qui serait appelée dans la méthode update redéfinie dans SimpleBacterium.
+- Il faudrait déclarer et initialiser le temps t dans un endroit où il pourra être incrémenté en fonction du temps, par conséquent t devrait être un attribut de la classe SimpleBacterium qui sera incrémenté dans la méthode update redéfinie dans SimpleBacterium. Il sera initialisé dans le constructeur d'une SimpleBacterium.
+
+*************************************************
+##Q3.18
+
+
+- Pour mémoriser l'angle de direction, il faudrait l'initialiser en tant qu'attribut d'une Bacterium et lui donner la valeur direction.angle(), puis le mettre à jour dans la foncion Bacterium::drawOn en ajoutant une ligne angleDir=direction.angle() afin de s'assurer d'avoir toutjours le bon angle.
+
+*************************************************
+##Q3.19
+
+
+- On doit donc ajouter à PetriDish un nouvel argument puissance, à initialiser dans le consutructeur selon les indications de l'énoncé, puis de coder un PetriDish::getPositionScore que l'on pourra réutiliser dans Lab, qui retournera la somme des scores pour chaque source de nutriments pour une position p donnée en paramètre.
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
 
 *************************************************
 ##Q
