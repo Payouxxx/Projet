@@ -14,8 +14,10 @@ public:
     void move(sf::Time dt);
     void drawOn(sf::RenderTarget& targetWindow) const;
     void update(sf::Time dt);
-    //void updateFlagelle(sf::Time) const;
     Vec2d f(Vec2d position, Vec2d speed) const;
+
+    void drawFlagelle(sf::RenderTarget& targetWindow) const;
+    void updateFlagelle(sf::Time dt);
     Vec2d getSpeedVector() const;
 private:
     double t; //compteur pour le dessin du flagelle

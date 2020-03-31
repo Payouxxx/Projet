@@ -18,8 +18,9 @@ Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, Muta
       direction(dir),
       couleur(color),
       abstinence(false),
-      compteur(sf::Time::Zero)
-{} //pas d'initialisation des paramètres : liste vide ?
+      compteur(sf::Time::Zero),
+      angleDir(dir.angle())
+{}
 
 
 void Bacterium::drawOn(sf::RenderTarget &targetWindow) const
@@ -77,4 +78,16 @@ void Bacterium::consumeEnergy(Quantity qt)
 Vec2d Bacterium::getDirection()const
 {
     return direction;
+}
+
+double Bacterium::getAngleDir() const
+{
+    return angleDir;
+}
+
+//setter
+
+void Bacterium::setAngleDir(double angle)
+{
+    angleDir = angle;
 }

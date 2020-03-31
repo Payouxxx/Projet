@@ -3,6 +3,8 @@
 #include "Random/Random.hpp"
 #include "Utility/Vec2d.hpp"
 #include <cmath>
+#include "Utility/Constants.hpp"
+#include "Utility/Utility.hpp"
 
 using namespace std;
 
@@ -47,9 +49,8 @@ void SimpleBacterium::move(sf::Time dt)
     //La vitesse ne varie pas car la force est nulle
 }
 
-void SimpleBacterium::drawOn(sf::RenderTarget& targetWindow) const
+void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
 {
-    Bacterium::drawOn(targetWindow);
     auto set_of_points = sf::VertexArray(sf::TrianglesStrip);
     set_of_points.append({{0,0}, sf::Color::Black});
     for(size_t i(1); i<30; ++i){
@@ -57,12 +58,34 @@ void SimpleBacterium::drawOn(sf::RenderTarget& targetWindow) const
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
         set_of_points.append({{x,y}, sf::Color::Black});
     }
-    targetWindow.draw(set_of_points);
+    auto transform = sf::Transform(); // déclare une matrice de transformation
+    transform.translate(getPosition()+Vec2d(getRadius(),getRadius()));
+    transform.rotate((getDirection().angle())/DEG_TO_RAD);
+
+    targetWindow.draw(set_of_points, transform);
+}
+
+void SimpleBacterium::drawOn(sf::RenderTarget& targetWindow) const
+{
+    drawFlagelle(targetWindow);
+    Bacterium::drawOn(targetWindow);
+}
+
+void SimpleBacterium::updateFlagelle(sf::Time dt)
+{
+    t += 3*dt.asSeconds();
+
+    auto const angleDiff = angleDelta(getDirection().angle(), getAngleDir());
+     // calcule la différence entre le nouvel angle de direction et l'ancien
+    auto dalpha = PI * dt.asSeconds(); // calcule dα
+    dalpha = std::min(dalpha, std::abs(angleDiff)); // on ne peut tourner plus que de angleDiff
+    dalpha = std::copysign(dalpha, angleDiff); // on tourne dans la direction indiquée par angleDiff
+    setAngleDir(getAngleDir()+dalpha); // angle de rotation mis à jour
+
 }
 
 void SimpleBacterium::update(sf::Time dt)
 {
+    updateFlagelle(dt);
     Bacterium::update(dt);
-    t += 3*dt.asSeconds();
 }
-

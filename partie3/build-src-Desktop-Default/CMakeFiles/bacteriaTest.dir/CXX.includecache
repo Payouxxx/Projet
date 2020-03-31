@@ -331,6 +331,10 @@ Utility/Vec2d.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Vec2d.hpp
 cmath
 -
+Utility/Constants.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Constants.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/Utility/Utility.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Lab/SimpleBacterium.hpp
 Bacterium.hpp

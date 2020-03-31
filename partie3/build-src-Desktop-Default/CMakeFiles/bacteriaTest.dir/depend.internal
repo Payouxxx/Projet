@@ -994,6 +994,8 @@ CMakeFiles/bacteriaTest.dir/Lab/SimpleBacterium.cpp.o
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableColor.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/MutableNumber.hpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Types.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.hpp
+ /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Utility.tpp
  /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie3/src/Utility/Vec2d.hpp
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp

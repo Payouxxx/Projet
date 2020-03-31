@@ -24,6 +24,8 @@ public:
     sf::Time getDelay() const;
     Quantity getConsumption() const;
     Vec2d getDirection()const;
+    double getAngleDir()const;
+    void setAngleDir(double angle);
 
     Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color);
 
@@ -34,6 +36,7 @@ private:
     bool abstinence;
     sf::Time compteur; //temps entre 2 consommation nutriments
     std::map<std::string, MutableNumber> parametres;
+    double angleDir;
 
 };
 
