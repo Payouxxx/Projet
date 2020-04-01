@@ -11,6 +11,7 @@ class Nutriment : public CircularBody, public Drawable, public Updatable
 {
 public:
     Nutriment(Quantity rayon, Vec2d centre);
+    ~Nutriment();
     Quantity takeQuantity(Quantity q);
     void setQuantity(Quantity q);
     void drawOn(sf::RenderTarget& target) const;

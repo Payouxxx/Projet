@@ -11,6 +11,7 @@ using namespace std;
 Nutriment::Nutriment(Quantity rayon, Vec2d centre)
     : CircularBody(centre, rayon), quantite(rayon) {}
 
+Nutriment::~Nutriment() {}
 
 Quantity Nutriment::takeQuantity(Quantity q) {
     /* si la quantité demandée est inférieure ou egale à celle disponible

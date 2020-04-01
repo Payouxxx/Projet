@@ -9,6 +9,8 @@ CircularBody::CircularBody(const Vec2d& coordCentre, double rayon) //constructeu
 CircularBody::CircularBody(const CircularBody& other) //constructeur copie
     : centre(other.centre), radius(other.radius) {}
 
+CircularBody::~CircularBody() {}
+
 const Vec2d& CircularBody::getPosition() const{
     return centre;
 }

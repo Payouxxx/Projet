@@ -14,7 +14,8 @@ private:
 public:
     MutableNumber(double val, double p, double std, bool Inf=false, double min=0, bool Sup=false, double max=0);
     MutableNumber(const j::Value &config);
-    double get() const;
+    MutableNumber() = default;
+    double get() const; //get valeur
     void set(double val); //modifie la valeur tout en restant entre min et max
     void mutate(); //entraine un changement de la valeur selon un nombre tiré aléatoirement
     static MutableNumber probability(double initialValue, double mutationProbability, double sigma);

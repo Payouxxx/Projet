@@ -8,6 +8,7 @@ class SimpleBacterium : public Bacterium, public DiffEqFunction
 {
 public:
     SimpleBacterium(Vec2d position);
+    ~SimpleBacterium();
 
     j::Value& getConfig() const;
     Bacterium* clone() const;
@@ -19,8 +20,12 @@ public:
     void drawFlagelle(sf::RenderTarget& targetWindow) const;
     void updateFlagelle(sf::Time dt);
     Vec2d getSpeedVector() const;
+
+    void basculement();
+
 private:
     double t; //compteur pour le dessin du flagelle
+    sf::Time dt; //compteur entre 2 basculements
 };
 
 #endif // SIMPLEBACTERIUM_HPP

@@ -40,6 +40,7 @@ public:
 
 private:
     std::vector<Bacterium*> faune;
+    //std::vector<Bacterium*> annexe; //bactéries créées par clonage
     std::vector<Nutriment*> food;
     double temperature;
     double puissance;

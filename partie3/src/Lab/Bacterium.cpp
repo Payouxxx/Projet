@@ -19,9 +19,11 @@ Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, Muta
       couleur(color),
       abstinence(false),
       compteur(sf::Time::Zero),
-      angleDir(dir.angle())
+      angleDir(dir.angle()),
+      pBasculement(0.0)
 {}
 
+Bacterium::~Bacterium() {}
 
 void Bacterium::drawOn(sf::RenderTarget &targetWindow) const
 { //couleur.get() pour avoir la couleur SFML
@@ -46,9 +48,35 @@ void Bacterium::update(sf::Time dt)
         if (!abstinence and compteur>=getDelay()){
             energie += (getAppEnv().getNutrimentColliding(*this)->takeQuantity(getConfig()["meal"]["max"].toDouble()));
             compteur = sf::Time::Zero;
+            divide();
             //ajout à l'energie de la bactérie de la quantité
             //max de nutriment qu'elle peut prélever
         }
+    }
+}
+
+Bacterium* Bacterium::mutate()
+{
+    map<string, MutableNumber>::iterator it = parametres.begin();
+    while(it != parametres.end()){
+        it->second.mutate();
+        ++it;
+    }
+    couleur.mutate();
+    return this;
+}
+
+void Bacterium::addProperty(const string & name, MutableNumber m)
+{
+    parametres[name]= m;
+}
+
+void Bacterium::divide()
+{
+    if(energie > getEnergieMin()){
+        consumeEnergy(energie/2.0);
+        getAppEnv().addBacterium(clone()->mutate());
+        direction = -direction;
     }
 }
 
@@ -58,6 +86,13 @@ void Bacterium::update(sf::Time dt)
 Quantity Bacterium::getEnergieMin() const
 {
     return getConfig()["energy"]["division"].toDouble();
+}
+
+MutableNumber Bacterium::getProperty(const string &name) const
+{
+    auto paire = parametres.find(name);
+    //if()
+    return paire->second;
 }
 
 sf::Time Bacterium::getDelay() const
@@ -90,9 +125,25 @@ double Bacterium::getScore() const
     return getAppEnv().getPositionScore(getPosition());
 }
 
+double Bacterium::getpBasculement() const
+{
+    return pBasculement;
+}
+
+
 //setter
 
 void Bacterium::setAngleDir(double angle)
 {
     angleDir = angle;
+}
+
+void Bacterium::setpBasculement(double p)
+{
+    pBasculement = p;
+}
+
+void Bacterium::setDirection(Vec2d dir)
+{
+    direction = dir;
 }

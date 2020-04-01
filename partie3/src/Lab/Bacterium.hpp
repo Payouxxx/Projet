@@ -16,19 +16,29 @@ public:
     virtual void update(sf::Time dt);
     virtual void move(sf::Time dt) =0;
     virtual Bacterium* clone() const =0;
-    bool alive() const;
     virtual j::Value& getConfig() const =0;
+
+    bool alive() const;
     void consumeEnergy(Quantity qt);
+    void addProperty(const std::string&name, MutableNumber m);
+    MutableNumber getProperty(const std::string& name) const;
+    Bacterium *mutate();
+    void divide();
 
     Quantity getEnergieMin() const;
+   // Quantity getEnergie()const;
     sf::Time getDelay() const;
     Quantity getConsumption() const;
     Vec2d getDirection()const;
+    void setDirection(Vec2d dir);
     double getAngleDir()const;
     void setAngleDir(double angle);
     double getScore() const;
+    double getpBasculement() const;
+    void setpBasculement(double p);
 
     Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color);
+    virtual ~Bacterium() = 0;
 
 private:
     Quantity energie;

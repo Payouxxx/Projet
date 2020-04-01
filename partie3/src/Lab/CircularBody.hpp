@@ -6,9 +6,11 @@ class CircularBody
 {
 public:
     CircularBody(const Vec2d& coordCentre, double rayon); //constructeur
+    virtual ~CircularBody();
+
     /*!
-     * \brief getPosition
-     * \return
+     * @brief getPosition
+     * @return position
      */
     const Vec2d& getPosition() const;
     double getRadius()const;
