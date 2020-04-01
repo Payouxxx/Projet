@@ -67,7 +67,12 @@ void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
         float y = static_cast<float>((getRadius()+2) * sin(t) * sin(2 * i / 10.0));
     }
     auto transform = sf::Transform(); // déclare une matrice de transformation
+<<<<<<< HEAD
     transform.translate(getPosition());
+=======
+    Vec2d posterieur(-getDirection().normalised()*getRadius());
+    transform.translate(getPosition()+posterieur);
+>>>>>>> 552cd71e7faf4f889b55dcbaf3e17c442c53ffa2
     transform.rotate((getAngleDir())/DEG_TO_RAD);
 
     targetWindow.draw(set_of_points, transform);

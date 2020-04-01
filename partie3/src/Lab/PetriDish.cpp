@@ -122,7 +122,7 @@ double PetriDish::getPositionScore(const Vec2d &p) const
 {
     double somme(0.0);
     for(auto& n : food){
-        somme += (n->getRadius()*2)/(pow(distance(p,n->getPosition()), puissance));
+        if (n != nullptr) somme += (n->getRadius()*2)/(pow(distance(p,n->getPosition()), puissance));
         }
     return somme;
 }
