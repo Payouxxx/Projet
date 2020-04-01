@@ -208,28 +208,28 @@
 - On doit donc ajouter à PetriDish un nouvel argument puissance, à initialiser dans le consutructeur selon les indications de l'énoncé, puis de coder un PetriDish::getPositionScore que l'on pourra réutiliser dans Lab, qui retournera la somme des scores pour chaque source de nutriments pour une position p donnée en paramètre.
 
 *************************************************
-##Q
+##Q3.20
 
 
-- réponse à la question 
-
-*************************************************
-##Q
-
-
-- réponse à la question 
+- La probabilité de basculement est une propiété de toutes les bactéries et il faut ensuite ajouter un compteur de temps dt pour les bactéries qui mesurera le temps entre deux baculements. Ces attributs seront initialisés dans les constructeurs respectifs à 0 (pour éviter une valeur aléatoire) et sf::Time::Zero, puis mis à jour dans la fonction move, qui est appelée dans la fonction update.
 
 *************************************************
-##Q
+##Q3.21
 
 
-- réponse à la question 
+- Il faudrait utiliser la méthode mutate à MutableNumber afin que chacun des paramètre mutable de la bactérie puissent muter séparément, dans une nouvelle méthode update codée dans Bacterium. 
 
 *************************************************
-##Q
+##Q3.22
 
 
-- réponse à la question 
+- Les méthodes addProperty et getProperty seront adaptées dans Bacterium afin de pouvoir influer sur l'attibut std::map<string, MutableNumber>
+
+*************************************************
+##Q3.23
+
+
+- La méthode de division d'une bactérie sera placée dans la classe Bacterium puisque toutes les bactéries pourront se diviser. 
 
 *************************************************
 ##Q
