@@ -36,7 +36,7 @@ Vec2d SimpleBacterium::f(Vec2d position, Vec2d speed) const
 
 Vec2d SimpleBacterium::getSpeedVector() const
 {
-    return getDirection().normalised()*10;
+    return getDirection().normalised()*20;
 }
 
 void SimpleBacterium::move(sf::Time dt)
@@ -57,13 +57,17 @@ void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
 {
     auto set_of_points = sf::VertexArray(sf::TrianglesStrip);
     set_of_points.append({{0,0}, sf::Color::Black});
-    for(size_t i(1); i<30; ++i){
+    for(int i(1); i<30; ++i){
         float x = static_cast<float>(-i * getRadius() / 10.0);
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
         set_of_points.append({{x,y}, sf::Color::Black});
     }
+    for(int i(1); i<60; ++i){
+        float x = static_cast<float>((-i * getRadius()+2) / 10.0);
+        float y = static_cast<float>((getRadius()+2) * sin(t) * sin(2 * i / 10.0));
+    }
     auto transform = sf::Transform(); // déclare une matrice de transformation
-    transform.translate(getPosition()+Vec2d(getRadius(),getRadius()));
+    transform.translate(getPosition());
     transform.rotate((getAngleDir())/DEG_TO_RAD);
 
     targetWindow.draw(set_of_points, transform);
