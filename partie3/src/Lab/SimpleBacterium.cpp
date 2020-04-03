@@ -21,11 +21,11 @@ Bacterium* SimpleBacterium::clone() const
 }
 
 
-SimpleBacterium::SimpleBacterium(Vec2d position)
+SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléatoires
     : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
       getConfig()["color"]),
-      t(uniform(0.0, M_PI)),
+      t(uniform(0.0, M_PI)), //compteur dessin flagelle
       dt(sf::Time::Zero)
 {
     addProperty("speed", MutableNumber::positive(getAppConfig()["simple bacterium"]["speed"])); //vitesse
@@ -37,7 +37,7 @@ SimpleBacterium::~SimpleBacterium() {}
 
 Vec2d SimpleBacterium::f(Vec2d position, Vec2d speed) const
 {
-    return Vec2d(0,0);
+    return Vec2d(0,0); //force nulle sur les SimpleBacterium
 }
 
 Vec2d SimpleBacterium::getSpeedVector() const
@@ -48,25 +48,28 @@ Vec2d SimpleBacterium::getSpeedVector() const
 void SimpleBacterium::move(sf::Time dt)
 {
     double ancien_score(getScore());
-    this->dt += dt;
+
+    //déplacement
     DiffEqResult resultat(stepDiffEq(getPosition(), getSpeedVector(), dt, *this, DiffEqAlgorithm::EC));
-    Vec2d length(resultat.position - this->getPosition());
-    if(length.lengthSquared() > 0.001){
-        this->CircularBody::move(length);
-        consumeEnergy(getConsumption()*length.length());
+    Vec2d deplacement(resultat.position - this->getPosition());
+    if(deplacement.lengthSquared() > 0.001){ //empêche tremblotements
+        this->CircularBody::move(deplacement);
+        consumeEnergy(getConsumption()*deplacement.length());
     }
     //La vitesse ne varie pas car la force est nulle
+    //on utilise pas resultat.speed
 
     //Basculement
-    double score(getScore());
+    this->dt += dt;
+    double score(getScore()); //à la nouvelle position après le déplacement
     double lambda(getProperty("tumble better").get());
     if(score<=ancien_score){
         lambda = getProperty("tumble worse").get();
         }
     setpBasculement(1-(exp(-(this->dt.asSeconds())/lambda)));
     if(bernoulli(getpBasculement())){
-        basculement();}
-
+        basculement();
+        }
 }
 
 void SimpleBacterium::basculement()
@@ -94,11 +97,11 @@ void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
         float x = static_cast<float>(-i * getRadius() / 10.0);
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
         set_of_points.append({{x,y}, sf::Color::Black});
-        set_of_points.append({{x+1,y+1}, sf::Color::Black});
+        set_of_points.append({{x+2,y+2}, sf::Color::Black});
     }
     auto transform = sf::Transform(); // déclare une matrice de transformation
 
-    Vec2d posterieur(-getDirection().normalised()*getRadius());
+    Vec2d posterieur(-getDirection().normalised()*getRadius()); //position de l'arrière bacterie
     transform.translate(getPosition()+posterieur);
     transform.rotate((getAngleDir())/DEG_TO_RAD);
 
@@ -116,7 +119,7 @@ void SimpleBacterium::updateFlagelle(sf::Time dt)
     t += 3*dt.asSeconds();
 
     auto const angleDiff = angleDelta(getDirection().angle(), getAngleDir());
-     // calcule la différence entre le nouvel angle de direction et l'ancien
+    // calcule la différence entre le nouvel angle de direction et l'ancien
     auto dalpha = PI * dt.asSeconds(); // calcule dα
     dalpha = std::min(dalpha, std::abs(angleDiff)); // on ne peut tourner plus que de angleDiff
     dalpha = std::copysign(dalpha, angleDiff); // on tourne dans la direction indiquée par angleDiff

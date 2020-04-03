@@ -12,7 +12,7 @@ NutrimentGenerator::NutrimentGenerator()
     : dt(Time::Zero) {}
 
 void NutrimentGenerator::update(Time dt){
-    this->dt+=dt; //incrémente le temps
+    this->dt+=dt; //incrémente le compteur de temps
 
     if(this->dt>=sf::seconds(getAppConfig()["generator"]["nutriment"]["delay"].toDouble())) {
         reset();

@@ -26,7 +26,6 @@ public:
     void divide();
 
     Quantity getEnergieMin() const;
-   // Quantity getEnergie()const;
     sf::Time getDelay() const;
     Quantity getConsumption() const;
     Vec2d getDirection()const;

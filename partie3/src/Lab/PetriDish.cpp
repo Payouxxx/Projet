@@ -28,8 +28,8 @@ void PetriDish::update(sf::Time dt) {
             if (nutriment->getRadius()==0) {
                 delete nutriment;
                 nutriment=nullptr;
-            }
-            //si la quantité (=rayon) vaut zéro le nutriment est supprimé
+            } //si la quantité (=rayon) vaut zéro le nutriment est supprimé
+
             if (nutriment != nullptr) nutriment->update(dt);
         }
         food.erase(remove(food.begin(), food.end(), nullptr), food.end());
@@ -39,8 +39,8 @@ void PetriDish::update(sf::Time dt) {
             if (!bacterie->alive()) {
                 delete bacterie;
                 bacterie=nullptr;
-            }
-            //si morte la bactérie doit disparaitre
+            } //si morte la bactérie doit disparaitre
+
             if (bacterie != nullptr) bacterie->update(dt);
         }
         faune.erase(remove(faune.begin(), faune.end(), nullptr), faune.end());
@@ -67,6 +67,7 @@ void PetriDish::reset() {
     food.clear();
 
     resetTemperature();
+    resetGradientExponent();
 }
 
 void PetriDish::resetTemperature(){

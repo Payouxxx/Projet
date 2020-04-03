@@ -68,12 +68,12 @@ Nutriment* Lab::getNutrimentColliding(CircularBody const& body)
     return boite.getNutrimentColliding(body);
 }
 
-//GRADIENT EXPONENT
-
 double Lab::getPositionScore(const Vec2d& p) const
 {
     return boite.getPositionScore(p);
 }
+
+//GRADIENT EXPONENT
 
 double Lab::getGradientExponent() const
 {

@@ -60,6 +60,7 @@ void Nutriment::update(sf::Time dt) {
             double speed(getConfig()["growth"]["speed"].toDouble());
             auto growth = speed * dt.asSeconds();
             if(getAppEnv().contains(CircularBody(this->getPosition(), quantite+growth))) {
+                //si assiette contient nutriment augmenté alors possible de l'agmenter
                 quantite +=growth;
                 setRadius(quantite);
             }

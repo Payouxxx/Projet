@@ -46,16 +46,16 @@ void Bacterium::update(sf::Time dt)
     }
     if (getAppEnv().getNutrimentColliding(*this) != nullptr) {
         if (!abstinence and compteur>=getDelay()){
+            //ajout à l'energie de la bactérie de la quantité
+            //max de nutriment qu'elle peut prélever
             energie += (getAppEnv().getNutrimentColliding(*this)->takeQuantity(getConfig()["meal"]["max"].toDouble()));
             compteur = sf::Time::Zero;
             divide();
-            //ajout à l'energie de la bactérie de la quantité
-            //max de nutriment qu'elle peut prélever
         }
     }
 }
 
-Bacterium* Bacterium::mutate()
+Bacterium* Bacterium::mutate() //retourne pointeur sur elle même pour réutilistion dans addBacterium
 {
     map<string, MutableNumber>::iterator it = parametres.begin();
     while(it != parametres.end()){
@@ -66,20 +66,27 @@ Bacterium* Bacterium::mutate()
     return this;
 }
 
-void Bacterium::addProperty(const string & name, MutableNumber m)
+
+void Bacterium::consumeEnergy(Quantity qt)
 {
-    parametres[name]= m;
+    energie -= qt;
 }
 
 void Bacterium::divide()
-{
+{ //si assez énergie ajoute copie d'elle même à l'assiette, nrj/2 et mutation possible pour la nouvelle +inverse dir
     if(energie > getEnergieMin()){
         consumeEnergy(energie/2.0);
+        //notre solution pour ajouter bacterie
+        //solution prof : taleau annexe à ajouter avec append(v1, v2)
         getAppEnv().addBacterium(clone()->mutate());
         direction = -direction;
     }
 }
 
+void Bacterium::addProperty(const string & name, MutableNumber m)
+{
+    parametres[name]= m;
+}
 
 //getters
 
@@ -91,7 +98,7 @@ Quantity Bacterium::getEnergieMin() const
 MutableNumber Bacterium::getProperty(const string &name) const
 {
     auto paire = parametres.find(name);
-    //if()
+    //if() à coder si nom pas trouvé renvoie erreur std::out_of_range ou std::invalid_argument
     return paire->second;
 }
 
@@ -103,11 +110,6 @@ sf::Time Bacterium::getDelay() const
 Quantity Bacterium::getConsumption() const
 {
     return getConfig()["energy"]["consumption factor"].toDouble();
-}
-
-void Bacterium::consumeEnergy(Quantity qt)
-{
-    energie -= qt;
 }
 
 Vec2d Bacterium::getDirection()const
