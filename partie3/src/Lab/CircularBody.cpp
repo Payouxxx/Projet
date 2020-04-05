@@ -4,19 +4,19 @@
 using namespace std;
 
 CircularBody::CircularBody(const Vec2d& coordCentre, double rayon) //constructeur
-    : centre(coordCentre), radius(rayon) {}
+    : position(coordCentre), radius(rayon) {}
 
 CircularBody::CircularBody(const CircularBody& other) //constructeur copie
-    : centre(other.centre), radius(other.radius) {}
+    : position(other.position), radius(other.radius) {}
 
 CircularBody::~CircularBody() {}
 
 const Vec2d& CircularBody::getPosition() const{
-    return centre;
+    return position;
 }
 
 void CircularBody::setPosition(const Vec2d& position){
-    centre=position;
+    this->position=position;
 }
 double CircularBody::getRadius() const{
     return radius;
@@ -27,30 +27,30 @@ void CircularBody::setRadius(double rayon){
 }
 
 CircularBody& CircularBody::operator=(const CircularBody &other){
-    centre=other.centre;
+    position=other.position;
     radius=other.radius;
     return *this;
 }
 
 CircularBody& CircularBody:: move(const Vec2d& add){
-    centre += add;
+    position += add;
     return *this;
 }
 
 bool CircularBody::contains(const CircularBody& other)const {
     double difference(radius-other.radius);
-    double dist (distance(centre, other.centre));
+    double dist (distance(position, other.position));
     return (difference>=0 and dist<=difference);
 }
 
 bool CircularBody::isColliding(const CircularBody& other)const {
     double somme(radius+other.radius);
-    double dist (distance(centre, other.centre));
+    double dist (distance(position, other.position));
     return (dist<=somme);
 }
 
 bool CircularBody::contains(const Vec2d& point)const {
-    return (distance(point, centre) <= radius);
+    return (distance(point, position) <= radius);
 }
 
 bool operator>(const CircularBody& body1, const CircularBody& body2) {

@@ -7,11 +7,6 @@
 
 using namespace std;
 
-bool Bacterium::alive() const
-{
-    return (energie>0); //retourne true si en vie
-}
-
 Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color)
     : CircularBody(position, rayon),
       energie(nrj),
@@ -53,6 +48,11 @@ void Bacterium::update(sf::Time dt)
             divide();
         }
     }
+}
+
+bool Bacterium::alive() const
+{
+    return (energie>0); //retourne true si en vie
 }
 
 Bacterium* Bacterium::mutate() //retourne pointeur sur elle même pour réutilistion dans addBacterium

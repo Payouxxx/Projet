@@ -6,26 +6,28 @@
 
 using namespace std;
 
-void Lab::drawOn(sf::RenderTarget &targetWindow) const {
-        boite.drawOn(targetWindow);
+Lab::Lab()
+    : boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0)
+{}
+
+void Lab::drawOn(sf::RenderTarget &targetWindow) const
+{
+    boite.drawOn(targetWindow);
 }
 
-void Lab::update(sf::Time dt) {
+void Lab::update(sf::Time dt)
+{
     boite.update(dt);
     automatique.update(dt); //nutrimentGenerator
 }
-
-Lab::Lab() :
-    boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0)
-{}
 
 void Lab::reset(){
     automatique.reset();
     boite.reset();
 }
 
-bool Lab::contains(const CircularBody& corps) const {
-    return boite.contains(corps);
+bool Lab::contains(const CircularBody& body) const {
+    return boite.contains(body);
 }
 
 void Lab::addNutriment(Nutriment* n){
