@@ -78,30 +78,97 @@ public:
      * @param m (MutableNumber)
      */
     void addProperty(const std::string&name, MutableNumber m);
+
+    /*!
+     * @brief access to a property thanks to its name
+     *
+     * @param name (string)
+     *
+     * @return a MutableNumber linked to the name
+     */
     MutableNumber getProperty(const std::string& name) const;
+
+    /*!
+     * @brief call the mutate method of the MutableNumber class on each element of parametres and also on the couleur
+     * @return a pointer on the new bacteria (either modified or not)
+     */
     Bacterium *mutate();
+
+    /*!
+     * @brief if the bacteria has enough energy, it can produce a copy of itself with clone
+     *        then the bacteria changes its direction to the opposite
+     */
     void divide();
 
+    /*!
+     * @brief access to the minimum of energy a bacteria needs to divide
+     * @return the EnergyMin (Quantity = double)
+     */
     Quantity getEnergieMin() const;
+
+    /*!
+     * @brief access to the time between 2 "meals" of the bacteria (value from app.json)
+     * @return the time before it can eat again a nutriment
+     */
     sf::Time getDelay() const;
+
+    /*!
+     * @brief access to the energy withdraw to the bacteria at each "time"
+     * @return the quantity taken to the bacteria
+     */
     Quantity getConsumption() const;
+
+    /*!
+     * @brief access to the current direction of the bacteria
+     * @return the direction as a Vec2d
+     */
     Vec2d getDirection()const;
+
+    /*!
+     * @brief method to change the direction from the subClasses as its a private attribute
+     * @param new direction
+     */
     void setDirection(Vec2d dir);
+
+    /*!
+     * @brief access to the current angle of direction
+     * @return the angle as a double
+     */
     double getAngleDir()const;
+
+    /*!
+     * @brief method to change the angle of direction from the subClasses as its a private attribute
+     * @param new angle
+     */
     void setAngleDir(double angle);
+
+    /*!
+     * @brief access to the score of the bacteria's position
+     * @return the score
+     */
     double getScore() const;
+
+    /*!
+     * @brief access to the failover probability (pBasculement)
+     * @return the probability
+     */
     double getpBasculement() const;
+
+    /*!
+     * @brief method to change the failover probability from the subClasses as its a private attribute
+     * @param new probability
+     */
     void setpBasculement(double p);
 
 private:
-    Quantity energie;
-    Vec2d direction;
-    MutableColor couleur;
-    bool abstinence;
-    sf::Time compteur; //temps entre 2 consommation nutriments
-    std::map<std::string, MutableNumber> parametres;
-    double angleDir;
-    double pBasculement;
+    Quantity energie;                                   ///< energy of the bacteria
+    Vec2d direction;                                    ///< direction
+    MutableColor couleur;                               ///< color
+    bool abstinence;                                    ///< true = the bacteria can eat
+    sf::Time compteur;                                  ///< time between 2 meals
+    std::map<std::string, MutableNumber> parametres;    ///< list of parameters
+    double angleDir;                                    ///< direction angle
+    double pBasculement;                                ///< failover probability (random change of direction)
 
 };
 
