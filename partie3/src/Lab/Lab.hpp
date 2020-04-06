@@ -7,7 +7,7 @@
 #include "NutrimentGenerator.hpp"
 
 /*!
- * @brief The Lab class managing one PetriDish development and its nutriments
+ * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development and its nutriments
  */
 class Lab : public Drawable, public Updatable{
 public:

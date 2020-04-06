@@ -9,18 +9,6 @@
 
 using namespace std;
 
-
-j::Value& SimpleBacterium::getConfig() const
-{
-    return (getAppConfig()["simple bacterium"]);
-}
-
-Bacterium* SimpleBacterium::clone() const
-{
-    return new SimpleBacterium(*this);
-}
-
-
 SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléatoires
     : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
@@ -33,7 +21,15 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
     addProperty("tumble worse", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["worse"])); //lambda pour basculement péjoratif
 }
 
-SimpleBacterium::~SimpleBacterium() {}
+j::Value& SimpleBacterium::getConfig() const
+{
+    return (getAppConfig()["simple bacterium"]);
+}
+
+Bacterium* SimpleBacterium::clone() const
+{
+    return new SimpleBacterium(*this);
+}
 
 Vec2d SimpleBacterium::f(Vec2d position, Vec2d speed) const
 {
