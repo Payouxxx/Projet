@@ -5,7 +5,7 @@
 #include "Utility/DiffEqSolver.hpp"
 
 /*!
- * @brief The SimpleBacterium class, a subclass of Bacterium and DiffEqFunction
+ * @brief The SimpleBacterium class, a subclass of Bacterium and DiffEgFunction
  */
 class SimpleBacterium : public Bacterium, public DiffEqFunction
 {

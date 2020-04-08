@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "NutrimentGenerator.hpp"
+#include "Swarm.hpp"
 
 /*!
  * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development and its nutriments
@@ -127,6 +128,9 @@ public:
      * @return the score of the position p
      */
     double getPositionScore(const Vec2d&p) const;
+
+    Swarm *getSwarmWithId(std::string id);
+    void addSwarm(Swarm* s);
 
 private:
     PetriDish boite;                ///< the PetriDish

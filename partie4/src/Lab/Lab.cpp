@@ -106,9 +106,15 @@ void Lab::resetControls()
 
 
 
+Swarm* Lab::getSwarmWithId(string id)
+{
+    return boite.getSwarmWithId(id);
+}
 
-
-
+void Lab::addSwarm(Swarm *s)
+{
+    boite.addSwarm(s);
+}
 
 
 

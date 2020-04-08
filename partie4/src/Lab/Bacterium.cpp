@@ -124,7 +124,7 @@ double Bacterium::getAngleDir() const
 
 double Bacterium::getScore() const
 {
-    return getAppEnv().getPositionScore(getPosition());
+    return (getAppEnv().getPositionScore(getPosition()));
 }
 
 double Bacterium::getpBasculement() const

@@ -45,6 +45,10 @@ void PetriDish::update(sf::Time dt) {
         }
         faune.erase(remove(faune.begin(), faune.end(), nullptr), faune.end());
         //enleve tous les pointeurs nuls d'un coup dans faune
+
+        for (auto& grp : groupes) {
+            if (grp != nullptr) grp->update(dt);
+        }
 }
 
 void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
@@ -148,3 +152,17 @@ void PetriDish::resetGradientExponent()
     puissance = (getAppConfig()["petri dish"]["gradient"]["exponent"]["max"].toDouble() + getAppConfig()["petri dish"]["gradient"]["exponent"]["min"].toDouble())/2;
 }
 
+
+
+Swarm* PetriDish::getSwarmWithId(string id)
+{
+    for(auto& grp : groupes) {
+        if(grp->getIdentificator()==id) return grp;
+    }
+    return nullptr;
+}
+
+void PetriDish::addSwarm(Swarm* s)
+{
+    if (s != nullptr) groupes.push_back(s);
+}

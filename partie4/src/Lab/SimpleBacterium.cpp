@@ -16,9 +16,9 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
       t(uniform(0.0, M_PI)), //compteur dessin flagelle
       dt(sf::Time::Zero)
 {
-    addProperty("speed", MutableNumber::positive(getConfig()["speed"])); //vitesse
-    addProperty("tumble better", MutableNumber::positive(getConfig()["tumble"]["better"])); //lambda pour pBasculement mélioratif
-    addProperty("tumble worse", MutableNumber::positive(getConfig()["tumble"]["worse"])); //lambda pour basculement péjoratif
+    addProperty("speed", MutableNumber::positive(getAppConfig()["simple bacterium"]["speed"])); //vitesse
+    addProperty("tumble better", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["better"])); //lambda pour pBasculement mélioratif
+    addProperty("tumble worse", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["worse"])); //lambda pour basculement péjoratif
 }
 
 j::Value& SimpleBacterium::getConfig() const

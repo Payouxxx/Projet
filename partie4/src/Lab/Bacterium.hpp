@@ -74,9 +74,7 @@ public:
 
     /*!
      * @brief add a property to the parameters of the bacteria
-     *
      * @param name (string)
-     *
      * @param m (MutableNumber)
      */
     void addProperty(const std::string&name, MutableNumber m);
@@ -94,7 +92,7 @@ public:
      * @brief call the mutate method of the MutableNumber class on each element of parametres and also on the couleur
      * @return a pointer on the new bacteria (either modified or not)
      */
-    Bacterium *mutate();
+    Bacterium* mutate();
 
     /*!
      * @brief if the bacteria has enough energy, it can produce a copy of itself with clone

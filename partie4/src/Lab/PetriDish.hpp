@@ -9,7 +9,7 @@
 #include "CircularBody.hpp"
 #include "../Interface/Drawable.hpp"
 #include "../Interface/Updatable.hpp"
-
+#include "Swarm.hpp"
 
 
 
@@ -119,12 +119,16 @@ public:
       */
     void resetGradientExponent();
 
+
+    void addSwarm(Swarm* s);
+    Swarm *getSwarmWithId(std::string id);
+
 private:
     std::vector<Bacterium*> faune; ///< the whole bacteria in the petri dish
-    //std::vector<Bacterium*> annexe; //bactéries créées par clonage
     std::vector<Nutriment*> food; ///< the whole nutriments in the petri dish
     double temperature; ///< temperature of the petri dish
     double puissance; ///< used to calculate gradient exponent
+    std::vector<Swarm*> groupes;
 };
 
 #endif // PETRIDISH_HPP
