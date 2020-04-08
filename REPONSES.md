@@ -262,6 +262,90 @@
 - Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie. Puis une variable state de type etat que l'on passe en paramètre d'un switch afin de traiter tous les états possibles.
 
 *************************************************
+##Q4.6
+
+
+- L'assiette de Pétri contient des Swarm donc la classe PetriDish doit contenir elle aussi une méthode addSwarm qui sera appelée dans la classe Lab sur la boite qu'elle contient. La classe PetriDish contiendra donc un nouvel attribut std::vector<Swarm>
+
+*************************************************
+##Q4.7
+
+
+- La bacterie étant une force soumise à un objet, elle peut hériter de la classe DiffEqFunction modelisant cette force. 
+
+*************************************************
+##Q4.8
+
+
+- Il faudra impérativment redéfiir les classes move, getConfig et clone, ainsi que DiffEqFunction::f afin d'avoir une classe instanciable et polymorphyque.
+
+*************************************************
+##Q4.9
+
+
+- La méthode getSwarmWithId(id) devra donc être ajoutée à la classe Lab, elle devra retourner d'après la manière dont le code est mis en place un pointeur sur le Swarm dont l'identifiant entier est id.
+
+*************************************************
+##Q4.10
+
+
+- Le destructeur de PetrDish se charge d'éliminer les bactéries de l'assiette donc le destructeur de Swarm ne devrait rien faire, de plus un Swarm représente un groupe de bactéries et par conséquent un Swarm ne meurt que s'il n'y a plus de bactéries dedans et ses bactéries auront déjà été supprimées par le ipdate de la PetriDish.
+
+*************************************************
+##Q4.11
+
+
+- Pour dissocier une SwarBacterium de son Swarm, il faudrait utiliser dans le destructeur d'une SwarmBacterium le fait qu'elle se retire de son Swarm.
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
 ##Q
 
 
