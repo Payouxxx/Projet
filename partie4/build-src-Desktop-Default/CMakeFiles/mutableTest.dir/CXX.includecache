@@ -363,6 +363,8 @@ vector
 -
 NutrimentGenerator.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/NutrimentGenerator.hpp
+Swarm.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Swarm.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Nutriment.hpp
 Lab/CircularBody.hpp
@@ -399,6 +401,18 @@ CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Interface/Drawable.hpp
 ../Interface/Updatable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Interface/Updatable.hpp
+Swarm.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Swarm.hpp
+
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Swarm.hpp
+Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Interface/Updatable.hpp
+vector
+-
+Utility/Vec2d.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Utility/Vec2d.hpp
+SFML/Graphics.hpp
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Random/Random.cpp
 Random/Random.hpp

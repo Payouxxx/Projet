@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/simpleBactTest.dir/Lab/NutrimentGenerator.cpp.o"
   "CMakeFiles/simpleBactTest.dir/Lab/PetriDish.cpp.o"
   "CMakeFiles/simpleBactTest.dir/Lab/SimpleBacterium.cpp.o"
+  "CMakeFiles/simpleBactTest.dir/Lab/Swarm.cpp.o"
+  "CMakeFiles/simpleBactTest.dir/Lab/SwarmBacterium.cpp.o"
   "CMakeFiles/simpleBactTest.dir/Lab/TwitchingBacterium.cpp.o"
   "CMakeFiles/simpleBactTest.dir/Utility/DiffEqSolver.cpp.o"
   "CMakeFiles/simpleBactTest.dir/Utility/MutableColor.cpp.o"

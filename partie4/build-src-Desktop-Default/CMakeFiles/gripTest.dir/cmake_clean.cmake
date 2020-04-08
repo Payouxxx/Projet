@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gripTest.dir/Lab/NutrimentGenerator.cpp.o"
   "CMakeFiles/gripTest.dir/Lab/PetriDish.cpp.o"
   "CMakeFiles/gripTest.dir/Lab/SimpleBacterium.cpp.o"
+  "CMakeFiles/gripTest.dir/Lab/Swarm.cpp.o"
+  "CMakeFiles/gripTest.dir/Lab/SwarmBacterium.cpp.o"
   "CMakeFiles/gripTest.dir/Lab/TwitchingBacterium.cpp.o"
   "CMakeFiles/gripTest.dir/Utility/DiffEqSolver.cpp.o"
   "CMakeFiles/gripTest.dir/Utility/MutableColor.cpp.o"

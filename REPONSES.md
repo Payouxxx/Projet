@@ -232,6 +232,48 @@
 - La méthode de division d'une bactérie sera placée dans la classe Bacterium puisque toutes les bactéries pourront se diviser. 
 
 *************************************************
+##Q4.1
+
+
+- La classe TwitchingBacterium hérite de Bacterium en tant qu'elle est un type de bacterie au même titre qu'une SimpleBacterium
+
+*************************************************
+##Q4.2
+
+
+- En redéfinissant le méthode getConfig() de Bacterium comme nous l'avions fait dans SimpleBacterium
+
+*************************************************
+##Q4.3
+
+
+- Il faut impérativement redéfinir les méthodes qui étaient virtuelles pures dans Bacterium, c'est à dire : move(sf::Time dt), clone(), getConfig() bien sur et le destructeur qui n'est pas hérité.
+
+*************************************************
+##Q4.4
+
+
+- Nous avons crée des getteurs pour accéder aux valeurs associées à ["energy"]["consumption factor"]["move"] getEnergieMove() et à ["energy"]["consumption factor"]["tentacle"] getEnergieTentacle()
+
+*************************************************
+##Q4.5
+
+
+- Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie. Puis une variable state de type etat que l'on passe en paramètre d'un switch afin de traiter tous les états possibles.
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
+##Q
+
+
+- réponse à la question 
+
+*************************************************
 ##Q
 
 

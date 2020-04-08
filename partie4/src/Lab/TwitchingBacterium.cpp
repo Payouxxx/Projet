@@ -4,6 +4,10 @@
 #include "Random/Random.hpp"
 #include "SFML/Graphics.hpp"
 #include "Utility/Utility.hpp"
+#include "Utility/Vec2d.hpp"
+#include <iostream>
+
+using namespace std;
 
 TwitchingBacterium::TwitchingBacterium(Vec2d position)
     : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
@@ -36,11 +40,6 @@ double TwitchingBacterium::getEnergieTentacle() const
     return (getConfig()["energy"]["consumption factor"]["tentacle"].toDouble());
 }
 
-void TwitchingBacterium::move(sf::Time dt)
-{
-
-}
-
 Bacterium* TwitchingBacterium::clone() const
 {
     TwitchingBacterium* c(new TwitchingBacterium(this->getPosition()));
@@ -69,5 +68,69 @@ void TwitchingBacterium::moveGrip(Vec2d add)
     grapin.move(add);
 }
 
+void TwitchingBacterium::move(sf::Time dt)
+{
+    enum etat {IDLE, WAIT_TO_DEPLOY, DEPLOY, ATTRACT, RETRACT, EAT};
+    etat state(IDLE);
+    double vitesse_tentacule(getConfig()["tentacle"]["speed"]["initial"].toDouble());
+    switch (state) {
+        case IDLE: //tentacule au repos
+            state = WAIT_TO_DEPLOY;
+        case WAIT_TO_DEPLOY: //tentacule se préparant au deploiement
+    {
+        Vec2d dir(Vec2d::fromRandomAngle());
+        for(int i(0); i<20; ++i){
+            Vec2d dir2(Vec2d::fromRandomAngle());
+            if(getAppEnv().getPositionScore(dir+getPosition()) < getAppEnv().getPositionScore(dir2+getPosition())){
+                dir = dir2;
+            }
+        }
+        this->getDirection() = dir;
+        state = DEPLOY;
+    }
+        case DEPLOY:
+    {
+        //mouvement du grapin
+        grapin.move(getPosition() * vitesse_tentacule * dt.asSeconds());
+
+        //perte d'énergie
+        consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+
+        //rencontre nutriment
+        Nutriment* n(getAppEnv().getNutrimentColliding(grapin));
+        if(n != nullptr){
+            state = ATTRACT;
+        } else {
+            state = RETRACT;
+        }
+    }
+
+        case ATTRACT:
+    {
+        if(getAppEnv().getNutrimentColliding(*this) != nullptr){
+            state = EAT;
+        } else {
+            Vec2d dir_tentacule((grapin.getPosition() - getPosition()).normalised());
+            CircularBody::move(dir_tentacule* vitesse_tentacule * getEnergieMove() * dt.asSeconds());
+        }
+    }
+        case RETRACT:
+    {
+        if(distance(getPosition(), grapin.getPosition()) <= getRadius()){
+            state = IDLE;
+        } else {
+            grapin.move((getPosition() - grapin.getPosition()).normalised());
+            consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+        }
+    }
+
+        case EAT:
+            if(getAppEnv().getNutrimentColliding(*this) == nullptr) state = IDLE;
+
+        default:
+            break;
+   }
+
+}
 
 
