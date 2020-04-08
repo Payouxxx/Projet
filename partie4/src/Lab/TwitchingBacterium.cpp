@@ -13,7 +13,8 @@ TwitchingBacterium::TwitchingBacterium(Vec2d position)
     : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
       getConfig()["color"]),
-      grapin(position, getRadius()/4.0) //grapin initialisé à la même position mais avec un rayon 4 fois plus petit
+      grapin(position, getRadius()/4.0), //grapin initialisé à la même position mais avec un rayon 4 fois plus petit
+      state(IDLE)
 {
     addProperty("speed", MutableNumber::positive(getConfig()["tentacle"]["speed"]));
     addProperty("length tentacle", MutableNumber::positive(getConfig()["tentacle"]["length"]));
@@ -70,12 +71,12 @@ void TwitchingBacterium::moveGrip(Vec2d add)
 
 void TwitchingBacterium::move(sf::Time dt)
 {
-    enum etat {IDLE, WAIT_TO_DEPLOY, DEPLOY, ATTRACT, RETRACT, EAT};
-    etat state(IDLE);
     double vitesse_tentacule(getConfig()["tentacle"]["speed"]["initial"].toDouble());
     switch (state) {
         case IDLE: //tentacule au repos
             state = WAIT_TO_DEPLOY;
+            cout << 1 << endl;
+        break;
         case WAIT_TO_DEPLOY: //tentacule se préparant au deploiement
     {
         Vec2d dir(Vec2d::fromRandomAngle());
@@ -85,47 +86,69 @@ void TwitchingBacterium::move(sf::Time dt)
                 dir = dir2;
             }
         }
-        this->getDirection() = dir;
+        setDirection(dir);
         state = DEPLOY;
+        cout << 2 << endl;
+        break;
     }
         case DEPLOY:
     {
         //mouvement du grapin
-        grapin.move(getPosition() * vitesse_tentacule * dt.asSeconds());
+        if(distance(grapin.getPosition(),getPosition()) < getConfig()["tentacle"]["length"]["initial"].toDouble()
+                and not getAppEnv().doesCollideWithDish(grapin)){
+            grapin.move(getDirection() * vitesse_tentacule * dt.asSeconds());
+            cout << getDirection() * vitesse_tentacule * dt.asSeconds() << endl;
 
-        //perte d'énergie
-        consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+            //perte d'énergie
+            consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
 
-        //rencontre nutriment
-        Nutriment* n(getAppEnv().getNutrimentColliding(grapin));
-        if(n != nullptr){
-            state = ATTRACT;
+            //rencontre nutriment
+            if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
+                state = ATTRACT;
+                cout << 3.1 << endl;
+            } else {
+                cout << 3.2 << endl;
+            }
         } else {
             state = RETRACT;
         }
+        break;
     }
 
         case ATTRACT:
     {
         if(getAppEnv().getNutrimentColliding(*this) != nullptr){
             state = EAT;
-        } else {
+            cout << 4.1 << endl;
+        } else if(getAppEnv().getNutrimentColliding(*this) == nullptr and getAppEnv().getNutrimentColliding(grapin) != nullptr){
             Vec2d dir_tentacule((grapin.getPosition() - getPosition()).normalised());
-            CircularBody::move(dir_tentacule* vitesse_tentacule * getEnergieMove() * dt.asSeconds());
+            this->CircularBody::move(dir_tentacule* vitesse_tentacule * getEnergieMove() * dt.asSeconds());
+            consumeEnergy(getEnergieMove()*vitesse_tentacule * getEnergieMove() * dt.asSeconds());
+            cout << 4.2 << endl;
+        } else {
+            state = RETRACT;
         }
+        break;
     }
         case RETRACT:
     {
         if(distance(getPosition(), grapin.getPosition()) <= getRadius()){
             state = IDLE;
+            cout << 5.1 << endl;
         } else {
             grapin.move((getPosition() - grapin.getPosition()).normalised());
             consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+            cout << 5.2 << endl;
         }
+        break;
     }
 
         case EAT:
-            if(getAppEnv().getNutrimentColliding(*this) == nullptr) state = IDLE;
+            if(getAppEnv().getNutrimentColliding(*this) == nullptr){
+                state = IDLE;
+                cout << 6 << endl;
+            }
+        break;
 
         default:
             break;

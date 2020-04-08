@@ -73,8 +73,14 @@ public:
      */
     void moveGrip(Vec2d add);
 
+    /*!
+     * @brief The etat enum of the differents states of the bacteria
+     */
+    enum etat {IDLE, WAIT_TO_DEPLOY, DEPLOY, ATTRACT, RETRACT, EAT};
+
 private:
     Grip grapin;    ///< grip of the twitching bacteria (CircularBody)
+    etat state;     ///< state of the bacteria
 };
 
 #endif // TWITCHINGBACTERIUM_HPP
