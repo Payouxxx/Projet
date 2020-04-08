@@ -16,5 +16,11 @@ SEMAINE 3
 
 SEMAINE 4
 -lundi : début de la partie SimpleBacterium, test 9 passé. Début de la partie d'affichage des flagelles.
-- mardi : problème d'affichage des flagelles malgré l'aide de deux assistants. Début de la partie de gradient et basculement.
-- mercredi : problème de flagelles résolu. Fin de la partie 3.4, les bactéries se divisent correctement.
+-mardi : problème d'affichage des flagelles malgré l'aide de deux assistants. Début de la partie de gradient et basculement.
+-mercredi : problème de flagelles résolu. Fin de la partie 3.4, les bactéries se divisent correctement.
+
+SEMAINE 5
+-lundi : commentaires du code
+-mardi : début de la partie 4, chaucune sur un type de bactérie
+-mercredi : contination de la partie 4, test 14 réussi
+
