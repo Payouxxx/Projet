@@ -259,7 +259,7 @@
 ##Q4.5
 
 
-- Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie. Puis une variable state de type etat que l'on passe en paramètre d'un switch afin de traiter tous les états possibles.
+- Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie, au sein de la classe TwitchingBacterium. Puis un attribut que l'on passe en d'un switch dans la méthode move(sf::Time dt) afin de traiter tous les états possibles de la bactérie.
 
 *************************************************
 ##Q4.6
