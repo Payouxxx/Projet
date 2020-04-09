@@ -30,7 +30,7 @@ public:
 
     /*!
      * @brief redefinition of the virtual method move
-     * @param dt (sff::Time)
+     * @param dt (sf::Time)
      */
     void move(sf::Time dt);
 

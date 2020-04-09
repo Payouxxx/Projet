@@ -17,15 +17,10 @@ void Swarm::addSwarmBacterium(SwarmBacterium* bacteria)
 }
 
 
-void Swarm::removeSwarmBacterium(SwarmBacterium* bacteria)
+void Swarm::removeSwarmBacterium(const SwarmBacterium *bacteria)
 {
-    for(size_t i(0); i<bacteries.size(); ++i) {
-        if (bacteria==bacteries[i]) { //FAUX ATTENTION !!!!
-            swap(bacteries[i], bacteries.back());
-            delete bacteries.back();
-            bacteries.pop_back();
-        }
-    }
+    delete bacteria;
+    bacteria=nullptr;
 }
 
 Vec2d Swarm::getPositionLeader() const
@@ -33,9 +28,9 @@ Vec2d Swarm::getPositionLeader() const
     return leader->getPosition();
 }
 
-sf::Color Swarm::getOriginalColor() const
+MutableColor Swarm::getOriginalColor() const
 {
-    return MutableColor(getAppConfig()["swarms"][identificateur]["color"]).get();
+    return MutableColor(getAppConfig()["swarms"][identificateur]["color"]);
 }
 
 void Swarm::update(sf::Time dt)

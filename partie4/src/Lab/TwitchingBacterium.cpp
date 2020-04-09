@@ -51,9 +51,9 @@ Bacterium* TwitchingBacterium::clone() const
 
 void TwitchingBacterium::drawTentacle(sf::RenderTarget &targetWindow) const
 {
-    auto line = buildLine(grapin.getPosition(), this->getPosition(), sf::Color::Red, 1);
+    auto line = buildLine(grapin.getPosition(), this->getPosition(), getColor(), 1);
     targetWindow.draw(line);
-    auto border = buildAnnulus(grapin.getPosition(), grapin.getRadius(), sf::Color::Red, 1);
+    auto border = buildAnnulus(grapin.getPosition(), grapin.getRadius(), getColor(), 1);
     targetWindow.draw(border);
 }
 

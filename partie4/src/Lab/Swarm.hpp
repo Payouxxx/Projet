@@ -5,26 +5,66 @@
 #include <vector>
 #include "Utility/Vec2d.hpp"
 #include <SFML/Graphics.hpp>
+#include "Utility/MutableColor.hpp"
 
 class SwarmBacterium; //prédeclaration de classe pour casser
 // dépendance circulaire
 
+
+/*!
+ * @brief Class Swarm sub class of Updatable, modeling a group of SwarmBacterium
+ */
+
 class Swarm : public Updatable
 {
 public:
+    /*!
+     * @brief Constructor
+     * @param number of the swarm (identificator, std::string)
+     */
     Swarm(std::string id);
+
+    /*!
+     * @brief add a bacteria in the swarm
+     * @param pointer on SwarmBacterium added
+     */
     void addSwarmBacterium(SwarmBacterium* bacteria);
-    void removeSwarmBacterium(SwarmBacterium* bacteria);
+
+
+    void removeSwarmBacterium(const SwarmBacterium *bacteria);
+
+    /*!
+     * @brief get the position of the leader bacteria in the group
+     * @return leader position (Vec2d)
+     */
     Vec2d getPositionLeader() const;
-    sf::Color getOriginalColor() const;
+
+    /*!
+     * @brief get original color of the swarm (before mutation)
+     * @return Mutable color
+     */
+    MutableColor getOriginalColor() const;
+
+    /*!
+     * @brief redefinition of the virtual method update, changes leader
+     * @param dt (sf::Time), intervall of evolution
+     */
     void update(sf::Time dt);
 
+    /*!
+     * @brief get number of the swarm
+     * @return identifcator (std::string)
+     */
     std::string getIdentificator() const;
+
+    /*!
+     * @brief virtual destructor (does nothing)
+     */
     ~Swarm();
 private:
-    std::string identificateur;
-    std::vector<SwarmBacterium*> bacteries;
-    SwarmBacterium* leader; //pas sure pour le pointeur
+    std::string identificateur;                ///< number of the swarm
+    std::vector<SwarmBacterium*> bacteries;    ///< bacteria which are part of the swarm
+    SwarmBacterium* leader;                    ///< leader of the swarm (attracts others)
 };
 
 #endif // SWARM_HPP

@@ -62,8 +62,8 @@ void SimpleBacterium::move(sf::Time dt)
     if(score<=ancien_score){
         lambda = getProperty("tumble worse").get();
         }
-    setpBasculement(1-(exp(-(this->dt.asSeconds())/lambda)));
-    if(bernoulli(getpBasculement())){
+    pBasculement = (1-(exp(-(this->dt.asSeconds())/lambda)));
+    if(bernoulli(pBasculement)){
         basculement();
         }
 }
@@ -71,9 +71,9 @@ void SimpleBacterium::move(sf::Time dt)
 void SimpleBacterium::basculement()
 {
     if(getConfig()["tumble"]["algo"].toString()=="single random vector"){
-        setDirection(Vec2d::fromRandomAngle());
+        setDirection(getPosition().fromRandomAngle());
     } else if(getConfig()["tumble"]["algo"].toString()=="best of N"){
-        Vec2d dir(Vec2d::fromRandomAngle());
+        Vec2d dir(getPosition().fromRandomAngle());
         for(int i(0); i<20; ++i){
             Vec2d dir2(Vec2d::fromRandomAngle());
             if(getAppEnv().getPositionScore(dir+getPosition()) < getAppEnv().getPositionScore(dir2+getPosition())){
@@ -88,12 +88,12 @@ void SimpleBacterium::basculement()
 void SimpleBacterium::drawFlagelle(sf::RenderTarget &targetWindow) const
 {
     auto set_of_points = sf::VertexArray(sf::TrianglesStrip);
-    set_of_points.append({{0,0}, sf::Color::Black});
+    set_of_points.append({{0,0}, getColor()});
     for(int i(1); i<30; ++i){
         float x = static_cast<float>(-i * getRadius() / 10.0);
         float y = static_cast<float>(getRadius() * sin(t) * sin(2 * i / 10.0));
-        set_of_points.append({{x,y}, sf::Color::Black});
-        set_of_points.append({{x+2,y+2}, sf::Color::Black});
+        set_of_points.append({{x,y}, getColor()});
+        set_of_points.append({{x+2,y+2}, getColor()});
     }
     auto transform = sf::Transform(); // déclare une matrice de transformation
 

@@ -148,17 +148,7 @@ public:
      */
     double getScore() const;
 
-    /*!
-     * @brief access to the failover probability (pBasculement)
-     * @return the probability
-     */
-    double getpBasculement() const;
-
-    /*!
-     * @brief method to change the failover probability from the subClasses as its a private attribute
-     * @param new probability
-     */
-    void setpBasculement(double p);
+    sf::Color getColor() const;
 
 private:
     Quantity energie;                                   ///< energy of the bacteria

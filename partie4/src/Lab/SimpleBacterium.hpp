@@ -78,7 +78,7 @@ public:
 
     /*!
      * @brief access to the speed as a Vec2d
-     * @return the speed
+     * @return the speed (depending on direction)
      */
     Vec2d getSpeedVector() const;
 
@@ -88,8 +88,9 @@ public:
     void basculement();
 
 private:
-    double t;       ///< counter to draw the "flagelle"
-    sf::Time dt;    ///< counter between 2 failover
+    double t;              ///< counter to draw the "flagelle"
+    sf::Time dt;           ///< counter between 2 failover
+    double pBasculement;   ///< failover probability (random change of direction)
 };
 
 #endif // SIMPLEBACTERIUM_HPP

@@ -127,9 +127,9 @@ double Bacterium::getScore() const
     return (getAppEnv().getPositionScore(getPosition()));
 }
 
-double Bacterium::getpBasculement() const
+sf::Color Bacterium::getColor() const
 {
-    return pBasculement;
+    return couleur.get();
 }
 
 
@@ -138,11 +138,6 @@ double Bacterium::getpBasculement() const
 void Bacterium::setAngleDir(double angle)
 {
     angleDir = angle;
-}
-
-void Bacterium::setpBasculement(double p)
-{
-    pBasculement = p;
 }
 
 void Bacterium::setDirection(Vec2d dir)
