@@ -22,9 +22,9 @@ public:
     SwarmBacterium(Vec2d position, Swarm* grp);
 
     /*!
-     * @brief virtual destructor
+     * @brief virtual destructor, remove the bacteria from its Swarm
      */
-    ~SwarmBacterium(); //à refaire
+    ~SwarmBacterium();
 
 
     /*!

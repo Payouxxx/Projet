@@ -4,6 +4,7 @@
 #include "Utility/MutableColor.hpp"
 #include <utility>
 #include "Utility/Utility.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -19,8 +20,7 @@ void Swarm::addSwarmBacterium(SwarmBacterium* bacteria)
 
 void Swarm::removeSwarmBacterium(const SwarmBacterium *bacteria)
 {
-    delete bacteria;
-    bacteria=nullptr;
+    bacteries.erase(remove(bacteries.begin(), bacteries.end(), bacteria), bacteries.end());
 }
 
 Vec2d Swarm::getPositionLeader() const
@@ -50,4 +50,8 @@ string Swarm::getIdentificator() const
     return identificateur;
 }
 
-Swarm::~Swarm(){}
+Swarm::~Swarm()
+{
+    for (auto& bacterie : bacteries) delete bacterie;
+    bacteries.clear();
+}

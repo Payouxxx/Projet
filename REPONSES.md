@@ -259,7 +259,7 @@
 ##Q4.5
 
 
-- Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie, au sein de la classe TwitchingBacterium. Puis un attribut que l'on passe en d'un switch dans la méthode move(sf::Time dt) afin de traiter tous les états possibles de la bactérie.
+- Nous avons crée un type énuméré "etat" ayant comme valeurs les différents états possible pour la bactérie. Puis une variable state de type etat que l'on passe en paramètre d'un switch afin de traiter tous les états possibles.
 
 *************************************************
 ##Q4.6
@@ -289,13 +289,14 @@
 ##Q4.10
 
 
-- Le destructeur de PetrDish se charge d'éliminer les bactéries de l'assiette donc le destructeur de Swarm ne devrait rien faire, de plus un Swarm représente un groupe de bactéries et par conséquent un Swarm ne meurt que s'il n'y a plus de bactéries dedans et ses bactéries auront déjà été supprimées par le ipdate de la PetriDish.
+- Le destructeur de PetrDish se charge d'éliminer les bactéries de l'assiette mais le destructeur de Swarm doit se charger d'éliminer les bactéries de son swarm s'il disparait avant la PetriDish.
+- Si le Swarm meurt seulement quand il n'y a plus de bactéries dedans, cependant, alors l'assiette s'est déjà occupée de l'élimination des bactéries.
 
 *************************************************
 ##Q4.11
 
 
-- Pour dissocier une SwarBacterium de son Swarm, il faudrait utiliser dans le destructeur d'une SwarmBacterium le fait qu'elle se retire de son Swarm.
+- Pour dissocier une SwarBacterium de son Swarm, il faudrait utiliser dans le destructeur d'une SwarmBacterium le fait qu'elle se retire de son Swarm, avec la méthode Swarm::removeSwarmBacterium que nous avons du programmer.
 
 *************************************************
 ##Q

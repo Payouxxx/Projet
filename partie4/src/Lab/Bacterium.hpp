@@ -148,6 +148,10 @@ public:
      */
     double getScore() const;
 
+    /*!
+     * @brief access to the color of the bacteria (conversion from MutableColor to sf::Color)
+     * @return color (sf::Color)
+     */
     sf::Color getColor() const;
 
 private:

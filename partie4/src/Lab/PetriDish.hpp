@@ -124,11 +124,11 @@ public:
     Swarm *getSwarmWithId(std::string id);
 
 private:
-    std::vector<Bacterium*> faune; ///< the whole bacteria in the petri dish
-    std::vector<Nutriment*> food; ///< the whole nutriments in the petri dish
-    double temperature; ///< temperature of the petri dish
-    double puissance; ///< used to calculate gradient exponent
-    std::vector<Swarm*> groupes;
+    std::vector<Bacterium*> faune;   ///< the whole bacteria in the petri dish
+    std::vector<Nutriment*> food;    ///< the whole nutriments in the petri dish
+    double temperature;              ///< temperature of the petri dish
+    double puissance;                ///< used to calculate gradient exponent
+    std::vector<Swarm*> groupes;     ///< the whole swarms in the petri dish
 };
 
 #endif // PETRIDISH_HPP

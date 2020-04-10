@@ -29,14 +29,14 @@ void SwarmBacterium::move(sf::Time dt)
     if(deplacement.lengthSquared() > 0.01){ //empêche tremblotements
         this->CircularBody::move(deplacement);
         consumeEnergy(getConsumption()*deplacement.length());
-        setDirection(resultat.speed);
+        //setDirection(resultat.speed);
     }
     if (getPosition() == groupe->getPositionLeader()) newDirection();
 }
 
 Bacterium* SwarmBacterium::clone() const
-{ //constructeur pour pas avoir même adresse mais du coup Bacterium pas identique !!!! PROBLEME
-    return new SwarmBacterium(getPosition(), new Swarm(groupe->getIdentificator()));
+{ //constructeur pour ajout au Swarm mais pas copie exacte = PROBLEME
+    return new SwarmBacterium(getPosition(), groupe);
 }
 
 Vec2d SwarmBacterium::f(Vec2d position, Vec2d speed) const
@@ -56,7 +56,7 @@ void SwarmBacterium::drawOn(sf::RenderTarget &targetWindow) const
 
 SwarmBacterium::~SwarmBacterium()
 {
-    //groupe->removeSwarmBacterium(this);
+    groupe->removeSwarmBacterium(this);
 }
 
 void SwarmBacterium::newDirection()

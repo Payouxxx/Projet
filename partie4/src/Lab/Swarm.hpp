@@ -58,7 +58,7 @@ public:
     std::string getIdentificator() const;
 
     /*!
-     * @brief virtual destructor (does nothing)
+     * @brief virtual destructor (delete all abcteria and clear tab)
      */
     ~Swarm();
 private:
