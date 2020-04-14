@@ -211,7 +211,7 @@
 ##Q3.20
 
 
-- La probabilité de basculement est une propiété de toutes les bactéries et il faut ensuite ajouter un compteur de temps dt pour les bactéries qui mesurera le temps entre deux baculements. Ces attributs seront initialisés dans les constructeurs respectifs à 0 (pour éviter une valeur aléatoire) et sf::Time::Zero, puis mis à jour dans la fonction move, qui est appelée dans la fonction update.
+- La probabilité de basculement est une propiété des bactéries simples et il faut ensuite ajouter un compteur de temps dt pour les bactéries simples qui mesurera le temps entre deux baculements. Ces attributs seront initialisés dans les constructeurs respectifs à 0 (pour éviter une valeur aléatoire) et sf::Time::Zero, puis mis à jour dans la fonction move, qui est appelée dans la fonction update.
 
 *************************************************
 ##Q3.21
