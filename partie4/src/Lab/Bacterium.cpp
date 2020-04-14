@@ -7,15 +7,14 @@
 
 using namespace std;
 
-Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color)
+Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color, bool abst)
     : CircularBody(position, rayon),
       energie(nrj),
       direction(dir),
       couleur(color),
-      abstinence(false),
+      abstinence(abstinence)
       compteur(sf::Time::Zero),
-      angleDir(dir.angle()),
-      pBasculement(0.0)
+      angleDir(dir.angle())
 {}
 
 Bacterium::~Bacterium() {}
@@ -143,4 +142,17 @@ void Bacterium::setAngleDir(double angle)
 void Bacterium::setDirection(Vec2d dir)
 {
     direction = dir;
+}
+
+
+void Bacterium::newDirection()
+{
+    Vec2d dir(getPosition().fromRandomAngle());
+    for(int i(0); i<20; ++i){
+        Vec2d dir2(getPosition().fromRandomAngle());
+        if(getAppEnv().getPositionScore(dir+getPosition()) < getAppEnv().getPositionScore(dir2+getPosition())){
+            dir = dir2;
+        }
+    }
+    setDirection(dir);
 }

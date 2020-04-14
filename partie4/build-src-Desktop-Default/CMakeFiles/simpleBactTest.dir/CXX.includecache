@@ -371,6 +371,8 @@ utility
 -
 Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Utility/Utility.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Swarm.hpp
 Interface/Updatable.hpp
@@ -381,6 +383,8 @@ Utility/Vec2d.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Utility/Vec2d.hpp
 SFML/Graphics.hpp
 -
+Utility/MutableColor.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Utility/MutableColor.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/SwarmBacterium.cpp
 SwarmBacterium.hpp
@@ -393,6 +397,8 @@ Utility/Utility.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Utility/Utility.hpp
 Swarm.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/Swarm.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie4/src/Lab/SwarmBacterium.hpp
 Bacterium.hpp

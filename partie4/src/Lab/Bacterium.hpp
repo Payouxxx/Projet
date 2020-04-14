@@ -19,7 +19,7 @@ public:
      * @brief Constructor
      * @param nrj, position, dir, rayon, color
      */
-    Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color);
+    Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color, bool abst = false);
 
     /*!
      * @brief Virual destructor each subClass must define its own destructor
@@ -154,6 +154,11 @@ public:
      */
     sf::Color getColor() const;
 
+    /*!
+     * @brief select best of 20 randow direction depending on score and set it as the new direction
+     */
+    void newDirection();
+
 private:
     Quantity energie;                                   ///< energy of the bacteria
     Vec2d direction;                                    ///< direction
@@ -162,8 +167,6 @@ private:
     sf::Time compteur;                                  ///< time between 2 meals
     std::map<std::string, MutableNumber> parametres;    ///< list of parameters
     double angleDir;                                    ///< direction angle
-    double pBasculement;                                ///< failover probability (random change of direction)
-
 };
 
 

@@ -14,7 +14,8 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
       getConfig()["color"]),
       t(uniform(0.0, M_PI)), //compteur dessin flagelle
-      dt(sf::Time::Zero)
+      dt(sf::Time::Zero),
+      pBasculement(0.0)
 {
     addProperty("speed", MutableNumber::positive(getAppConfig()["simple bacterium"]["speed"])); //vitesse
     addProperty("tumble better", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["better"])); //lambda pour pBasculement mélioratif
@@ -73,14 +74,7 @@ void SimpleBacterium::basculement()
     if(getConfig()["tumble"]["algo"].toString()=="single random vector"){
         setDirection(getPosition().fromRandomAngle());
     } else if(getConfig()["tumble"]["algo"].toString()=="best of N"){
-        Vec2d dir(getPosition().fromRandomAngle());
-        for(int i(0); i<20; ++i){
-            Vec2d dir2(Vec2d::fromRandomAngle());
-            if(getAppEnv().getPositionScore(dir+getPosition()) < getAppEnv().getPositionScore(dir2+getPosition())){
-                dir = dir2;
-            }
-        }
-        setDirection(dir);
+        newDirection();
     }
     dt = sf::Time::Zero;
 }
