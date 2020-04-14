@@ -17,12 +17,6 @@ public:
     TwitchingBacterium(Vec2d position);
 
     /*!
-     * @brief Copy constructor
-     * @param other (TwitchingBacterium)
-     */
-    TwitchingBacterium(TwitchingBacterium& other);
-
-    /*!
      * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium datas in the app.json file
      * @return getAppConfig()
      */

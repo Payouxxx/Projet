@@ -60,12 +60,6 @@ public:
      */
     void drawOn(sf::RenderTarget &targetWindow) const;
 
-
-    /*!
-     * @brief select best of 20 randow direction depending on score and set is as the new direction
-     */
-    void newDirection();
-
     /*!
      * @brief access to the speed as a Vec2d
      * @return the speed (depending on direction)

@@ -29,14 +29,14 @@ void SwarmBacterium::move(sf::Time dt)
     if(deplacement.lengthSquared() > 0.01){ //empêche tremblotements
         this->CircularBody::move(deplacement);
         consumeEnergy(getConsumption()*deplacement.length());
-        //setDirection(resultat.speed);
+        //setDirection(resultat.speed.normalised());
     }
     if (getPosition() == groupe->getPositionLeader()) newDirection();
 }
 
 Bacterium* SwarmBacterium::clone() const
-{ //constructeur pour ajout au Swarm mais pas copie exacte = PROBLEME
-    return new SwarmBacterium(getPosition(), groupe);
+{
+    return new SwarmBacterium(*this);
 }
 
 Vec2d SwarmBacterium::f(Vec2d position, Vec2d speed) const
@@ -57,18 +57,6 @@ void SwarmBacterium::drawOn(sf::RenderTarget &targetWindow) const
 SwarmBacterium::~SwarmBacterium()
 {
     groupe->removeSwarmBacterium(this);
-}
-
-void SwarmBacterium::newDirection()
-{
-    Vec2d dir(getPosition().fromRandomAngle());
-    for(int i(0); i<20; ++i){
-        Vec2d dir2(getPosition().fromRandomAngle());
-        if(getAppEnv().getPositionScore(dir+getPosition()) < getAppEnv().getPositionScore(dir2+getPosition())){
-            dir = dir2;
-        }
-    }
-    setDirection(dir);
 }
 
 Vec2d SwarmBacterium::getSpeedVector() const
