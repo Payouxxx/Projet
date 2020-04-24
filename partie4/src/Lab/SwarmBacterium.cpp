@@ -7,14 +7,20 @@
 
 using namespace std;
 
-SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp)
-    : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
-                Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
+SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp) //uniform fait automatiquement entre min et max
+    : Bacterium(uniform(getConfig()["energy"]), position,
+                Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
                 grp->getOriginalColor()),
       groupe(grp)
 {
     groupe->addSwarmBacterium(this);
     //pas de caractéristiques mutables autre que couleur
+}
+
+SwarmBacterium::SwarmBacterium(const SwarmBacterium &other)
+    : Bacterium(other), groupe(other.groupe)
+{
+    groupe->addSwarmBacterium(this);
 }
 
 j::Value& SwarmBacterium::getConfig() const
@@ -29,7 +35,7 @@ void SwarmBacterium::move(sf::Time dt)
     if(deplacement.lengthSquared() > 0.01){ //empêche tremblotements
         this->CircularBody::move(deplacement);
         consumeEnergy(getConsumption()*deplacement.length());
-        //setDirection(resultat.speed.normalised());
+        setDirection(resultat.speed.normalised());
     }
     if (getPosition() == groupe->getPositionLeader()) newDirection();
 }
@@ -47,8 +53,8 @@ Vec2d SwarmBacterium::f(Vec2d position, Vec2d speed) const
 
 void SwarmBacterium::drawOn(sf::RenderTarget &targetWindow) const
 {
-    if(getPosition() == groupe->getPositionLeader() and isDebugOn()) {
-        auto border = buildAnnulus(getPosition(), getRadius(), sf::Color::Red, 5);
+    if(isDebugOn() and groupe->getPositionLeader()==getPosition()) {
+        auto border = buildAnnulus(getPosition(), getRadius()+5, sf::Color::Red, 3);
         targetWindow.draw(border);
     }
     Bacterium::drawOn(targetWindow);

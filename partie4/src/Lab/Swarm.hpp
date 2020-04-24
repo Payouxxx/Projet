@@ -30,7 +30,10 @@ public:
      */
     void addSwarmBacterium(SwarmBacterium* bacteria);
 
-
+    /*!
+     * @brief remove a bacteria from the swarm
+     * @param pointer on SwarmBacterium removed
+     */
     void removeSwarmBacterium(const SwarmBacterium *bacteria);
 
     /*!

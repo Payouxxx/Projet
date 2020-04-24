@@ -29,7 +29,7 @@ public:
     virtual void onEvent(sf::Event event, sf::RenderWindow& window) override final;
 };
 
-IMPLEMENT_MAIN(SwarmBacteriaTest);
+IMPLEMENT_MAIN(SwarmBacteriaTest)
 
 void SwarmBacteriaTest::onRun()
 {
@@ -42,7 +42,7 @@ void SwarmBacteriaTest::onSimulationStart()
 {
 	// Note: other swarm Ids can be added to app,json if wanted
 	Application::onSimulationStart();
-    for (auto i = 1; i < 3; ++i) {
+    for (auto i = 1; i <= 5; ++i) {
         auto id = std::to_string(i);
         getEnv().addSwarm(new Swarm(id));
     }
@@ -52,7 +52,7 @@ void SwarmBacteriaTest::onEvent(sf::Event event, sf::RenderWindow&)
 {
 	// new num keys can be added to handle new swarm Ids
     if (event.type == sf::Event::KeyPressed) {
-        if (sf::Keyboard::Num1 <= event.key.code && event.key.code <= sf::Keyboard::Num2) {
+        if (sf::Keyboard::Num1 <= event.key.code && event.key.code <= sf::Keyboard::Num5) {
             auto id = std::to_string(event.key.code - sf::Keyboard::Num0);
             auto swarm = getEnv().getSwarmWithId(id);
             assert(swarm != nullptr);
