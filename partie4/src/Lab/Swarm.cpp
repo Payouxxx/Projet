@@ -42,6 +42,7 @@ void Swarm::update(sf::Time dt)
             if (newScore > leaderScore) leader = b;
         }
     }
+    if (bacteries.size() == 1) leader = bacteries[0];
 }
 
 

@@ -10,8 +10,8 @@
 using namespace std;
 
 TwitchingBacterium::TwitchingBacterium(Vec2d position)
-    : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
-      Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
+    : Bacterium(uniform(getConfig()["energy"]), position,
+      Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
       getConfig()["color"]),
       grapin(position, getRadius()/4.0), //grapin initialisé à la même position mais avec un rayon 4 fois plus petit
       state(IDLE)

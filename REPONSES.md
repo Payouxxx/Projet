@@ -187,7 +187,7 @@
 ##Q3.16
 
 
-- La classe SimpleBacatrium doit hériter de la classe DiffEqFonction pour hériter de la méthode virtuelle pure f calculant la force, qui devra être redéfinie. 
+- La classe SimpleBacterium, en tant qu'objet soumis à une force de déplacement, doit hériter de la classe DiffEqFonction pour hériter de la méthode virtuelle pure f calculant la force, qui devra être redéfinie. 
 
 *************************************************
 ##Q3.17

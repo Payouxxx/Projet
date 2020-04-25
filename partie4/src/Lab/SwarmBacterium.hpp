@@ -22,6 +22,12 @@ public:
     SwarmBacterium(Vec2d position, Swarm* grp);
 
     /*!
+     * @brief Copy constructor, also add he copy in the same swarm
+     * @param other SwarmBacterium
+     */
+    SwarmBacterium(const SwarmBacterium& other);
+
+    /*!
      * @brief virtual destructor, remove the bacteria from its Swarm
      */
     ~SwarmBacterium();

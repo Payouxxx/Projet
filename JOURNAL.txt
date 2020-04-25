@@ -27,3 +27,9 @@ SEMAINE 5
 -mercredi : contination de la partie 4, tests 14, 15 et 16 réussis
 -execution correcte
 
+SEMAINE 6
+-derniers ajustements partie 4, relecture des commentaires du code et ajout de trois groupes de swarms dans le app.json (3=jaune, 4=blanc, 5=violet)
+
+SEMAINE 7
+
+

@@ -10,8 +10,8 @@
 using namespace std;
 
 SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléatoires
-    : Bacterium(uniform(getConfig()["energy"]["min"].toDouble(),getConfig()["energy"]["max"].toDouble()), position,
-      Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]["min"].toDouble(), getConfig()["radius"]["max"].toDouble()),
+    : Bacterium(uniform(getConfig()["energy"]), position,
+      Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
       getConfig()["color"]),
       t(uniform(0.0, M_PI)), //compteur dessin flagelle
       dt(sf::Time::Zero),
