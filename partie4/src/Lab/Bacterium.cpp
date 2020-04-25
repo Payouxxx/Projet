@@ -12,7 +12,7 @@ Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, Muta
       energie(nrj),
       direction(dir),
       couleur(color),
-      abstinence(abstinence)
+      abstinence(abst),
       compteur(sf::Time::Zero),
       angleDir(dir.angle())
 {}
