@@ -52,7 +52,7 @@ public:
      * @brief redefinition of the virtual method update, changes leader
      * @param dt (sf::Time), intervall of evolution
      */
-    void update(sf::Time dt);
+    void update(sf::Time dt) override;
 
     /*!
      * @brief get number of the swarm

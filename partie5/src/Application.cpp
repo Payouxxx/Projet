@@ -245,9 +245,8 @@ void Application::run()
             while (elapsedTime > sf::Time::Zero) {
                 auto dt = std::min(elapsedTime, maxDt);
                 elapsedTime -= dt;
-				getEnv().update(dt);
-				// A DECOMMENTER
-//				getStats().update(dt);
+                getEnv().update(dt);
+                //getStats().update(dt);
                 onUpdate(dt);
 				--nbCycles;
 
@@ -500,9 +499,8 @@ void Application::handleEvent(sf::Event event, sf::RenderWindow& window)
 		
 				
 				mIsResetting = true;
-				getEnv().reset();
-// A DECOMMENTER:
-//				getStats().reset();
+                getEnv().reset();
+                getStats().reset();
 				onSimulationStart();
 				createViews();
 				mSimulationBackground= mLabBackground;
@@ -538,9 +536,8 @@ void Application::handleEvent(sf::Event event, sf::RenderWindow& window)
 					case GRADIENT :
 						mLab->decreaseGradientExponent();
 						break;
-					case STATS:
-						// A DECOMMENTER
-//						mStats->previous(); 
+                    case STATS:
+                    mStats->previous();
 						break;
 					default:
 						break;
@@ -554,9 +551,8 @@ void Application::handleEvent(sf::Event event, sf::RenderWindow& window)
 					case GRADIENT :
 						mLab->increaseGradientExponent();
 						break;
-					case STATS:
-// A DECOMMENTER
-//						mStats->next();
+                    case STATS:
+                        mStats->next();
 						break;
 					default:
 						break;
@@ -667,8 +663,7 @@ void Application::render(sf::Drawable const& simulationBackground,
 	mRenderWindow.draw(statsBackground);
 	if (isStatsOn)
 	{
-// A DECOMENTER
-		//getStats().drawOn(mRenderWindow);
+        //getStats().drawOn(mRenderWindow);
 	}
 	
 	
@@ -825,9 +820,8 @@ void Application::drawOneControl(sf::RenderWindow& target
 			text += to_nice_string(mLab->getGradientExponent());
 			break;
 		case STATS :
-			text = "Current stat : ";
-			// A DECOMMENTER
-			//text += (isStatsOn ? mStats->getCurrentTitle() : "disabled");
+            text = "Current stat : ";
+            text += (isStatsOn ? mStats->getCurrentTitle() : "disabled");
 			break;
 		default:
 			/* nothing to do */
@@ -848,9 +842,8 @@ void Application::drawOneControl(sf::RenderWindow& target
 void Application::addGraph(std::string const& title, std::vector<std::string> const& series, double min, double max)
 {
     if (series.size() > 0){
-		++mCurrentGraphId;
-		// A DECOMMENTER
-//    getStats().addGraph(mCurrentGraphId, title, series, min, max, getStatsSize() );
+        ++mCurrentGraphId;
+    //getStats().addGraph(mCurrentGraphId, title, series, min, max, getStatsSize() );
 	}
 }
 
@@ -862,6 +855,5 @@ Stats& Application::getStats()
 
 void Application::setActiveGraph(int id)
 {
-	// A DECOMMENTER
-	//getStats().setActive(id);
+    getStats().setActive(id);
 }

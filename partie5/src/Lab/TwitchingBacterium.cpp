@@ -94,9 +94,9 @@ void TwitchingBacterium::move(sf::Time dt)
             //rencontre nutriment
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
                 state = ATTRACT;
-            } else {
-                state = RETRACT;
             }
+            } else {
+            state = RETRACT;
         }
         break;
     }

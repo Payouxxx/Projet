@@ -20,13 +20,13 @@ public:
      * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium datas in the app.json file
      * @return getAppConfig()
      */
-    j::Value& getConfig() const;
+    j::Value& getConfig() const override;
 
     /*!
      * @brief redefinition of the virtual method move
      * @param dt (sf::Time)
      */
-    void move(sf::Time dt);
+    void move(sf::Time dt) override;
 
     /*!
      * @brief redefinition of the virtual method clone
@@ -35,13 +35,13 @@ public:
      *
      * @return a bacteria pointer to a clone of the current instance
      */
-    Bacterium* clone() const;
+    Bacterium* clone() const override;
 
     /*!
      * @brief call the drawOn method of the Bacteria class, and the drawTentacle method
      * @param targetWindow (display window)
      */
-    void drawOn(sf::RenderTarget& targetWindow) const;
+    void drawOn(sf::RenderTarget& targetWindow) const override;
 
     /*!
      * @brief access to the value of the move consumption factor
@@ -72,8 +72,25 @@ public:
      */
     enum etat {IDLE, WAIT_TO_DEPLOY, DEPLOY, ATTRACT, RETRACT, EAT};
 
+
+    /*!
+     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment A
+     */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) override;
+
+    /*!
+     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment B
+     */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) override;
+
+    /*!
+     * @brief get in app.json the max eatable quantity for this bacteria
+     * @return max quantity eatable by this bacteria
+     */
     Quantity getMaxEatableQuantity() const;
 
 private:
