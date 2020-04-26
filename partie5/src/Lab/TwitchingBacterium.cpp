@@ -76,13 +76,11 @@ void TwitchingBacterium::move(sf::Time dt)
             state = WAIT_TO_DEPLOY;
         break;
         case WAIT_TO_DEPLOY: //tentacule se préparant au deploiement
-    {
         newDirection();
         state = DEPLOY;
         break;
-    }
+
         case DEPLOY:
-    {
         //mouvement du grapin
         if(distance(grapin.getPosition(),getPosition()) < getConfig()["tentacle"]["length"]["initial"].toDouble()
                 and not getAppEnv().doesCollideWithDish(grapin)){
@@ -94,15 +92,13 @@ void TwitchingBacterium::move(sf::Time dt)
             //rencontre nutriment
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
                 state = ATTRACT;
-            } else {
-                state = RETRACT;
             }
-        }
+        } else {
+            state = RETRACT;
+            }
         break;
-    }
 
         case ATTRACT:
-    {
         if(getAppEnv().getNutrimentColliding(*this) != nullptr){
             state = EAT;
         } else if(getAppEnv().getNutrimentColliding(*this) == nullptr and getAppEnv().getNutrimentColliding(grapin) != nullptr){
@@ -113,9 +109,8 @@ void TwitchingBacterium::move(sf::Time dt)
             state = RETRACT;
         }
         break;
-    }
+
         case RETRACT:
-    {
         if(distance(getPosition(), grapin.getPosition()) <= getRadius()){
             state = IDLE;
         } else {
@@ -123,7 +118,6 @@ void TwitchingBacterium::move(sf::Time dt)
             consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
         }
         break;
-    }
 
         case EAT:
             if(getAppEnv().getNutrimentColliding(*this) == nullptr){
@@ -133,8 +127,8 @@ void TwitchingBacterium::move(sf::Time dt)
 
         default:
             break;
-   }
 
+    }
 }
 
 
