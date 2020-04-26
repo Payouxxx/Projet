@@ -58,7 +58,7 @@ public:
      * @brief shortcut to a location in the file app.json
      * @return shortcut
      */
-    virtual j::Value const& getConfig() const =0; //n'a plus de raison d'être ici
+    virtual j::Value const& getConfig() const =0;
     // getConfig est virtuelle pure car trop générale pour la classe Nutriment
 private:
     Quantity quantite; ///< quantity of the nutriment
