@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src
+=======
+# Install script for directory: /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

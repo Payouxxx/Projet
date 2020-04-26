@@ -35,7 +35,7 @@ public:
      * @brief draw the bacteria on the target (virtual method inherited from the abstract Drawable class)
      * @param targetWindow (display window)
      */
-    virtual void drawOn(sf::RenderTarget& targetWindow) const;
+    virtual void drawOn(sf::RenderTarget& targetWindow) const override;
 
     /*!
      * @brief update the bacteria (vitual method inherited from the abstract Updatable class)
@@ -45,7 +45,7 @@ public:
      *
      * @param dt (sf::Time)
      */
-    virtual void update(sf::Time dt);
+    virtual void update(sf::Time dt) override;
 
     /*!
      * @brief must be overrided by subClasses to make a bacteria move
@@ -164,9 +164,24 @@ public:
      */
     void newDirection();
 
+    /*!
+     * @brief make current bacteria eat
+     * @param nutriment eaten
+     */
     void eat(Nutriment& nutriment);
-    //virtual Quantity getMaxEatableQuantity() const =0;
+
+    /*!
+     * @brief polymorphic method, virtual pure here
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment A
+     */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) = 0;
+
+    /*!
+     * @brief polymorphic method, virtual pure here
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment B
+     */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) = 0;
 
 private:

@@ -20,7 +20,7 @@ public:
      * @brief redefinition of the virtual method getConfig to access the SimpleBacterium datas in the app.json file
      * @return getAppConfig()["simple bacterium"]
      */
-    j::Value& getConfig() const;
+    j::Value& getConfig() const override;
 
     /*!
      * @brief redefinition of the virtual method clone
@@ -28,7 +28,7 @@ public:
      *
      * @return a bacteria pointer to a clone of the current instance
      */
-    Bacterium* clone() const;
+    Bacterium* clone() const override;
 
     /*!
      * @brief redefinition of the virtual method move
@@ -39,19 +39,19 @@ public:
      *
      * @param dt
      */
-    void move(sf::Time dt);
+    void move(sf::Time dt) override;
 
     /*!
      * @brief call the drawOn method of the Bacteria class, and the drawFlagelle method to display the "flagelle"
      * @param targetWindow (display window)
      */
-    void drawOn(sf::RenderTarget& targetWindow) const;
+    void drawOn(sf::RenderTarget& targetWindow) const override;
 
     /*!
      * @brief call the update method of the Bacteria class, and the updateFlagelle method
      * @param dt (sf::Time)
      */
-    void update(sf::Time dt);
+    void update(sf::Time dt) override;
 
     /*!
      * @brief redefinition of the f method of DiffEqFunction, which calculate the force exerced on the bacteria
@@ -62,7 +62,7 @@ public:
      *
      * @return 0 (always for a SimpleBacterium)
      */
-    Vec2d f(Vec2d position, Vec2d speed) const;
+    Vec2d f(Vec2d position, Vec2d speed) const override;
 
     /*!
      * @brief draw the "Flagelle" at the end of the bacteria
@@ -87,8 +87,24 @@ public:
      */
     void basculement();
 
+    /*!
+     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment A
+     */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) override;
+
+    /*!
+     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @param nutriment eaten
+     * @return quantity eatable by the bacteria with nutriment B
+     */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) override;
+
+    /*!
+     * @brief get in app.json the max eatable quantity for this bacteria
+     * @return max quantity eatable by this bacteria
+     */
     Quantity getMaxEatableQuantity() const;
 
 private:

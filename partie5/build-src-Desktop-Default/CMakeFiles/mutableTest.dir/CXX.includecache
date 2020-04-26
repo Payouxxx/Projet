@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/../extlib/Catch/include/catch.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/../extlib/Catch/include/catch.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 sstream
 -
 stdexcept
@@ -160,7 +164,11 @@ iostream
 map
 -
 Foundation/Foundation.h
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/../extlib/Catch/include/Foundation/Foundation.h
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/../extlib/Catch/include/Foundation/Foundation.h
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 ostream
 -
 streambuf
@@ -216,13 +224,21 @@ assert.h
 cstring
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Application.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Application.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Lab/Lab.hpp
 -
 JSON/JSON.hpp
 -
 Config.hpp
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Config.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Config.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Utility/Vec2d.hpp
 -
 SFML/Graphics.hpp
@@ -242,6 +258,7 @@ vector
 Stats/Stats.hpp
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Config.hpp
 string
 -
@@ -259,6 +276,25 @@ SFML/System.hpp
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSON.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Config.hpp
+string
+-
+JSON/JSON.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSON.hpp
+SFML/Graphics.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Drawable.hpp
+SFML/Graphics.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Updatable.hpp
+SFML/System.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSON.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSON.hpp
 -
 JSON/JSONImpl.hpp
@@ -268,7 +304,11 @@ Utility/Utility.hpp
 cassert
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSON.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSON.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSONImpl.hpp
 -
 cstddef
@@ -284,7 +324,11 @@ string
 vector
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSONImpl.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSONImpl.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSON.hpp
 -
 JSON/JSONImpl.hpp
@@ -292,7 +336,11 @@ JSON/JSONImpl.hpp
 cassert
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSONImpl.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSONImpl.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 memory
 -
 string
@@ -302,7 +350,11 @@ unordered_map
 vector
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSONSerialiser.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSONSerialiser.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSONSerialiser.hpp
 -
 algorithm
@@ -320,7 +372,11 @@ sstream
 string
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/JSON/JSONSerialiser.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/JSON/JSONSerialiser.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSON.hpp
 -
 stdexcept
@@ -328,6 +384,7 @@ stdexcept
 string
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Bacterium.hpp
 ../Interface/Drawable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Drawable.hpp
@@ -339,11 +396,25 @@ Utility/MutableColor.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Utility/MutableColor.hpp
 Utility/Types.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Utility/Types.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Bacterium.hpp
+../Interface/Drawable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Updatable.hpp
+CircularBody.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/CircularBody.hpp
+Utility/MutableColor.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Utility/MutableColor.hpp
+Utility/Types.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Utility/Types.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 string
 -
 SFML/Graphics.hpp
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/CircularBody.cpp
 CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/CircularBody.hpp
@@ -351,24 +422,47 @@ iostream
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/CircularBody.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/CircularBody.cpp
+CircularBody.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/CircularBody.hpp
+iostream
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/CircularBody.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Utility/Vec2d.hpp
 -
 iostream
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Lab.hpp
 PetriDish.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/PetriDish.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Lab.hpp
+PetriDish.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/PetriDish.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 SFML/Graphics.hpp
 -
 vector
 -
 NutrimentGenerator.hpp
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/NutrimentGenerator.hpp
 Swarm.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Swarm.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Nutriment.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/NutrimentGenerator.hpp
+Swarm.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Swarm.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Nutriment.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Lab/CircularBody.hpp
 -
 ../Utility/Types.hpp
@@ -376,6 +470,7 @@ Lab/CircularBody.hpp
 SFML/Graphics.hpp
 -
 ../Interface/Drawable.hpp
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Drawable.hpp
 ../Interface/Updatable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
@@ -387,11 +482,25 @@ SFML/Graphics.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/PetriDish.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Updatable.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/NutrimentGenerator.hpp
+SFML/Graphics.hpp
+-
+../Interface/Updatable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Updatable.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/PetriDish.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 iostream
 -
 vector
 -
 Nutriment.hpp
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Nutriment.hpp
 Bacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Bacterium.hpp
@@ -423,6 +532,39 @@ Random/Random.hpp
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Random/Random.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Nutriment.hpp
+Bacterium.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Bacterium.hpp
+SFML/Graphics.hpp
+-
+CircularBody.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/CircularBody.hpp
+../Interface/Drawable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Interface/Updatable.hpp
+Swarm.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Swarm.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Swarm.hpp
+Interface/Updatable.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Interface/Updatable.hpp
+vector
+-
+Utility/Vec2d.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Utility/Vec2d.hpp
+SFML/Graphics.hpp
+-
+Utility/MutableColor.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Lab/Utility/MutableColor.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Random/Random.cpp
+Random/Random.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Random/Random.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSON.hpp
 -
 Random/RandomGenerator.hpp
@@ -434,6 +576,7 @@ type_traits
 random
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Random/RandomGenerator.cpp
 Random/RandomGenerator.hpp
 -
@@ -449,17 +592,39 @@ catch.hpp
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/UnitTests/CheckUtility.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Random/RandomGenerator.cpp
+Random/RandomGenerator.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Random/RandomGenerator.hpp
+random
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Stats/Stats.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Tests/UnitTests/CatchTests.cpp
+catch.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Tests/UnitTests/CheckUtility.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 catch.hpp
 -
 cmath
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/UnitTests/MutablePropertyTest.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Tests/UnitTests/MutablePropertyTest.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Tests/UnitTests/CheckUtility.hpp
 -
 Utility/MutableNumber.hpp
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Constants.hpp
 string
 -
@@ -469,6 +634,17 @@ Utility/DiffEqSolver.hpp
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/DiffEqSolver.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Constants.hpp
+string
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/DiffEqSolver.cpp
+Utility/DiffEqSolver.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/DiffEqSolver.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Utility/Vec2d.hpp
 -
 SFML/System.hpp
@@ -476,6 +652,7 @@ SFML/System.hpp
 functional
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/MutableColor.cpp
 MutableColor.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/MutableColor.hpp
@@ -517,6 +694,49 @@ MutableNumber.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/MutableNumber.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Utility.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableColor.cpp
+MutableColor.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableColor.hpp
+iostream
+-
+Utility/Utility.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility/Utility.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableColor.hpp
+MutableNumber.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableNumber.hpp
+array
+-
+SFML/Graphics.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/SFML/Graphics.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableNumber.cpp
+MutableNumber.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableNumber.hpp
+iostream
+-
+Random/Random.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Random/Random.hpp
+../Application.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Application.hpp
+../Config.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Config.hpp
+Utility/Utility.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility/Utility.hpp
+../Utility/Types.hpp
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableNumber.hpp
+JSON/JSONImpl.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/JSON/JSONImpl.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Types.hpp
+MutableNumber.hpp
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/MutableNumber.hpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Utility/Utility.hpp
 -
 algorithm
@@ -534,7 +754,11 @@ string
 vector
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Utility.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Utility/Types.hpp
 -
 Utility/Vec2d.hpp
@@ -552,6 +776,7 @@ iomanip
 sstream
 -
 Utility.tpp
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Utility.tpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Utility.tpp
@@ -559,6 +784,15 @@ algorithm
 -
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Vec2d.cpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility.tpp
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Utility.tpp
+algorithm
+-
+
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Vec2d.cpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 Random/Random.hpp
 -
 Utility/Utility.hpp
@@ -570,7 +804,11 @@ cassert
 cmath
 -
 
+<<<<<<< HEAD
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Utility/Vec2d.hpp
+=======
+/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src/Utility/Vec2d.hpp
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 JSON/JSON.hpp
 -
 Utility/Constants.hpp

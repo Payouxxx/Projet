@@ -66,9 +66,32 @@ public:
     virtual j::Value const& getConfig() const =0; //n'a plus de raison d'être ici
     // getConfig est virtuelle pure car trop générale pour la classe Nutriment
 
+    /*!
+     * @brief fist call to differenciate nutriment (virtual pure here)
+     * @param bacterium eating the current nutriment
+     * @return Quantity eaten
+     */
     virtual Quantity eatenBy(Bacterium& bact) = 0;
+
+    /*!
+     * @brief case of SimpleBacterium (virtual pure here)
+     * @param bacterium eating the current nutriment
+     * @return Quantity eaten
+     */
     virtual Quantity eatenBy(SimpleBacterium& bact) = 0;
+
+    /*!
+     * @brief case of TwitchingBacterium (virtual pure here)
+     * @param bacterium eating the current nutriment
+     * @return Quantity eaten
+     */
     virtual Quantity eatenBy(TwitchingBacterium& bact) = 0;
+
+    /*!
+     * @brief case of SwarmBacterium (virtual pure here)
+     * @param bacterium eating the current nutriment
+     * @return Quantity eaten
+     */
     virtual Quantity eatenBy(SwarmBacterium& bact) = 0;
 
 private:

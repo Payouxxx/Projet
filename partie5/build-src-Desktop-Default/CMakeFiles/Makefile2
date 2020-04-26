@@ -54,10 +54,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default
+=======
+CMAKE_SOURCE_DIR = /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 
 #=============================================================================
 # Target rules for target CMakeFiles/circularBodyTest.dir
@@ -66,7 +73,11 @@ CMAKE_BINARY_DIR = /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5
 CMakeFiles/circularBodyTest.dir/all:
 	$(MAKE) -f CMakeFiles/circularBodyTest.dir/build.make CMakeFiles/circularBodyTest.dir/depend
 	$(MAKE) -f CMakeFiles/circularBodyTest.dir/build.make CMakeFiles/circularBodyTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=14,15,16,17,18,19,20 "Built target circularBodyTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=14,15,16,17,18,19,20 "Built target circularBodyTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/circularBodyTest.dir/all
 
 # Include target in all.
@@ -76,9 +87,15 @@ all: CMakeFiles/circularBodyTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/circularBodyTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/circularBodyTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/circularBodyTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/circularBodyTest.dir/rule
 
 # Convenience name for target.
@@ -103,7 +120,11 @@ clean: CMakeFiles/circularBodyTest.dir/clean
 CMakeFiles/mutableTest.dir/all:
 	$(MAKE) -f CMakeFiles/mutableTest.dir/build.make CMakeFiles/mutableTest.dir/depend
 	$(MAKE) -f CMakeFiles/mutableTest.dir/build.make CMakeFiles/mutableTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=34,35,36,37,38,39,40 "Built target mutableTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=34,35,36,37,38,39,40 "Built target mutableTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/mutableTest.dir/all
 
 # Include target in all.
@@ -113,9 +134,15 @@ all: CMakeFiles/mutableTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mutableTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mutableTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mutableTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/mutableTest.dir/rule
 
 # Convenience name for target.
@@ -140,7 +167,11 @@ clean: CMakeFiles/mutableTest.dir/clean
 CMakeFiles/nutrimentTest.dir/all:
 	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/depend
 	$(MAKE) -f CMakeFiles/nutrimentTest.dir/build.make CMakeFiles/nutrimentTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target nutrimentTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target nutrimentTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/nutrimentTest.dir/all
 
 # Include target in all.
@@ -150,9 +181,15 @@ all: CMakeFiles/nutrimentTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nutrimentTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nutrimentTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nutrimentTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/nutrimentTest.dir/rule
 
 # Convenience name for target.
@@ -177,7 +214,11 @@ clean: CMakeFiles/nutrimentTest.dir/clean
 CMakeFiles/swarmTest.dir/all:
 	$(MAKE) -f CMakeFiles/swarmTest.dir/build.make CMakeFiles/swarmTest.dir/depend
 	$(MAKE) -f CMakeFiles/swarmTest.dir/build.make CMakeFiles/swarmTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target swarmTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target swarmTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/swarmTest.dir/all
 
 # Include target in all.
@@ -187,9 +228,15 @@ all: CMakeFiles/swarmTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/swarmTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/swarmTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/swarmTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/swarmTest.dir/rule
 
 # Convenience name for target.
@@ -214,7 +261,11 @@ clean: CMakeFiles/swarmTest.dir/clean
 CMakeFiles/simpleBactTest.dir/all:
 	$(MAKE) -f CMakeFiles/simpleBactTest.dir/build.make CMakeFiles/simpleBactTest.dir/depend
 	$(MAKE) -f CMakeFiles/simpleBactTest.dir/build.make CMakeFiles/simpleBactTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target simpleBactTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target simpleBactTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/simpleBactTest.dir/all
 
 # Include target in all.
@@ -224,9 +275,15 @@ all: CMakeFiles/simpleBactTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simpleBactTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simpleBactTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simpleBactTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/simpleBactTest.dir/rule
 
 # Convenience name for target.
@@ -251,7 +308,11 @@ clean: CMakeFiles/simpleBactTest.dir/clean
 CMakeFiles/application.dir/all:
 	$(MAKE) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/depend
 	$(MAKE) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target application"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target application"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/application.dir/all
 
 # Include target in all.
@@ -261,9 +322,15 @@ all: CMakeFiles/application.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/application.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/application.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/application.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/application.dir/rule
 
 # Convenience name for target.
@@ -288,7 +355,11 @@ clean: CMakeFiles/application.dir/clean
 CMakeFiles/gripTest.dir/all:
 	$(MAKE) -f CMakeFiles/gripTest.dir/build.make CMakeFiles/gripTest.dir/depend
 	$(MAKE) -f CMakeFiles/gripTest.dir/build.make CMakeFiles/gripTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target gripTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target gripTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/gripTest.dir/all
 
 # Include target in all.
@@ -298,9 +369,15 @@ all: CMakeFiles/gripTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gripTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gripTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gripTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/gripTest.dir/rule
 
 # Convenience name for target.
@@ -325,7 +402,11 @@ clean: CMakeFiles/gripTest.dir/clean
 CMakeFiles/vec2dTest.dir/all:
 	$(MAKE) -f CMakeFiles/vec2dTest.dir/build.make CMakeFiles/vec2dTest.dir/depend
 	$(MAKE) -f CMakeFiles/vec2dTest.dir/build.make CMakeFiles/vec2dTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=94,95,96,97,98,99,100 "Built target vec2dTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=94,95,96,97,98,99,100 "Built target vec2dTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/vec2dTest.dir/all
 
 # Include target in all.
@@ -335,9 +416,15 @@ all: CMakeFiles/vec2dTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vec2dTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vec2dTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vec2dTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/vec2dTest.dir/rule
 
 # Convenience name for target.
@@ -362,14 +449,24 @@ clean: CMakeFiles/vec2dTest.dir/clean
 CMakeFiles/application-run.dir/all: CMakeFiles/application.dir/all
 	$(MAKE) -f CMakeFiles/application-run.dir/build.make CMakeFiles/application-run.dir/depend
 	$(MAKE) -f CMakeFiles/application-run.dir/build.make CMakeFiles/application-run.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num= "Built target application-run"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num= "Built target application-run"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/application-run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/application-run.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/application-run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/application-run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/application-run.dir/rule
 
 # Convenience name for target.
@@ -394,7 +491,11 @@ clean: CMakeFiles/application-run.dir/clean
 CMakeFiles/twitchingTest.dir/all:
 	$(MAKE) -f CMakeFiles/twitchingTest.dir/build.make CMakeFiles/twitchingTest.dir/depend
 	$(MAKE) -f CMakeFiles/twitchingTest.dir/build.make CMakeFiles/twitchingTest.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=81,82,83,84,85,86,87,88,89,90,91,92,93 "Built target twitchingTest"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles --progress-num=81,82,83,84,85,86,87,88,89,90,91,92,93 "Built target twitchingTest"
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/twitchingTest.dir/all
 
 # Include target in all.
@@ -404,9 +505,15 @@ all: CMakeFiles/twitchingTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/twitchingTest.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/twitchingTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/twitchingTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles 0
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/twitchingTest.dir/rule
 
 # Convenience name for target.

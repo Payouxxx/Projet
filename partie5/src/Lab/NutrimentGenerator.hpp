@@ -22,7 +22,7 @@ public:
      * then add it to the current lab)
      * @param amount of time making simulation evolve
      */
-    void update(sf::Time dt);
+    void update(sf::Time dt) override;
 
     /*!
      * @brief reset time

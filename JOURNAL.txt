@@ -30,6 +30,7 @@ SEMAINE 5
 SEMAINE 6
 -derniers ajustements partie 4, relecture des commentaires du code et ajout de trois groupes de swarms dans le app.json (3=jaune, 4=blanc, 5=violet)
 -samedi : début de la partie 5.1, nous avons du faire très attention à bien prédéclarer les classes utilisées dans les headers (Bacterium.hpp et Nutriment.hpp) et ne les inclure que dans les fichier .cpp. Nous avons remarqué un problème qui n'apparaissait pas avant dans la classe TwitchingBacterium, les grapins ne se deployaient plus, nous avons pu réparer cette erreur. Test 17 réussi, fin de la partie 5.1
+-dimanche : début partie 5.2, segmentation fault lors du test 18, nous n'avons pas encore pu trouver de solution pour réparer ce problème.
 
 SEMAINE 7
 

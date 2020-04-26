@@ -21,13 +21,13 @@ public:
      * @brief update of the PetriDish and the Nutriments (vitual method inherited from the abstract Updatable class)
      * @param dt (sf::Time)
      */
-    void update(sf::Time dt);
+    void update(sf::Time dt) override;
 
     /*!
      * @brief draw the PetriDish on the target (virtual method inherited from the abstract Drawable class)
      * @param targetWindow (display window)
      */
-    void drawOn(sf::RenderTarget& targetWindow) const;
+    void drawOn(sf::RenderTarget& targetWindow) const override;
 
     /*!
      * @brief delete everything in the PetriDish

@@ -39,14 +39,14 @@ public:
      * @brief updatde petri dish simulation
      * @param amount of time making simulation evolve (sf::Time dt)
      */
-    void update(sf::Time dt);
+    void update(sf::Time dt) override;
 
     /*!
      * @brief draw a circle (border of the petridish) and call for drawOn of every bacteria and nutriment contained
      * (if not null pointers)
      * @param amount of time making simulation evolve (sf::Time dt)
      */
-    void drawOn(sf::RenderTarget& targetWindow) const;
+    void drawOn(sf::RenderTarget& targetWindow) const override;
 
    /*!
      * @brief reset petridish simulation (erase everything contained and reset temperature and gradient exponent)
@@ -119,8 +119,16 @@ public:
       */
     void resetGradientExponent();
 
-
+    /*!
+      * @brief add a swarm in the petri dish
+      * @param pointer on a swarm
+      */
     void addSwarm(Swarm* s);
+
+    /*!
+      * @brief search and return a particular swarm with its id
+      * @return pointer on swarm
+      */
     Swarm *getSwarmWithId(std::string id);
 
 private:

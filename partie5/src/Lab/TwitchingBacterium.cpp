@@ -93,9 +93,15 @@ void TwitchingBacterium::move(sf::Time dt)
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
                 state = ATTRACT;
             }
+<<<<<<< HEAD
         } else {
             state = RETRACT;
             }
+=======
+            } else {
+            state = RETRACT;
+        }
+>>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
         break;
 
         case ATTRACT:
