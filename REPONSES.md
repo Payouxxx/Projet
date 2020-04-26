@@ -311,10 +311,10 @@
 - Il faut aussi créer une méthode Nutriment::eatenby(Bacterium& bact), qui prend donc en paramètre un bacterie de la super classe, pour pouvoir l'appeler dans la méthode Bacterium::eat sans problème car eat s'applique sur une bacterie générale et non pas une des sous classes.
 
 *************************************************
-##Q
+##Q5.3
 
 
-- réponse à la question 
+- Nous avons créer deux map, l'une liant les id et les libellés, l'autre liant les libellés et les graphes, ce qui au final relie les 3 informations. 
 
 *************************************************
 ##Q
