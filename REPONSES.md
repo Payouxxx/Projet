@@ -299,16 +299,16 @@
 - Pour dissocier une SwarBacterium de son Swarm, il faudrait utiliser dans le destructeur d'une SwarmBacterium le fait qu'elle se retire de son Swarm, avec la méthode Swarm::removeSwarmBacterium que nous avons du programmer.
 
 *************************************************
-##Q
+##Q5.1
 
 
-- réponse à la question 
+- Il n'est pas conseillé de tester le type d'un objet à l'exécution car si l'objet passé en paramètre appartient à un sous-classe du paramètre (NutrimentB pour Nutriment) alors qu'on s'attend à un objet d'une autre sous-classe (NutrimentA), comme la méthode n'est pas polymorphique on pert les propriétés des sous-classes. 
 
 *************************************************
-##Q
+##Q5.2
 
 
-- réponse à la question 
+- Il faut aussi créer une méthode Nutriment::eatenby(Bacterium& bact), qui prend donc en paramètre un bacterie de la super classe, pour pouvoir l'appeler dans la méthode Bacterium::eat sans problème car eat s'applique sur une bacterie générale et non pas une des sous classes.
 
 *************************************************
 ##Q
