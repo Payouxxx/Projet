@@ -96,10 +96,14 @@ Quantity Bacterium::getEnergieMin() const
 
 MutableNumber Bacterium::getProperty(const string &name) const
 {
-    auto paire = parametres.find(name);
-    if(paire == parametres.end()) cout << "pas trouvé" << endl;
-    //à coder si nom pas trouvé renvoie erreur std::out_of_range ou std::invalid_argument
-    return paire->second;
+    try{
+        auto paire = parametres.find(name);
+        return paire->second;
+    } catch(std::out_of_range){
+        cerr << "out of range";
+    } catch(std::invalid_argument){
+        cerr << "invalid argment";
+    }
 }
 
 sf::Time Bacterium::getDelay() const
