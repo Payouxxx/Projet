@@ -111,6 +111,8 @@ public:
 
     static double getCompteur();
     static double compteur;       ///< counter of created instances
+    static MutableNumber better;
+    static MutableNumber worse;
 private:
     double t;              ///< counter to draw the "flagelle"
     sf::Time dt;           ///< counter between 2 failover

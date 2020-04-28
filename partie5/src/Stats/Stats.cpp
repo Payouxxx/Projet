@@ -11,7 +11,7 @@ Stats::~Stats() {}
 
 void Stats::next()
 {
-    if(idActif == int(names.size())) {
+    if(idActif == int(names.size() -1)) {
         idActif=0;
     } else {
         ++idActif;
@@ -21,7 +21,7 @@ void Stats::next()
 void Stats::previous()
 {
     if(idActif==0) {
-        idActif=names.size();
+        idActif=(names.size() -1);
     } else {
         --idActif;
     }
@@ -50,18 +50,11 @@ void Stats::reset()
 
 void Stats::addGraph(int idGraph, const string &title, const std::vector<string> &series, double min, double max, Vec2d size)
 {
-    try {
-        auto paire = names.find(idGraph);
-        auto couple = graphes.find(paire->second);
-        (couple->second)->reset();
-        (couple->second) = unique_ptr<Graph(new Graph(series, size, min, max))>;
-        (paire->second) = title;
-        idActif = idGraph;
-    } catch(out_of_range) {
-        cerr << "out of range";
-    } catch(invalid_argument){
-        cerr << "invalid argument";
-    }
+    setActive(idGraph);
+    names[idGraph] = title;
+    unique_ptr<Graph> pointeur;
+    pointeur.reset(new Graph(series, size, min, max));
+    graphes[title] = std::move(pointeur);
 }
 
 void Stats::update(sf::Time dt)
@@ -72,14 +65,14 @@ void Stats::update(sf::Time dt)
         for(auto& graphe : graphes){
             (graphe.second)->updateData(this->dt, getAppEnv().fetchData(getCurrentTitle()));
         }
+        this->dt = sf::Time::Zero;
     }
 }
 
 void Stats::drawOn(sf::RenderTarget &target) const
 {
-    for(auto& couple : graphes){
-        (couple.second)->drawOn(target);
-    }
+    string name(names.at(idActif));
+    (graphes.at(name))->drawOn(target);
 }
 
 void Stats::setActive(int id)

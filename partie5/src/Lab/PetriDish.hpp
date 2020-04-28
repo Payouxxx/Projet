@@ -134,7 +134,7 @@ public:
 
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
-    enum statistic {NUTRIMENT_SOURCES, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};
+    enum statistic {NUTRIMENT_QUANTITY, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, SPEED};
 
 private:
     std::vector<Bacterium*> faune;   ///< the whole bacteria in the petri dish

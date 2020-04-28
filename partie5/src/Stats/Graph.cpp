@@ -45,6 +45,7 @@ void Graph::updateData(sf::Time deltaEpoch, std::unordered_map<std::string, doub
 
     for (auto& serie : mSeries) {
         auto x = newEpoch.asSeconds() * X_SCALE;
+        std::cerr << serie.title;
         auto y = (newData.at(serie.title) - mYMin) * Y_SCALE;
 		if (serie.title == "nutriment quantity"){
 		}

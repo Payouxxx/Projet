@@ -175,18 +175,18 @@ unordered_map<string, double> PetriDish::fetchData(const string & name) const
     unordered_map<string, double> new_data;
     statistic var;
     if(name == s::NUTRIMENT_QUANTITY){
-        var = NUTRIMENT_SOURCES;
+        var = NUTRIMENT_QUANTITY;
     } else if(name == s::GENERAL){
         var = GENERAL;
     } else if(name == s::SIMPLE_BACTERIA){
         var = SIMPLE_BACTERIA;
     } else if(name == s::TWITCHING_BACTERIA){
         var = TWITCHING_BACTERIA;
-    } else if(name == s::BACTERIA){
-        var = BACTERIA;
+    } else if(name == s::SPEED){
+        var = SPEED;
     }
     switch (var) {
-    case NUTRIMENT_SOURCES :
+    case NUTRIMENT_QUANTITY :
         new_data = unordered_map<string, double> {{s::NUTRIMENT_SOURCES, food.size()}};
         break;
 
@@ -197,16 +197,16 @@ unordered_map<string, double> PetriDish::fetchData(const string & name) const
         break;
 
     case SIMPLE_BACTERIA :
-        new_data = unordered_map<string, double> {{s::BETTER, SimpleBacterium::getProperty("tumble better")},
-                                                  {s::WORSE, SimpleBacterium::getProperty("tumble worse")}};
+ //       new_data = unordered_map<string, double> {{s::BETTER, SimpleBacterium::getProperty("tumble better").get()},
+   //                                               {s::WORSE, SimpleBacterium::getProperty("tumble worse").get()}};
         break;
 
     case TWITCHING_BACTERIA :
-        new_data = unordered_map<string, double> {{s::TENTACLE_LENGTH, TwitchingBacterium::getProperty("tentacle length")},
-                                                  {s::TENTACLE_SPEED, TwitchingBacterium::getProperty("speed")}};
+      //  new_data = unordered_map<string, double> {{s::TENTACLE_LENGTH, TwitchingBacterium::getProperty("tentacle length").get()},
+        //                                          {s::TENTACLE_SPEED, TwitchingBacterium::getProperty("speed").get()}};
         break;
 
-    case BACTERIA :
+    case SPEED :
         new_data = unordered_map<string, double> {};
     default:
         break;
