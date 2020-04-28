@@ -314,13 +314,15 @@
 ##Q5.3
 
 
-- Nous avons créer deux map, l'une liant les id et les libellés, l'autre liant les libellés et les graphes, ce qui au final relie les 3 informations. 
+- Nous avons créé deux map, l'une liant les id et les libellés, l'autre liant les libellés et les graphes, ce qui au final relie les 3 informations. 
 
 *************************************************
-##Q
+##Q5.4
 
 
-- réponse à la question 
+- Afin de pouvoir compter les instances spécifique de chaque type, il serait judicieux d'ajouter des méthodes getCompteur à la classe Bacterium qui serait polymorphique (virtuelle pure) et retournerait le compteur qui serait un attribut de chaque sous classe de bacterie, incrémenté dans le constructeur et décrémenté dans le destructeur.
+- Pour la classe Nutriment un simple food.size() (food étant le vector de nutriments) suffit.
+- On définit ensuite un switch dans la méthode fetchData
 
 *************************************************
 ##Q
