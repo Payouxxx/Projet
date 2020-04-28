@@ -10,6 +10,8 @@
 
 using namespace std;
 
+double SwarmBacterium::compteur = 0.0;
+
 SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp) //uniform fait automatiquement entre min et max
     : Bacterium(uniform(getConfig()["energy"]), position,
                 Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
@@ -18,12 +20,14 @@ SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp) //uniform fait automa
 {
     groupe->addSwarmBacterium(this);
     //pas de caractéristiques mutables autre que couleur
+    compteur += 1;
 }
 
 SwarmBacterium::SwarmBacterium(const SwarmBacterium &other)
     : Bacterium(other), groupe(other.groupe)
 {
     groupe->addSwarmBacterium(this);
+    compteur += 1;
 }
 
 j::Value& SwarmBacterium::getConfig() const
@@ -66,6 +70,7 @@ void SwarmBacterium::drawOn(sf::RenderTarget &targetWindow) const
 SwarmBacterium::~SwarmBacterium()
 {
     groupe->removeSwarmBacterium(this);
+    compteur -= 1;
 }
 
 Vec2d SwarmBacterium::getSpeedVector() const
@@ -87,4 +92,10 @@ Quantity SwarmBacterium::eatableQuantity(NutrimentA& nutriment)
 Quantity SwarmBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
+}
+
+
+double SwarmBacterium::getCompteur()
+{
+    return compteur;
 }

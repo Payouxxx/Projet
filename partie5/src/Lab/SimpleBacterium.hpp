@@ -16,6 +16,8 @@ public:
      */
     SimpleBacterium(Vec2d position);
 
+    ~SimpleBacterium();
+
     /*!
      * @brief redefinition of the virtual method getConfig to access the SimpleBacterium datas in the app.json file
      * @return getAppConfig()["simple bacterium"]
@@ -107,10 +109,14 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    static double getCompteur();
+    static double compteur;       ///< counter of created instances
 private:
     double t;              ///< counter to draw the "flagelle"
     sf::Time dt;           ///< counter between 2 failover
     double pBasculement;   ///< failover probability (random change of direction)
+
 };
+
 
 #endif // SIMPLEBACTERIUM_HPP

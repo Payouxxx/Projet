@@ -36,3 +36,4 @@ Quantity NutrimentA::eatenBy(SwarmBacterium& bact)
 {
     return takeQuantity(bact.getMaxEatableQuantity());
 }
+

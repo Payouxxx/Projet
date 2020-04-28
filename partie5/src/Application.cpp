@@ -843,7 +843,7 @@ void Application::addGraph(std::string const& title, std::vector<std::string> co
 {
     if (series.size() > 0){
         ++mCurrentGraphId;
-    //getStats().addGraph(mCurrentGraphId, title, series, min, max, getStatsSize() );
+        getStats().addGraph(mCurrentGraphId, title, series, min, max, getStatsSize() );
 	}
 }
 

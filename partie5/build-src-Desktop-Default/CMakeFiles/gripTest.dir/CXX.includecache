@@ -347,6 +347,12 @@ iostream
 -
 cmath
 -
+SimpleBacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/SimpleBacterium.hpp
+SwarmBacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/SwarmBacterium.hpp
+TwitchingBacterium.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/TwitchingBacterium.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/PetriDish.hpp
 iostream
@@ -367,6 +373,8 @@ CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
 Swarm.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Swarm.hpp
+Utility/Constants.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Utility/Constants.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/SimpleBacterium.cpp
 SimpleBacterium.hpp
@@ -539,8 +547,30 @@ vector
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Stats.cpp
 Stats/Stats.hpp
 -
+iostream
+-
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Application.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Stats.hpp
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
+vector
+-
+memory
+-
+string
+-
+Utility/Types.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Utility/Types.hpp
+iostream
+-
+Graph.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Graph.hpp
+SFML/Graphics.hpp
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/GripTest.cpp
 Application.hpp

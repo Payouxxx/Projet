@@ -116,7 +116,10 @@ void Lab::addSwarm(Swarm *s)
     boite.addSwarm(s);
 }
 
-
+unordered_map<string, double> Lab::fetchData(const string & name) const
+{
+    return boite.fetchData(name);
+}
 
 
 

@@ -5,6 +5,9 @@
 #include "JSON/JSONImpl.hpp"
 #include <iostream>
 #include <cmath>
+#include "SimpleBacterium.hpp"
+#include "SwarmBacterium.hpp"
+#include "TwitchingBacterium.hpp"
 
 using namespace std;
 
@@ -165,4 +168,48 @@ Swarm* PetriDish::getSwarmWithId(string id)
 void PetriDish::addSwarm(Swarm* s)
 {
     if (s != nullptr) groupes.push_back(s);
+}
+
+unordered_map<string, double> PetriDish::fetchData(const string & name) const
+{
+    unordered_map<string, double> new_data;
+    statistic var;
+    if(name == s::NUTRIMENT_QUANTITY){
+        var = NUTRIMENT_SOURCES;
+    } else if(name == s::GENERAL){
+        var = GENERAL;
+    } else if(name == s::SIMPLE_BACTERIA){
+        var = SIMPLE_BACTERIA;
+    } else if(name == s::TWITCHING_BACTERIA){
+        var = TWITCHING_BACTERIA;
+    } else if(name == s::BACTERIA){
+        var = BACTERIA;
+    }
+    switch (var) {
+    case NUTRIMENT_SOURCES :
+        new_data = unordered_map<string, double> {{s::NUTRIMENT_SOURCES, food.size()}};
+        break;
+
+    case GENERAL :
+        new_data = unordered_map<string, double> {{s::SIMPLE_BACTERIA, SimpleBacterium::getCompteur()},
+                                                  {s::SWARM_BACTERIA, SwarmBacterium::getCompteur()},
+                                                  {s::TWITCHING_BACTERIA, TwitchingBacterium::getCompteur()}};
+        break;
+
+    case SIMPLE_BACTERIA :
+        new_data = unordered_map<string, double> {{s::BETTER, SimpleBacterium::getProperty("tumble better")},
+                                                  {s::WORSE, SimpleBacterium::getProperty("tumble worse")}};
+        break;
+
+    case TWITCHING_BACTERIA :
+        new_data = unordered_map<string, double> {{s::TENTACLE_LENGTH, TwitchingBacterium::getProperty("tentacle length")},
+                                                  {s::TENTACLE_SPEED, TwitchingBacterium::getProperty("speed")}};
+        break;
+
+    case BACTERIA :
+        new_data = unordered_map<string, double> {};
+    default:
+        break;
+    }
+    return new_data;
 }

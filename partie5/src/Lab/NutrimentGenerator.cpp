@@ -14,7 +14,7 @@ NutrimentGenerator::NutrimentGenerator()
 void NutrimentGenerator::update(Time dt){
     this->dt+=dt; //incrémente le compteur de temps
 
-    if(this->dt>=sf::seconds(getAppConfig()["generator"]["nutriment"]["delay"].toDouble())) {
+    if(this->dt >= sf::seconds(getAppConfig()["generator"]["nutriment"]["delay"].toDouble())) {
         reset();
 
         //condition selon laquelle nutriment A/B choisis (proba)

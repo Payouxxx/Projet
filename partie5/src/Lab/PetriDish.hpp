@@ -10,6 +10,7 @@
 #include "../Interface/Drawable.hpp"
 #include "../Interface/Updatable.hpp"
 #include "Swarm.hpp"
+#include "Utility/Constants.hpp"
 
 
 
@@ -131,12 +132,17 @@ public:
       */
     Swarm *getSwarmWithId(std::string id);
 
+    std::unordered_map<std::string, double> fetchData(const std::string &name) const;
+
+    enum statistic {NUTRIMENT_SOURCES, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};
+
 private:
     std::vector<Bacterium*> faune;   ///< the whole bacteria in the petri dish
     std::vector<Nutriment*> food;    ///< the whole nutriments in the petri dish
     double temperature;              ///< temperature of the petri dish
     double puissance;                ///< used to calculate gradient exponent
     std::vector<Swarm*> groupes;     ///< the whole swarms in the petri dish
+
 };
 
 #endif // PETRIDISH_HPP

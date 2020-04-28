@@ -8,13 +8,15 @@
 #include "Utility/Types.hpp"
 #include <iostream>
 #include "Graph.hpp"
+#include <SFML/Graphics.hpp>
 
-typedef std::map<std::string, std::unique_ptr<Graph>> Libelles;
+typedef std::map<std::string, std::unique_ptr<Graph>> Label;
 
 class Stats: public Drawable, public Updatable
 {
 public:
     Stats();
+    ~Stats();
     std::string getCurrentTitle() const;
     void next();
     void previous();
@@ -26,6 +28,7 @@ public:
 private:
     std::map<int, std::string> names;
     int idActif;
-    Libelles graphes;
+    Label graphes;
+    sf::Time dt;
 };
 

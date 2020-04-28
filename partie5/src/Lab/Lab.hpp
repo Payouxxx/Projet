@@ -131,6 +131,7 @@ public:
 
     Swarm *getSwarmWithId(std::string id);
     void addSwarm(Swarm* s);
+    std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
 private:
     PetriDish boite;                ///< the PetriDish

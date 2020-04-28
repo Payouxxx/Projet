@@ -52,6 +52,7 @@ public:
      * @return Quantity eaten (here max aetable)
      */
     virtual Quantity eatenBy(SwarmBacterium& bact) override;
+
 };
 
 #endif // NUTRIMENTA_HPP

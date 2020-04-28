@@ -399,6 +399,8 @@ CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
 Swarm.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Swarm.hpp
+Utility/Constants.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Utility/Constants.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Swarm.hpp
 Interface/Updatable.hpp
@@ -436,7 +438,41 @@ Random/RandomGenerator.hpp
 random
 -
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Graph.hpp
+Interface/Drawable.hpp
+-
+Utility/Vec2d.hpp
+-
+SFML/Graphics.hpp
+-
+SFML/System.hpp
+-
+unordered_map
+-
+string
+-
+vector
+-
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Stats.hpp
+../Interface/Drawable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Drawable.hpp
+../Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Interface/Updatable.hpp
+vector
+-
+memory
+-
+string
+-
+Utility/Types.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Utility/Types.hpp
+iostream
+-
+Graph.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Stats/Graph.hpp
+SFML/Graphics.hpp
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/UnitTests/CatchTests.cpp
 catch.hpp

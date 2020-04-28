@@ -32,7 +32,6 @@ public:
      */
     ~SwarmBacterium();
 
-
     /*!
      * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium datas in the app.json file
      * @return shortcut towards adaptated values
@@ -92,8 +91,11 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    static double getCompteur();
+    static double compteur; ///< counter of created instances
 private:
-    Swarm* groupe;  ///< knowledge of the swarm where it belongs
+    Swarm* groupe;          ///< knowledge of the swarm where it belongs
+
 };
 
 #endif // SWARMBACTERIUM_HPP

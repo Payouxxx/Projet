@@ -11,6 +11,7 @@
 #include "FinalApplication.hpp"
 
 #include <cassert>
+#include <iostream>
 
 IMPLEMENT_MAIN(FinalApplication);
 
@@ -19,18 +20,18 @@ void FinalApplication::onRun()
     // Basic setup
     Application::onRun();
 	// add graphs for statistics
-	setStats(true);
-    //addGraph(s::GENERAL, { s::SIMPLE_BACTERIA, s::TWITCHING_BACTERIA, s::SWARM_BACTERIA, s::NUTRIMENT_SOURCES,s::DISH_TEMPERATURE}, 0, 150);
+    setStats(true);
+    addGraph(s::GENERAL, { s::SIMPLE_BACTERIA, s::TWITCHING_BACTERIA, s::SWARM_BACTERIA, s::NUTRIMENT_SOURCES,s::DISH_TEMPERATURE}, 0, 150);
     addGraph(s::NUTRIMENT_QUANTITY, {s::NUTRIMENT_QUANTITY}, 0, 2000);
     addGraph(s::SIMPLE_BACTERIA, { s::BETTER, s::WORSE}, 0, 10);
-	//addGraph(s::TWITCHING_BACTERIA, { s::TENTACLE_LENGTH, s::TENTACLE_SPEED}, 0, 150);
-	//addGraph(s::BACTERIA, { s::SPEED}, 20, 50);
-	setActiveGraph(0);
+    addGraph(s::TWITCHING_BACTERIA, { s::TENTACLE_LENGTH, s::TENTACLE_SPEED}, 0, 150);
+    addGraph(s::BACTERIA, { s::SPEED}, 20, 50);
+    setActiveGraph(0);
 }
 
 void FinalApplication::onSimulationStart()
 {
-	Application::onSimulationStart();
+    Application::onSimulationStart();
     for (auto i = 1; i <= 5; ++i) {
         auto id = std::to_string(i);
         getEnv().addSwarm(new Swarm(id));

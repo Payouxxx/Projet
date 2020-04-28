@@ -1,9 +1,13 @@
 #include <Stats/Stats.hpp>
+#include <iostream>
+#include "../Application.hpp"
 
 using namespace std;
 
 Stats::Stats() : idActif(0)
 {}
+
+Stats::~Stats() {}
 
 void Stats::next()
 {
@@ -37,7 +41,7 @@ string Stats::getCurrentTitle() const
 
 void Stats::reset()
 {
-    Libelles::iterator it = graphes.begin();
+    Label::iterator it = graphes.begin();
     while(it != graphes.end()){
         (it->second)->reset();
         ++it;
@@ -49,7 +53,8 @@ void Stats::addGraph(int idGraph, const string &title, const std::vector<string>
     try {
         auto paire = names.find(idGraph);
         auto couple = graphes.find(paire->second);
-        (couple->second).reset(new Graph(series, size, min, max));
+        (couple->second)->reset();
+        (couple->second) = unique_ptr<Graph(new Graph(series, size, min, max))>;
         (paire->second) = title;
         idActif = idGraph;
     } catch(out_of_range) {
@@ -61,14 +66,20 @@ void Stats::addGraph(int idGraph, const string &title, const std::vector<string>
 
 void Stats::update(sf::Time dt)
 {
+    this->dt+=dt;
 
+    if(this->dt >= sf::seconds(getAppConfig()["stats"]["refresh rate"].toDouble())){
+        for(auto& graphe : graphes){
+            (graphe.second)->updateData(this->dt, getAppEnv().fetchData(getCurrentTitle()));
+        }
+    }
 }
 
 void Stats::drawOn(sf::RenderTarget &target) const
 {
-    /*for(auto couple : graphes){
+    for(auto& couple : graphes){
         (couple.second)->drawOn(target);
-    }*/
+    }
 }
 
 void Stats::setActive(int id)

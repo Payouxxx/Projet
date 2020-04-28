@@ -43,17 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default
-=======
-CMAKE_SOURCE_DIR = /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default
->>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 
 # Utility rule file for application-run.
 
@@ -78,10 +71,6 @@ CMakeFiles/application-run.dir/clean:
 .PHONY : CMakeFiles/application-run.dir/clean
 
 CMakeFiles/application-run.dir/depend:
-<<<<<<< HEAD
 	cd /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/build-src-Desktop-Default/CMakeFiles/application-run.dir/DependInfo.cmake --color=$(COLOR)
-=======
-	cd /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/src /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default /home/crozat/Desktop/myfiles/Programmation/cpp/projet/partie5/build-src-Desktop-Default/CMakeFiles/application-run.dir/DependInfo.cmake --color=$(COLOR)
->>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
 .PHONY : CMakeFiles/application-run.dir/depend
 

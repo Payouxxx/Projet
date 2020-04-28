@@ -12,6 +12,8 @@
 
 using namespace std;
 
+double TwitchingBacterium::compteur = 0.0;
+
 TwitchingBacterium::TwitchingBacterium(Vec2d position)
     : Bacterium(uniform(getConfig()["energy"]), position,
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
@@ -21,6 +23,12 @@ TwitchingBacterium::TwitchingBacterium(Vec2d position)
 {
     addProperty("speed", MutableNumber::positive(getConfig()["tentacle"]["speed"]));
     addProperty("length tentacle", MutableNumber::positive(getConfig()["tentacle"]["length"]));
+    compteur += 1;
+}
+
+TwitchingBacterium::~TwitchingBacterium()
+{
+    compteur -= 1;
 }
 
 //getters
@@ -42,6 +50,7 @@ double TwitchingBacterium::getEnergieTentacle() const
 
 Bacterium* TwitchingBacterium::clone() const
 {
+    compteur += 1;
     TwitchingBacterium* c(new TwitchingBacterium(*this));
     c->grapin.~Grip();
     c->setPosition(Vec2d(getPosition().x +20,getPosition().y -20));
@@ -93,15 +102,9 @@ void TwitchingBacterium::move(sf::Time dt)
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
                 state = ATTRACT;
             }
-<<<<<<< HEAD
         } else {
             state = RETRACT;
             }
-=======
-            } else {
-            state = RETRACT;
-        }
->>>>>>> da04f3ec441debbcc3d5147e8c3a1b1922ac553e
         break;
 
         case ATTRACT:
@@ -151,4 +154,9 @@ Quantity TwitchingBacterium::eatableQuantity(NutrimentA& nutriment)
 Quantity TwitchingBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
+}
+
+double TwitchingBacterium::getCompteur()
+{
+    return compteur;
 }

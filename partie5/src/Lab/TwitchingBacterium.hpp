@@ -16,6 +16,8 @@ public:
      */
     TwitchingBacterium(Vec2d position);
 
+    ~TwitchingBacterium();
+
     /*!
      * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium datas in the app.json file
      * @return getAppConfig()
@@ -93,9 +95,13 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    static double getCompteur();
+    static double compteur;  ///< counter of created instances
 private:
-    Grip grapin;    ///< grip of the twitching bacteria (CircularBody)
-    etat state;     ///< state of the bacteria
+    Grip grapin;            ///< grip of the twitching bacteria (CircularBody)
+    etat state;             ///< state of the bacteria
+
 };
+
 
 #endif // TWITCHINGBACTERIUM_HPP

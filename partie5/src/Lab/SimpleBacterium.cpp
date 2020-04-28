@@ -12,6 +12,8 @@
 
 using namespace std;
 
+double SimpleBacterium::compteur = 0.0;
+
 SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléatoires
     : Bacterium(uniform(getConfig()["energy"]), position,
       Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
@@ -23,6 +25,12 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
     addProperty("speed", MutableNumber::positive(getAppConfig()["simple bacterium"]["speed"])); //vitesse
     addProperty("tumble better", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["better"])); //lambda pour pBasculement mélioratif
     addProperty("tumble worse", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["worse"])); //lambda pour basculement péjoratif
+    compteur += 1;
+}
+
+SimpleBacterium::~SimpleBacterium()
+{
+    compteur -= 1;
 }
 
 j::Value& SimpleBacterium::getConfig() const
@@ -32,6 +40,7 @@ j::Value& SimpleBacterium::getConfig() const
 
 Bacterium* SimpleBacterium::clone() const
 {
+    compteur += 1;
     return new SimpleBacterium(*this);
 }
 
@@ -141,4 +150,9 @@ Quantity SimpleBacterium::eatableQuantity(NutrimentA& nutriment)
 Quantity SimpleBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
+}
+
+double SimpleBacterium::getCompteur()
+{
+    return compteur;
 }
