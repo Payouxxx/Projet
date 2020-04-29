@@ -62,11 +62,10 @@ void Stats::update(sf::Time dt)
     this->dt+=dt;
 
     if(this->dt >= sf::seconds(getAppConfig()["stats"]["refresh rate"].toDouble())){
-        for(auto& graphe : graphes){
-            (graphe.second)->updateData(this->dt, getAppEnv().fetchData(getCurrentTitle()));
-        }
+        graphes.at(getCurrentTitle())->updateData(this->dt, getAppEnv().fetchData(getCurrentTitle()));
         this->dt = sf::Time::Zero;
-    }
+        }
+
 }
 
 void Stats::drawOn(sf::RenderTarget &target) const

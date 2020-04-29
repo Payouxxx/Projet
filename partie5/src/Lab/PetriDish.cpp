@@ -182,32 +182,41 @@ unordered_map<string, double> PetriDish::fetchData(const string & name) const
         var = SIMPLE_BACTERIA;
     } else if(name == s::TWITCHING_BACTERIA){
         var = TWITCHING_BACTERIA;
-    } else if(name == s::SPEED){
-        var = SPEED;
+    } else if(name == s::BACTERIA){
+        var = BACTERIA;
     }
     switch (var) {
     case NUTRIMENT_QUANTITY :
-        new_data = unordered_map<string, double> {{s::NUTRIMENT_SOURCES, food.size()}};
+        new_data = unordered_map<string, double> {{s::NUTRIMENT_QUANTITY, food.size()}};
         break;
 
     case GENERAL :
-        new_data = unordered_map<string, double> {{s::SIMPLE_BACTERIA, SimpleBacterium::getCompteur()},
-                                                  {s::SWARM_BACTERIA, SwarmBacterium::getCompteur()},
-                                                  {s::TWITCHING_BACTERIA, TwitchingBacterium::getCompteur()}};
+        new_data = unordered_map<string, double> {{s::SIMPLE_BACTERIA, SimpleBacterium::compteur},
+                                                  {s::TWITCHING_BACTERIA, TwitchingBacterium::compteur},
+                                                  {s::SWARM_BACTERIA, SwarmBacterium::compteur},
+                                                  {s::NUTRIMENT_SOURCES, food.size()},
+                                                  {"temperature", temperature}};
         break;
 
     case SIMPLE_BACTERIA :
- //       new_data = unordered_map<string, double> {{s::BETTER, SimpleBacterium::getProperty("tumble better").get()},
-   //                                               {s::WORSE, SimpleBacterium::getProperty("tumble worse").get()}};
+        new_data = unordered_map<string, double> {{s::BETTER, SimpleBacterium::Mbetter},
+                                                  {s::WORSE, SimpleBacterium::Mworse}};
         break;
 
     case TWITCHING_BACTERIA :
-      //  new_data = unordered_map<string, double> {{s::TENTACLE_LENGTH, TwitchingBacterium::getProperty("tentacle length").get()},
-        //                                          {s::TENTACLE_SPEED, TwitchingBacterium::getProperty("speed").get()}};
+        new_data = unordered_map<string, double> {{s::TENTACLE_LENGTH, TwitchingBacterium::Mlength},
+                                                  {s::TENTACLE_SPEED, TwitchingBacterium::Mspeed}};
         break;
 
-    case SPEED :
-        new_data = unordered_map<string, double> {};
+    case BACTERIA :
+    {
+        double moyenne(0.0);
+        if((SimpleBacterium::compteur+TwitchingBacterium::compteur+SwarmBacterium::compteur) != 0){
+            moyenne = ((SimpleBacterium::Mspeed*SimpleBacterium::compteur)+(TwitchingBacterium::Mspeed*TwitchingBacterium::compteur)+(30*SwarmBacterium::compteur))/(SimpleBacterium::compteur+TwitchingBacterium::compteur+SwarmBacterium::compteur);
+        }
+        new_data = unordered_map<string, double> {{s::SPEED, moyenne}};
+        break;
+    }
     default:
         break;
     }

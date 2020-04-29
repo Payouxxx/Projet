@@ -10,6 +10,7 @@
 
 using namespace std;
 
+
 Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, MutableColor color, bool abst)
     : CircularBody(position, rayon),
       energie(nrj),
@@ -99,10 +100,14 @@ Quantity Bacterium::getEnergieMin() const
 
 MutableNumber Bacterium::getProperty(const string &name) const
 {
-    auto paire = parametres.find(name);
-    if(paire == parametres.end()) cout << "pas trouvé" << endl;
-    //à coder si nom pas trouvé renvoie erreur std::out_of_range ou std::invalid_argument
-    return paire->second;
+    try{
+        auto paire = parametres.find(name);
+        return paire->second;
+    } catch(out_of_range){
+        cerr << "out of range";
+    } catch(invalid_argument){
+        cerr << "invalid argument";
+    }
 }
 
 sf::Time Bacterium::getDelay() const

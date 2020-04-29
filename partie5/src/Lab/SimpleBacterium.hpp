@@ -109,10 +109,12 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
-    static double getCompteur();
+public:
     static double compteur;       ///< counter of created instances
-    static MutableNumber better;
-    static MutableNumber worse;
+    static double Mbetter;        ///< average values of mutableNumber tumble better
+    static double Mworse;         ///< average values of mutableNumber tumble worse
+    static double Mspeed;         ///< average speed
+
 private:
     double t;              ///< counter to draw the "flagelle"
     sf::Time dt;           ///< counter between 2 failover

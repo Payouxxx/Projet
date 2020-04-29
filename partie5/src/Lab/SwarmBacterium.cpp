@@ -94,8 +94,3 @@ Quantity SwarmBacterium::getMaxEatableQuantity() const
     return (getConfig()["meal"]["max"].toDouble());
 }
 
-
-double SwarmBacterium::getCompteur()
-{
-    return compteur;
-}

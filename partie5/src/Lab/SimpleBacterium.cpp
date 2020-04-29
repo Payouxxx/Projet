@@ -13,6 +13,9 @@
 using namespace std;
 
 double SimpleBacterium::compteur = 0.0;
+double SimpleBacterium::Mbetter = 0.0;
+double SimpleBacterium::Mworse = 0.0;
+double SimpleBacterium::Mspeed = 0.0;
 
 SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléatoires
     : Bacterium(uniform(getConfig()["energy"]), position,
@@ -26,11 +29,23 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
     addProperty("tumble better", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["better"])); //lambda pour pBasculement mélioratif
     addProperty("tumble worse", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["worse"])); //lambda pour basculement péjoratif
     compteur += 1;
+    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
+    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
 }
 
 SimpleBacterium::~SimpleBacterium()
 {
     compteur -= 1;
+    if(compteur == 0){
+        Mbetter = 0.0;
+        Mworse = 0.0;
+        Mspeed = 0.0;
+    } else {
+        Mbetter = (Mbetter*(compteur+1) - getProperty("tumble better").get())/compteur;
+        Mworse = (Mworse*(compteur+1) - getProperty("tumble worse").get())/compteur;
+        Mspeed = ((Mspeed*(compteur+1)) - getProperty("speed").get())/compteur;
+    }
 }
 
 j::Value& SimpleBacterium::getConfig() const
@@ -41,6 +56,9 @@ j::Value& SimpleBacterium::getConfig() const
 Bacterium* SimpleBacterium::clone() const
 {
     compteur += 1;
+    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
+    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
     return new SimpleBacterium(*this);
 }
 
@@ -72,7 +90,7 @@ void SimpleBacterium::move(sf::Time dt)
     this->dt += dt;
     double score(getScore()); //à la nouvelle position après le déplacement
     double lambda(getProperty("tumble better").get());
-    if(score<=ancien_score){
+    if(score <= ancien_score){
         lambda = getProperty("tumble worse").get();
         }
     pBasculement = (1-(exp(-(this->dt.asSeconds())/lambda)));
@@ -150,9 +168,4 @@ Quantity SimpleBacterium::eatableQuantity(NutrimentA& nutriment)
 Quantity SimpleBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
-}
-
-double SimpleBacterium::getCompteur()
-{
-    return compteur;
 }

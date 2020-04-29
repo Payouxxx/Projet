@@ -585,6 +585,10 @@ Lab/TwitchingBacterium.hpp
 -
 FinalApplication.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/FinalApplication.hpp
+Lab/NutrimentA.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/Lab/NutrimentA.hpp
+Lab/NutrimentB.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/Lab/NutrimentB.hpp
 cassert
 -
 iostream

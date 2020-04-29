@@ -13,6 +13,8 @@
 using namespace std;
 
 double TwitchingBacterium::compteur = 0.0;
+double TwitchingBacterium::Mlength = 0.0;
+double TwitchingBacterium::Mspeed = 0.0;
 
 TwitchingBacterium::TwitchingBacterium(Vec2d position)
     : Bacterium(uniform(getConfig()["energy"]), position,
@@ -24,11 +26,20 @@ TwitchingBacterium::TwitchingBacterium(Vec2d position)
     addProperty("speed", MutableNumber::positive(getConfig()["tentacle"]["speed"]));
     addProperty("length tentacle", MutableNumber::positive(getConfig()["tentacle"]["length"]));
     compteur += 1;
+    Mlength = (Mlength*(compteur-1) + getProperty("length tentacle").get())/compteur;
+    Mspeed = (Mspeed*(compteur-1) + getProperty("speed").get())/compteur;
 }
 
 TwitchingBacterium::~TwitchingBacterium()
 {
     compteur -= 1;
+    if(compteur == 0){
+        Mlength = 0.0;
+        Mspeed = 0.0;
+    } else {
+        Mlength = (Mlength*(compteur+1) - getProperty("length tentacle").get())/compteur;
+        Mspeed = (Mspeed*(compteur+1) - getProperty("speed").get())/compteur;
+    }
 }
 
 //getters
@@ -51,6 +62,8 @@ double TwitchingBacterium::getEnergieTentacle() const
 Bacterium* TwitchingBacterium::clone() const
 {
     compteur += 1;
+    Mlength = (Mlength*(compteur-1) + getProperty("length tentacle").get())/compteur;
+    Mspeed = (Mspeed*(compteur-1) + getProperty("speed").get())/compteur;
     TwitchingBacterium* c(new TwitchingBacterium(*this));
     c->grapin.~Grip();
     c->setPosition(Vec2d(getPosition().x +20,getPosition().y -20));
@@ -156,7 +169,3 @@ Quantity TwitchingBacterium::getMaxEatableQuantity() const
     return (getConfig()["meal"]["max"].toDouble());
 }
 
-double TwitchingBacterium::getCompteur()
-{
-    return compteur;
-}

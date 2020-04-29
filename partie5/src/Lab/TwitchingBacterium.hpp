@@ -94,8 +94,9 @@ public:
      * @return max quantity eatable by this bacteria
      */
     Quantity getMaxEatableQuantity() const;
-
-    static double getCompteur();
+public:
+    static double Mlength;
+    static double Mspeed;
     static double compteur;  ///< counter of created instances
 private:
     Grip grapin;            ///< grip of the twitching bacteria (CircularBody)

@@ -13,7 +13,7 @@
 namespace
 {
 
-std::vector<sf::Color> const& COLORS = { sf::Color::Red, sf::Color::Green, sf::Color::Yellow, sf::Color::Cyan,
+std::vector<sf::Color> const& COLORS = { sf::Color::Cyan, sf::Color::Red, sf::Color::Yellow, sf::Color::Green,
                                          sf::Color::White };
 
 } // anonymous
@@ -45,7 +45,6 @@ void Graph::updateData(sf::Time deltaEpoch, std::unordered_map<std::string, doub
 
     for (auto& serie : mSeries) {
         auto x = newEpoch.asSeconds() * X_SCALE;
-        std::cerr << serie.title;
         auto y = (newData.at(serie.title) - mYMin) * Y_SCALE;
 		if (serie.title == "nutriment quantity"){
 		}

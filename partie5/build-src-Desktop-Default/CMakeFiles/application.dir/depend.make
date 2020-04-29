@@ -1704,6 +1704,8 @@ CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/pa
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Grip.hpp
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Lab.hpp
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/Nutriment.hpp
+CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/NutrimentA.hpp
+CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/NutrimentB.hpp
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/NutrimentGenerator.hpp
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/PetriDish.hpp
 CMakeFiles/application.dir/Tests/GraphicalTests/FinalApplication.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/SimpleBacterium.hpp
