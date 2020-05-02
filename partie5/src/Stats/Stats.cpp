@@ -64,12 +64,11 @@ void Stats::update(sf::Time dt)
     if(this->dt >= sf::seconds(getAppConfig()["stats"]["refresh rate"].toDouble())){
         graphes.at(getCurrentTitle())->updateData(this->dt, getAppEnv().fetchData(getCurrentTitle()));
         this->dt = sf::Time::Zero;
-        }
-
+    }
 }
 
 void Stats::drawOn(sf::RenderTarget &target) const
-{
+{ //affiche que l'id actif (sinon tout se superpose) + méthode at qui permet d'accéder à l'autre élément
     string name(names.at(idActif));
     (graphes.at(name))->drawOn(target);
 }

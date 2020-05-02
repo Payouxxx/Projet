@@ -127,11 +127,17 @@ public:
     void addSwarm(Swarm* s);
 
     /*!
-      * @brief search and return a particular swarm with its id
-      * @return pointer on swarm
-      */
+     * @brief search and return the swarm with matching id given
+     * @param string id
+     * @return pointer on swarm or nullptr if not found
+     */
     Swarm *getSwarmWithId(std::string id);
 
+    /*!
+     * @brief for a graph given, return the name of one curve and a new point on it
+     * @param string name (of the graph)
+     * @return unordered_map<std::string, double>
+     */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
     enum statistic {NUTRIMENT_QUANTITY, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};

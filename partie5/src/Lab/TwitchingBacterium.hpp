@@ -11,11 +11,14 @@ class TwitchingBacterium : public Bacterium
 {
 public:
     /*!
-     * @brief Constructor
+     * @brief Constructor, increments statics attributs
      * @param position (Vec2d)
      */
     TwitchingBacterium(Vec2d position);
 
+    /*!
+     * @brief Desstructor, decreses statics attributs
+     */
     ~TwitchingBacterium();
 
     /*!
@@ -32,9 +35,8 @@ public:
 
     /*!
      * @brief redefinition of the virtual method clone
-     *
-     * the clone does not have tentacle and its position is a bit different of the initial one
-     *
+     *        the clone does not have tentacle and its position is a bit different of the initial one
+     *        increments statics attributs
      * @return a bacteria pointer to a clone of the current instance
      */
     Bacterium* clone() const override;
@@ -94,9 +96,10 @@ public:
      * @return max quantity eatable by this bacteria
      */
     Quantity getMaxEatableQuantity() const;
+
 public:
-    static double Mlength;
-    static double Mspeed;
+    static double Mlength;   ///< average values of mutableNumber tenatcule length
+    static double Mspeed;    ///< average values of mutableNumber tentacule speed
     static double compteur;  ///< counter of created instances
 private:
     Grip grapin;            ///< grip of the twitching bacteria (CircularBody)

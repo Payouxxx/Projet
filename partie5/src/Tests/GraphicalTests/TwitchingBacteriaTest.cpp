@@ -28,8 +28,7 @@ void TwitchingBacteriaTest::onRun()
 {
     // Basic setup
     Application::onRun();
-    setStats(false);
-
+	setStats(false);
 }
 
 void TwitchingBacteriaTest::onEvent(sf::Event event, sf::RenderWindow&)

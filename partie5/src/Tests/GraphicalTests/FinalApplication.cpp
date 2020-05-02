@@ -8,9 +8,9 @@
 #include <Lab/Swarm.hpp>
 #include <Lab/SwarmBacterium.hpp>
 #include <Lab/TwitchingBacterium.hpp>
+#include <Lab/NutrimentA.hpp>
+#include <Lab/NutrimentB.hpp>
 #include "FinalApplication.hpp"
-#include "Lab/NutrimentA.hpp"
-#include "Lab/NutrimentB.hpp"
 
 #include <cassert>
 #include <iostream>
@@ -24,7 +24,7 @@ void FinalApplication::onRun()
 	// add graphs for statistics
     setStats(true);
     addGraph(s::GENERAL, { s::SIMPLE_BACTERIA, s::TWITCHING_BACTERIA, s::SWARM_BACTERIA, s::NUTRIMENT_SOURCES,s::DISH_TEMPERATURE}, 0, 150);
-    addGraph(s::NUTRIMENT_QUANTITY, {s::NUTRIMENT_QUANTITY}, 0, 200);
+    addGraph(s::NUTRIMENT_QUANTITY, {s::NUTRIMENT_QUANTITY}, 0, 500); //min réduit pour graphe plus parlant
     addGraph(s::SIMPLE_BACTERIA, { s::BETTER, s::WORSE}, 0, 10);
     addGraph(s::TWITCHING_BACTERIA, { s::TENTACLE_LENGTH, s::TENTACLE_SPEED}, 0, 150);
     addGraph(s::BACTERIA, { s::SPEED}, 20, 50);
@@ -85,7 +85,7 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
             getEnv().addBacterium(new SwarmBacterium(getCursorPositionInView(), swarm));
         } break;
 
-        case sf::Keyboard::N:
+        case sf::Keyboard::N: {
             constexpr int NUT_QTY(50);
             Nutriment* lastCreated = nullptr;
             if (event.key.shift) {
@@ -94,7 +94,7 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
                 lastCreated = new NutrimentA(NUT_QTY, getCursorPositionInView());
             }
             getEnv().addNutriment(lastCreated);
-            break;
+          } break;
         }
     }
 }

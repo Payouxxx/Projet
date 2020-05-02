@@ -35,5 +35,7 @@ SEMAINE 6
 SEMAINE 7
 -mardi : continuation de l'implémentation de la partie 5.2, la compilation est correcte mais nous sommes toujours bloquées au niveau de l'exécution pour les tests 18, 19 et 20.
 -mercredi : Nous avons résolu le problème de l'execution, due au fait qu'on avait décommenté trop de courbes dans le FinalApplication.cpp et que notre méthode fetchData ne retournait pas la température en même temps que les autres pour général. L'exécution est maintenant correcte, nous avons fini de coder les courbes bonus.
+-samedi : réglage du problème des exécutables précédent qui n'existaient pas, test de différentes conditions initiales pour l'exécutable application et commentaire des fichiers de la partie 5
 
+SEMAINE 8
 

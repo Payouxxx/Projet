@@ -15,7 +15,7 @@ class SwarmBacterium : public Bacterium, public DiffEqFunction
 {
 public:
     /*!
-     * @brief Constructor
+     * @brief Constructor, increments statics attributs
      * @param position (Vec2d)
      * @param pointer on the swarm where it belongs
      */
@@ -23,12 +23,13 @@ public:
 
     /*!
      * @brief Copy constructor, also add he copy in the same swarm
+     *        increments statics attributs
      * @param other SwarmBacterium
      */
     SwarmBacterium(const SwarmBacterium& other);
 
     /*!
-     * @brief virtual destructor, remove the bacteria from its Swarm
+     * @brief virtual destructor, remove the bacteria from its Swarm, decreases statics attributs
      */
     ~SwarmBacterium();
 

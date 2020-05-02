@@ -11,11 +11,14 @@ class SimpleBacterium : public Bacterium, public DiffEqFunction
 {
 public:
     /*!
-     * @brief Constructor
+     * @brief Constructor, increments statics attributs
      * @param position (Vec2d)
      */
     SimpleBacterium(Vec2d position);
 
+    /*!
+     * @brief Destructor, decrement static attributs
+     */
     ~SimpleBacterium();
 
     /*!
@@ -27,6 +30,7 @@ public:
     /*!
      * @brief redefinition of the virtual method clone
      *        creation of a new pointer of a new bacteria based on the current instance
+     *        increments statics attributs
      *
      * @return a bacteria pointer to a clone of the current instance
      */
