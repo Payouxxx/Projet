@@ -8,6 +8,7 @@
 #include "SimpleBacterium.hpp"
 #include "SwarmBacterium.hpp"
 #include "TwitchingBacterium.hpp"
+#include "../Config.hpp"
 
 using namespace std;
 

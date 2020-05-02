@@ -27,8 +27,8 @@ IMPLEMENT_MAIN(TwitchingBacteriaTest);
 void TwitchingBacteriaTest::onRun()
 {
     // Basic setup
-    setStats(false);
     Application::onRun();
+    setStats(false);
 
 }
 

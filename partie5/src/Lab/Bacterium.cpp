@@ -48,9 +48,9 @@ void Bacterium::update(sf::Time dt)
             //max de nutriment qu'elle peut prélever
             eat(*(getAppEnv().getNutrimentColliding(*this)));
             compteur = sf::Time::Zero;
-            divide();
         }
     }
+    divide();
 }
 
 bool Bacterium::alive() const

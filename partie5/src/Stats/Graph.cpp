@@ -99,9 +99,10 @@ void Graph::drawOn(sf::RenderTarget& target) const
         // The legend
 		std::stringstream tmpStream;
 		auto value(serie.lastValue);
-		tmpStream << std::fixed << std::setprecision(2) << value;
-		auto value_str = tmpStream.str();
-        value_str = value_str.substr(0, value_str.find_last_not_of("0"));
+        tmpStream << std::fixed << std::setprecision(2) << value;
+        auto value_str = tmpStream.str();
+        value_str = value_str.substr(0, value_str.find_last_not_of("0")+1);
+        value_str = value_str.substr(0, value_str.find_last_not_of(".")+1);
         auto text = serie.title + ": " + value_str;
         auto legend = sf::Text(text, getAppFont(), FONT_SIZE);
         legend.setPosition(lastLegendX, LEGEND_MARGIN);

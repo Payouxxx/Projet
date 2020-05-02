@@ -12,8 +12,8 @@
     },
     "generator" : {
         "nutriment" : {
-            "delay" : 2,
-            "prob" : 0.5
+            "delay" : 0.5,
+            "prob" : 0.8
         }
     },
     "map" : "map.json",
@@ -113,7 +113,7 @@
         },
         "energy" : {
             "consumption factor" : 0.2,
-            "division" : 140,
+            "division" : 100,
             "max" : 100,
             "min" : 50
         },
@@ -189,7 +189,7 @@
         },
         "energy" : {
             "consumption factor" : 0.1,
-            "division" : 140,
+            "division" : 100,
             "max" : 100,
             "min" : 50
         },
@@ -456,7 +456,7 @@
                 "move" : 0.4,
                 "tentacle" : 0.1
             },
-            "division" : 120,
+            "division" : 100,
             "max" : 100,
             "min" : 50
         },
