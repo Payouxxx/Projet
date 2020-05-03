@@ -19,6 +19,7 @@ public:
 
     /*!
      * @brief update of the PetriDish and the Nutriments (vitual method inherited from the abstract Updatable class)
+     *        update attribute time
      * @param dt (sf::Time)
      */
     void update(sf::Time dt) override;
@@ -143,13 +144,22 @@ public:
      */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
+
+    /*!
+     * @brief return current time
+     * @return time (double)
+     */
     double getTime() const;
+
+    /*!
+     * @brief reset comptor of time
+     */
     void resetTime();
 
 private:
     PetriDish boite;                ///< the PetriDish
     NutrimentGenerator automatique; ///< creation of new nutriments
-    double time;
+    double time;                    ///< comptor of time
 };
 
 #endif // LAB_HPP
