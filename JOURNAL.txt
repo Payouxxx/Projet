@@ -39,3 +39,4 @@ SEMAINE 7
 
 SEMAINE 8
 -mardi : ajout d'un attribut temps à la partie controle du lab. Nous pouvons ainsi mieux comprendre les statistiques avec une comparation temporelle. 
+Codage de la classe ADN qui ajoute des morceaux d'ADN dans le lab en appuyant sur le touche A. Absorber de l'ADN permet au Swarm de ne plus être sensibles au poison des nutriments bleus, aux Twtching de se diviser et les deux clones auront 2/3 de l'énergie initiale et les Simple vont plus vite mais ont un Consumption factor atténué qui leur permet de perdre moins d'énergie malgré leur vitesse accrue.
