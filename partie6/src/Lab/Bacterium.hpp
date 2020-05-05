@@ -13,6 +13,7 @@
 class Nutriment;
 class NutrimentA;
 class NutrimentB;
+class ADN;
 
 /*!
  * @brief The Bacterium class, a subClass of CircularBody, Drawable and Updatable
@@ -183,6 +184,8 @@ public:
      * @return quantity eatable by the bacteria with nutriment B
      */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) = 0;
+
+    void competence(ADN adn);
 
 private:
     Quantity energie;                                   ///< energy of the bacteria
