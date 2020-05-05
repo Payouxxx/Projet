@@ -8,6 +8,7 @@
 #include "NutrimentA.hpp"
 #include "NutrimentB.hpp"
 #include "ADN.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -19,7 +20,8 @@ Bacterium::Bacterium(Quantity nrj, Vec2d position, Vec2d dir, double rayon, Muta
       couleur(color),
       abstinence(abst),
       compteur(sf::Time::Zero),
-      angleDir(dir.angle())
+      angleDir(dir.angle()),
+      evolved(false)
 {}
 
 Bacterium::~Bacterium() {}
@@ -52,6 +54,10 @@ void Bacterium::update(sf::Time dt)
         }
     }
     divide();
+    if(getAppEnv().getADNColliding(*this) != nullptr and !evolved){
+        competence(getAppEnv().getADNColliding(*this));
+    }
+
 }
 
 bool Bacterium::alive() const
@@ -153,7 +159,6 @@ void Bacterium::setDirection(Vec2d dir)
 {
     direction = dir;
 }
-
 
 void Bacterium::newDirection()
 {

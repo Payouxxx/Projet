@@ -163,6 +163,8 @@ SwarmBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SwarmBacterium.hpp
 TwitchingBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/TwitchingBacterium.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
 CircularBody.hpp
@@ -189,6 +191,10 @@ NutrimentA.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.hpp
 NutrimentB.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp
+ADN.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
+iostream
+-
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Bacterium.hpp
 ../Interface/Drawable.hpp
@@ -331,6 +337,8 @@ TwitchingBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/TwitchingBacterium.hpp
 Bacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Bacterium.hpp
+ADN.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp
 Nutriment.hpp
@@ -425,6 +433,8 @@ NutrimentA.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.hpp
 NutrimentB.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp
+ADN.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SimpleBacterium.hpp
 Bacterium.hpp
@@ -479,6 +489,8 @@ NutrimentA.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.hpp
 NutrimentB.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp
+ADN.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SwarmBacterium.hpp
 Bacterium.hpp
@@ -509,6 +521,8 @@ NutrimentA.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.hpp
 NutrimentB.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp
+ADN.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/TwitchingBacterium.hpp
 Bacterium.hpp

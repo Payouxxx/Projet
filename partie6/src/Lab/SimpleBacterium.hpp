@@ -124,6 +124,7 @@ private:
     double t;              ///< counter to draw the "flagelle"
     sf::Time dt;           ///< counter between 2 failover
     double pBasculement;   ///< failover probability (random change of direction)
+    double speed;          ///< speed as a double
 
 };
 

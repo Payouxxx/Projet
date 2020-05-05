@@ -30,9 +30,6 @@ SimpleBacterium::SimpleBacterium(Vec2d position) //nrj, direction, rayon aléato
     addProperty("tumble better", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["better"])); //lambda pour pBasculement mélioratif
     addProperty("tumble worse", MutableNumber::positive(getAppConfig()["simple bacterium"]["tumble"]["worse"])); //lambda pour basculement péjoratif
     compteur += 1;
-    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
-    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
-    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
 }
 
 SimpleBacterium::~SimpleBacterium()
@@ -71,7 +68,10 @@ Vec2d SimpleBacterium::f(Vec2d position, Vec2d speed) const
 Vec2d SimpleBacterium::getSpeedVector() const
 {
     double factor(getProperty("speed").get());
-    //if (getEvolution()) factor *= ADN::getConfig()["factor"]["speed"].toDouble();
+    if (getEvolution()){
+        factor *= ADN::getConfig()["factor"]["speed"].toDouble();
+        getProperty("speed").set(getProperty("speed").get()*ADN::getConfig()["factor"]["speed"].toDouble());
+    }
     return getDirection().normalised()*factor;
 }
 
@@ -154,6 +154,9 @@ void SimpleBacterium::update(sf::Time dt)
 {
     updateFlagelle(dt);
     Bacterium::update(dt);
+    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
+    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
 }
 
 

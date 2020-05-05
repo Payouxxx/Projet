@@ -125,18 +125,18 @@ PetriDish::~PetriDish(){
 
 bool PetriDish::addBacterium(Bacterium *b)
 {
-    if (contains(*b) and adn.size() < 5) {
+    if (contains(*b)) {
         faune.push_back(b);
     }
-    return (contains(*b) and adn.size() < 5);
+    return (contains(*b));
 }
 
 bool PetriDish::addADN(ADN *a)
 {
-    if (contains(*a)){
+    if (contains(*a) and adn.size() < 5){
         adn.push_back(a);
     }
-    return contains(*a);
+    return (contains(*a) and adn.size() < 5);
 }
 
 

@@ -5,6 +5,9 @@
 #include "SimpleBacterium.hpp"
 #include "SwarmBacterium.hpp"
 #include "TwitchingBacterium.hpp"
+#include <iostream>
+
+using namespace std;
 
 ADN::ADN(double rayon, Vec2d centre) : CircularBody(centre, rayon)
 {}
@@ -28,4 +31,5 @@ j::Value const& ADN::getConfig()
 void ADN::eaten()
 {
     setRadius(0.0);
+    cerr << "compétente!";
 }

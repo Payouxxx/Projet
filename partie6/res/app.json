@@ -58,8 +58,8 @@
     },
     "ADN" : {
 	"texture" : "ADN.png",
-	"factors" : {
-  	    "speed" : 5,
+	"factor" : {
+  	    "speed" : 1.5,
 	    "recovery" : -1
 	}
     },
