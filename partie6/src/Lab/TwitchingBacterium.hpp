@@ -97,6 +97,7 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+
 public:
     static double Mlength;   ///< average values of mutableNumber tenatcule length
     static double Mspeed;    ///< average values of mutableNumber tentacule speed

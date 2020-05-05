@@ -20,28 +20,12 @@ void ADN::drawOn(sf::RenderTarget &target) const
        target.draw(adnSprite);
 }
 
-j::Value const& ADN::getConfig() const
+j::Value const& ADN::getConfig()
 {
     return getAppConfig()["ADN"];
 }
 
-
-void ADN::eatenBy(Bacterium &bact)
+void ADN::eaten()
 {
-    bact.
-}
-
-void ADN::eatenBy(SimpleBacterium &bact)
-{
-    bact.mutate();
-}
-
-void ADN::eatenBy(SwarmBacterium &bact)
-{
-    bact.mutate();
-}
-
-void ADN::eatenBy(TwitchingBacterium &bact)
-{
-    bact.mutate();
+    setRadius(0.0);
 }

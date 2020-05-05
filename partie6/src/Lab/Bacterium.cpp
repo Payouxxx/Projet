@@ -7,6 +7,7 @@
 #include "Nutriment.hpp"
 #include "NutrimentA.hpp"
 #include "NutrimentB.hpp"
+#include "ADN.hpp"
 
 using namespace std;
 
@@ -174,7 +175,15 @@ void Bacterium::eat(Nutriment &nutriment)
 }
 
 
-void Bacterium::competence(ADN& adn)
+void Bacterium::competence(ADN* adn)
 {
+    mutate();
+    evolved = true;
+    adn->eaten();
+}
 
+
+bool Bacterium::getEvolution() const
+{
+    return evolved;
 }

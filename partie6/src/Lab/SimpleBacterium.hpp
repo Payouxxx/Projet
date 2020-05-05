@@ -113,6 +113,7 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+
 public:
     static double compteur;       ///< counter of created instances
     static double Mbetter;        ///< average values of mutableNumber tumble better

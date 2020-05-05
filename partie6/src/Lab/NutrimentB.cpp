@@ -7,6 +7,7 @@
 #include "SimpleBacterium.hpp"
 #include "TwitchingBacterium.hpp"
 #include "Bacterium.hpp"
+#include "ADN.hpp"
 
 using namespace std;
 
@@ -34,5 +35,7 @@ Quantity NutrimentB::eatenBy(TwitchingBacterium &bact)
 
 Quantity NutrimentB::eatenBy(SwarmBacterium& bact)
 {
-    return takeQuantity(-(getConfig()["poison factor"].toDouble())*bact.getMaxEatableQuantity());
+    double factor(getConfig()["poison factor"].toDouble());
+    //if(bact.getEvolution())  factor = ADN::getConfig()["factor"]["recovery"].toDouble();
+    return takeQuantity(-factor*bact.getMaxEatableQuantity());
 }

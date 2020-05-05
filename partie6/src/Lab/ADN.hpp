@@ -16,13 +16,8 @@ public:
     ADN(double rayon, Vec2d centre);
     ~ADN();
     void drawOn(sf::RenderTarget& target) const;
-    j::Value const& getConfig() const;
-
-    void eatenBy(Bacterium& bact);
-    void eatenBy(SimpleBacterium& bact);
-    void eatenBy(TwitchingBacterium& bact);
-    void eatenBy(SwarmBacterium& bact);
-
+    static j::Value const& getConfig();
+    void eaten();
 };
 
 #endif // ADN_HPP

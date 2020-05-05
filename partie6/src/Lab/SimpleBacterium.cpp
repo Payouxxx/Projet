@@ -9,6 +9,7 @@
 #include "Nutriment.hpp"
 #include "NutrimentA.hpp"
 #include "NutrimentB.hpp"
+#include "ADN.hpp"
 
 using namespace std;
 
@@ -69,7 +70,9 @@ Vec2d SimpleBacterium::f(Vec2d position, Vec2d speed) const
 
 Vec2d SimpleBacterium::getSpeedVector() const
 {
-    return getDirection().normalised()*getProperty("speed").get();
+    double factor(getProperty("speed").get());
+    //if (getEvolution()) factor *= ADN::getConfig()["factor"]["speed"].toDouble();
+    return getDirection().normalised()*factor;
 }
 
 void SimpleBacterium::move(sf::Time dt)

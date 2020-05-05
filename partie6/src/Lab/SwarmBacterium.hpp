@@ -92,6 +92,9 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    double evolution();
+
+
     static double compteur; ///< counter of created instances
 private:
     Swarm* groupe;          ///< knowledge of the swarm where it belongs

@@ -185,7 +185,8 @@ public:
      */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) = 0;
 
-    void competence(ADN adn);
+    void competence(ADN* adn);
+    bool getEvolution() const;
 
 private:
     Quantity energie;                                   ///< energy of the bacteria
@@ -195,6 +196,7 @@ private:
     sf::Time compteur;                                  ///< time between 2 meals
     std::map<std::string, MutableNumber> parametres;    ///< list of parameters
     double angleDir;                                    ///< direction angle
+    bool evolved;
 };
 
 
