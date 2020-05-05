@@ -6,6 +6,7 @@
 #include <vector>
 #include "NutrimentGenerator.hpp"
 #include "Swarm.hpp"
+#include "ADN.hpp"
 
 /*!
  * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development and its nutriments
@@ -62,6 +63,12 @@ public:
     void addBacterium(Bacterium* b);
 
     /*!
+     * @brief call the addADN method of its PetriDish
+     * @param a (adn pointer)
+     */
+    void addADN(ADN* a);
+
+    /*!
      * @brief call the getTemperature method of the PetriDish
      * @return Temperature
      */
@@ -116,6 +123,13 @@ public:
      * @return a pointer on the nutriment if they are colliding otherwise it returns a nullptr
      */
     Nutriment* getNutrimentColliding(CircularBody const& body);
+
+    /*!
+     * @brief call the getADNColliding method of the PetriDish
+     * @param body (CircularBody)
+     * @return a pointer on the ADN if they are colliding otherwise it returns a nullptr
+     */
+    ADN* getADNColliding(CircularBody const& body);
 
     /*!
      * @brief call the getPositionScore method of the PetriDish

@@ -11,6 +11,7 @@
 #include "../Interface/Updatable.hpp"
 #include "Swarm.hpp"
 #include "Utility/Constants.hpp"
+#include "ADN.hpp"
 
 
 
@@ -35,6 +36,12 @@ public:
      */
     bool addNutriment(Nutriment* n);
 
+    /*!
+     * @brief add an ADN in the petridish (if contained)
+     * @param adn we want to add (pointer)
+     * @return booleen indicating if adding was successful or not
+     */
+    bool addADN(ADN* a);
 
     /*!
      * @brief updatde petri dish simulation
@@ -83,12 +90,20 @@ public:
 
 
     /*!
-      * @brief get the first nutrient colliding with the circular body we chose
-      * @param circular body which can collide against a nutriment
-      * @return nullprr if the body isn't colliding with nutriment,
+      * @brief get the first nutriment colliding with the circular body we chose
+      * @param circular body which can collide a nutriment
+      * @return nullprr if the body isn't colliding with any nutriment,
       * else a pointer toward the nutriment the body is collinding with
       */
-    Nutriment* getNutrimentColliding(CircularBody const& body);
+    Nutriment* getNutrimentColliding(CircularBody const& body) const;
+
+    /*!
+     * @brief get the first ADN colliding with the circular body we chose
+     * @param circular body which can collide a piece of adn
+     * @return nullprr if the body isn't colliding with any adn,
+     * else a pointer toward the adn the body is collinding with
+     */
+    ADN* getADNcolliding(CircularBody const& body) const;
 
     /*!
       * @brief get position score depending on the formula where s is nutriment source and p a position:
@@ -148,6 +163,7 @@ private:
     double temperature;              ///< temperature of the petri dish
     double puissance;                ///< used to calculate gradient exponent
     std::vector<Swarm*> groupes;     ///< the whole swarms in the petri dish
+    std::vector<ADN*> adn;           ///< the whole ADN in the petri dish
 
 };
 

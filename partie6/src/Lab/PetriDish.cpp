@@ -52,6 +52,14 @@ void PetriDish::update(sf::Time dt) {
         for (auto& grp : groupes) {
             if (grp != nullptr) grp->update(dt);
         }
+
+        for (auto& a : adn){
+            if (a->getRadius() == 0){
+                delete a;
+                a = nullptr;
+            }
+        }
+        adn.erase(remove(adn.begin(), adn.end(), nullptr), adn.end());
 }
 
 void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
@@ -64,14 +72,19 @@ void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
     for (auto& b : faune) {
         if (b != nullptr) b->drawOn(targetWindow);
     }
+    for (auto& a : adn){
+        if(a != nullptr) a->drawOn(targetWindow);
+    }
 }
 
 void PetriDish::reset() {
     for (auto& bacterie : faune) delete bacterie;
     for (auto& nutriment : food) delete nutriment;
+    for (auto& a : adn) delete a;
 
     faune.clear();
     food.clear();
+    adn.clear();
 
     resetTemperature();
     resetGradientExponent();
@@ -103,19 +116,31 @@ PetriDish::~PetriDish(){
         delete nutriment;
         nutriment = nullptr;
     }
+    for (auto& a : adn){
+        delete a;
+        a = nullptr;
+    }
 }
 
 
 bool PetriDish::addBacterium(Bacterium *b)
 {
-    if (contains(*b)) {
+    if (contains(*b) and adn.size() < 5) {
         faune.push_back(b);
     }
-    return contains(*b);
+    return (contains(*b) and adn.size() < 5);
+}
+
+bool PetriDish::addADN(ADN *a)
+{
+    if (contains(*a)){
+        adn.push_back(a);
+    }
+    return contains(*a);
 }
 
 
-Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
+Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body) const
 {
         for (auto& nutriments : food) {
             if ((*nutriments)&(body)) return nutriments;
@@ -124,6 +149,14 @@ Nutriment* PetriDish::getNutrimentColliding(CircularBody const& body)
             //la bactérie passée en paramètre
         }
     return nullptr; //si n'a rien retourné avant
+}
+
+ADN* PetriDish::getADNcolliding(const CircularBody &body) const
+{
+    for (auto& a : adn){
+        if((*a)&(body)) return a;
+    }
+    return nullptr;
 }
 
 double PetriDish::getPositionScore(const Vec2d &p) const

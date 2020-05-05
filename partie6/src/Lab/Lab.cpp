@@ -36,6 +36,10 @@ void Lab::addNutriment(Nutriment* n){
     if (!boite.addNutriment(n)) delete n;
 }//si pas possible d'ajouter alors supprimé de la zone mémoire
 
+void Lab::addADN(ADN *a){
+    if (!boite.addADN(a)) delete a;
+}
+
 //TEMPERATURE
 
 double Lab::getTemperature() const {
@@ -72,6 +76,11 @@ Nutriment* Lab::getNutrimentColliding(CircularBody const& body)
     return boite.getNutrimentColliding(body);
 }
 
+ADN* Lab::getADNColliding(const CircularBody &body)
+{
+    return boite.getADNcolliding(body);
+}
+
 double Lab::getPositionScore(const Vec2d& p) const
 {
     return boite.getPositionScore(p);
@@ -106,9 +115,6 @@ void Lab::resetControls()
     resetTime();
 }
 
-
-
-
 Swarm* Lab::getSwarmWithId(string id)
 {
     return boite.getSwarmWithId(id);
@@ -123,8 +129,6 @@ unordered_map<string, double> Lab::fetchData(const string & name) const
 {
     return boite.fetchData(name);
 }
-
-
 
 double Lab::getTime() const
 {
