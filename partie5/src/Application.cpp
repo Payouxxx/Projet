@@ -170,7 +170,7 @@ Application::~Application()
     // Destroy lab and stats, in reverse order
     delete mLab;
 	delete mConfig;
-    delete mStats;
+	delete mStats;
 
     // Release textures
     for (auto& kv : mTextures) {
@@ -187,7 +187,7 @@ void Application::run()
 {
     // Load lab and stats
     mLab   = new Lab;
-    mStats = new Stats;
+	mStats = new Stats;
     // Set up subclasses
     onRun();
     onSimulationStart();
@@ -246,7 +246,7 @@ void Application::run()
                 auto dt = std::min(elapsedTime, maxDt);
                 elapsedTime -= dt;
                 getEnv().update(dt);
-                if(isStatsOn == true) getStats().update(dt);
+                if (isStatsOn == true) getStats().update(dt);
                 onUpdate(dt);
 				--nbCycles;
 
@@ -537,7 +537,7 @@ void Application::handleEvent(sf::Event event, sf::RenderWindow& window)
 						mLab->decreaseGradientExponent();
 						break;
                     case STATS:
-                        mStats->previous();
+                    mStats->previous();
 						break;
 					default:
 						break;
@@ -771,7 +771,7 @@ sf::Texture& getAppTexture(std::string const& name)
 
 void Application::setStats(bool isStatsOn)
 {
-    this->isStatsOn = isStatsOn;
+	this->isStatsOn = isStatsOn;
 }
 
 bool isDebugOn()

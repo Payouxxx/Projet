@@ -104,33 +104,43 @@ public:
 
     /*!
      * @brief call the doesCollideWithDish method of the PetriDish
-     *
      * @param body (CircularBody)
-     *
      * @return true if body and the PetriDish are colliding
      */
     bool doesCollideWithDish(CircularBody const& body) const;
 
     /*!
      * @brief call the getNutrimentColliding method of the PetriDish
-     *
      * @param body (CircularBody)
-     *
      * @return a pointer on the nutriment if they are colliding otherwise it returns a nullptr
      */
     Nutriment* getNutrimentColliding(CircularBody const& body);
 
     /*!
      * @brief call the getPositionScore method of the PetriDish
-     *
      * @param p (Vec2d)
-     *
      * @return the score of the position p
      */
     double getPositionScore(const Vec2d&p) const;
 
+    /*!
+     * @brief call the getPositionScore method of the PetriDish
+     * @param string id
+     * @return pointer on swarm or nullptr if swarm not found
+     */
     Swarm *getSwarmWithId(std::string id);
+
+    /*!
+     * @brief call the getPositionScore method of the PetriDish
+     * @param pointer on Swarm
+     */
     void addSwarm(Swarm* s);
+
+    /*!
+     * @brief call the getPositionScore method of the PetriDish
+     * @param string name (of the graph)
+     * @return unordered_map<std::string, double>
+     */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
 private:
