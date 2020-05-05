@@ -18,3 +18,4 @@ S    : add simple bacterium
 T    : add Twitching bacterium
 1-2-3-4-5  : add swarm bacterium
 	  of type 1-2-3-4-5
+A	: add piece of DNA

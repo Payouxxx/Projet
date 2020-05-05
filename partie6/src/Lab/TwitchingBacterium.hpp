@@ -97,6 +97,8 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    virtual void divide();
+
 
 public:
     static double Mlength;   ///< average values of mutableNumber tenatcule length

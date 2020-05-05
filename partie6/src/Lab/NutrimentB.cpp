@@ -36,6 +36,6 @@ Quantity NutrimentB::eatenBy(TwitchingBacterium &bact)
 Quantity NutrimentB::eatenBy(SwarmBacterium& bact)
 {
     double factor(getConfig()["poison factor"].toDouble());
-    //if(bact.getEvolution())  factor = ADN::getConfig()["factor"]["recovery"].toDouble();
+    if(bact.getEvolution())  factor = ADN::getConfig()["recovery"].toDouble();
     return takeQuantity(-factor*bact.getMaxEatableQuantity());
 }

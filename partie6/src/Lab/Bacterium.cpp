@@ -53,7 +53,7 @@ void Bacterium::update(sf::Time dt)
             compteur = sf::Time::Zero;
         }
     }
-    divide();
+    this->divide();
     if(getAppEnv().getADNColliding(*this) != nullptr and !evolved){
         competence(getAppEnv().getADNColliding(*this));
     }
@@ -191,4 +191,9 @@ void Bacterium::competence(ADN* adn)
 bool Bacterium::getEvolution() const
 {
     return evolved;
+}
+
+Quantity Bacterium::getEnergie() const
+{
+    return energie;
 }

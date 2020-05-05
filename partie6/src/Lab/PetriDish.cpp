@@ -135,8 +135,9 @@ bool PetriDish::addADN(ADN *a)
 {
     if (contains(*a) and adn.size() < 5){
         adn.push_back(a);
+        cerr << "nfzjef";
     }
-    return (contains(*a) and adn.size() < 5);
+    return (contains(*a) and adn.size() <= 5);
 }
 
 

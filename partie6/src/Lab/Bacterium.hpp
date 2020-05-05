@@ -104,7 +104,7 @@ public:
      * @brief if the bacteria has enough energy, it can produce a copy of itself with clone
      *        then the bacteria changes its direction to the opposite
      */
-    void divide();
+    virtual void divide();
 
     /*!
      * @brief access to the minimum of energy a bacteria needs to divide
@@ -187,6 +187,7 @@ public:
 
     void competence(ADN* adn);
     bool getEvolution() const;
+    Quantity getEnergie() const;
 
 private:
     Quantity energie;                                   ///< energy of the bacteria

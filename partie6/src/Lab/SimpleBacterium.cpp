@@ -69,8 +69,8 @@ Vec2d SimpleBacterium::getSpeedVector() const
 {
     double factor(getProperty("speed").get());
     if (getEvolution()){
-        factor *= ADN::getConfig()["factor"]["speed"].toDouble();
-        getProperty("speed").set(getProperty("speed").get()*ADN::getConfig()["factor"]["speed"].toDouble());
+        factor *= ADN::getConfig()["speed"].toDouble();
+        getProperty("speed").set(getProperty("speed").get()*ADN::getConfig()["speed"].toDouble());
     }
     return getDirection().normalised()*factor;
 }
@@ -84,7 +84,11 @@ void SimpleBacterium::move(sf::Time dt)
     Vec2d deplacement(resultat.position - this->getPosition());
     if(deplacement.lengthSquared() > 0.001){ //empêche tremblotements
         this->CircularBody::move(deplacement);
-        consumeEnergy(getConsumption()*deplacement.length());
+        double factor(getConsumption());
+        if (getEvolution()){
+            factor *= ADN::getConfig()["consumption"].toDouble();
+        }
+        consumeEnergy(factor*deplacement.length());
     }
     //La vitesse ne varie pas car la force est nulle
     //on utilise pas resultat.speed

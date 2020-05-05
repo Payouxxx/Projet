@@ -105,6 +105,7 @@ void TwitchingBacterium::move(sf::Time dt)
 
         case DEPLOY:
         //mouvement du grapin
+        if(getAppEnv().getADNColliding(grapin) != nullptr) competence(getAppEnv().getADNColliding(grapin));
         if(distance(grapin.getPosition(),getPosition()) < getConfig()["tentacle"]["length"]["initial"].toDouble()
                 and not getAppEnv().doesCollideWithDish(grapin)){
             grapin.move(getDirection() * vitesse_tentacule * dt.asSeconds());
@@ -154,7 +155,6 @@ void TwitchingBacterium::move(sf::Time dt)
     }
 }
 
-
 Quantity TwitchingBacterium::eatableQuantity(NutrimentB& nutriment)
 {
     return nutriment.eatenBy(*this);
@@ -170,3 +170,11 @@ Quantity TwitchingBacterium::getMaxEatableQuantity() const
     return (getConfig()["meal"]["max"].toDouble());
 }
 
+void TwitchingBacterium::divide()
+{
+    if(getEnergie() > getEnergieMin()){
+        consumeEnergy(2*getEnergie()/3.0);
+        getAppEnv().addBacterium(clone()->mutate());
+        setDirection(-getDirection());
+    }
+}
