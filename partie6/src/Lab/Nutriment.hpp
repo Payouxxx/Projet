@@ -63,8 +63,7 @@ public:
      * @brief shortcut to a location in the file app.json
      * @return shortcut
      */
-    virtual j::Value const& getConfig() const =0; //n'a plus de raison d'être ici
-    // getConfig est virtuelle pure car trop générale pour la classe Nutriment
+    virtual j::Value const& getConfig() const =0;
 
     /*!
      * @brief fist call to differenciate nutriment (virtual pure here)

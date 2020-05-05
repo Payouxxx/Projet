@@ -83,11 +83,27 @@ public:
       */
     void resetTemperature();
 
+    /*!
+     * @brief constructor
+     * @param centrer
+     * @param radius
+     */
     PetriDish(Vec2d centre, double r);
-    PetriDish(const PetriDish&) = delete; //empecher la copie
-    PetriDish& operator= (const PetriDish&) = delete; //empecher l'affectation
-    ~PetriDish();
 
+    /*!
+     * @brief prevent and forbid the copy of a petridish
+     */
+    PetriDish(const PetriDish&) = delete;
+
+    /*!
+     * @brief prevent and forbid the affectation operator
+     */
+    PetriDish& operator= (const PetriDish&) = delete;
+
+    /*!
+     * @brief destructor
+     */
+    ~PetriDish();
 
     /*!
       * @brief get the first nutriment colliding with the circular body we chose
@@ -155,6 +171,9 @@ public:
      */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
+    /*!
+     * @brief The statistic enumerate type to handle the differents states of a twitching
+     */
     enum statistic {NUTRIMENT_QUANTITY, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};
 
 private:

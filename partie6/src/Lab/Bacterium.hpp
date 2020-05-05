@@ -43,6 +43,7 @@ public:
      *        make the bacteria move thanks to call to the move method
      *        make the bacteria eat nutriments
      *        make the bacteria divide (random)
+     *        make the bacteria eat adn if it's the first one
      *
      * @param dt (sf::Time)
      */
@@ -185,8 +186,23 @@ public:
      */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) = 0;
 
+    /*!
+     * @brief competence method, common to all the bacteria types, makes the bacteria mutate,
+     * call the eaten method of the adn, indicate that the bacteria is now "competente"
+     * @param adn
+     */
     void competence(ADN* adn);
+
+    /*!
+     * @brief getEvolution methode
+     * @return true if the bacteria has already ate a piece of adn
+     */
     bool getEvolution() const;
+
+    /*!
+     * @brief getEnergie
+     * @return the energy of the bacteria
+     */
     Quantity getEnergie() const;
 
 private:

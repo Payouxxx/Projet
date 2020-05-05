@@ -31,5 +31,4 @@ j::Value const& ADN::getConfig()
 void ADN::eaten()
 {
     setRadius(0.0);
-    cerr << "compétente!";
 }

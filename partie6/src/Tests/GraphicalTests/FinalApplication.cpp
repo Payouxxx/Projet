@@ -51,7 +51,7 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
             getEnv().addBacterium(new SimpleBacterium(getCursorPositionInView()));
             break;
         case sf::Keyboard::A:
-            getEnv().addADN(new ADN(20, getCursorPositionInView()));
+            getEnv().addADN(new ADN(30, getCursorPositionInView()));
             break;
 
         case sf::Keyboard::T:

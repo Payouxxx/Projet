@@ -11,9 +11,7 @@ class Grip : public CircularBody
 public:
     /*!
      * @brief Constructor
-     *
      * @param position
-     *
      * @param rayon
      */
     Grip(Vec2d position, double rayon);
@@ -23,6 +21,10 @@ public:
      */
     ~Grip();
 
+    /*!
+     * @brief move method of a grip, calling the move of CircularBody
+     * @param add (Vec2d)
+     */
     void move(const Vec2d &add);
 };
 

@@ -7,9 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include "Utility/MutableColor.hpp"
 
-class SwarmBacterium; //prédeclaration de classe pour casser
-// dépendance circulaire
-
+class SwarmBacterium;
 
 /*!
  * @brief Class Swarm sub class of Updatable, modeling a group of SwarmBacterium
