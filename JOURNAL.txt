@@ -38,4 +38,4 @@ SEMAINE 7
 -samedi : réglage du problème des exécutables précédent qui n'existaient pas, test de différentes conditions initiales pour l'exécutable application et commentaire des fichiers de la partie 5
 
 SEMAINE 8
-
+-mardi : ajout d'un attribut temps à la partie controle du lab. Nous pouvons ainsi mieux comprendre les statistiques avec une comparation temporelle. 

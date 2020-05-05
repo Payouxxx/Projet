@@ -56,6 +56,13 @@
             "texture" : "foodB.png"
         }
     },
+    "ADN" : {
+	"texture" : "ADN.png",
+	"factors" : {
+  	    "speed" : 5,
+	    "recovery" : -1
+	}
+    },
     "petri dish" : {
         "gradient" : {
             "exponent" : {
