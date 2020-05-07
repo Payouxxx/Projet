@@ -107,13 +107,15 @@ void TwitchingBacterium::move(sf::Time dt)
 
         case DEPLOY:
         //mouvement du grapin
-        if(getAppEnv().getADNColliding(grapin) != nullptr) competence(getAppEnv().getADNColliding(grapin));
         if(distance(grapin.getPosition(),getPosition()) < getConfig()["tentacle"]["length"]["initial"].toDouble()
                 and not getAppEnv().doesCollideWithDish(grapin)){
             grapin.move(getDirection() * vitesse_tentacule * dt.asSeconds());
 
             //perte d'énergie
             consumeEnergy(gain*getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+
+            //rencontre ADN
+            if(getAppEnv().getADNColliding(grapin) != nullptr) competence(getAppEnv().getADNColliding(grapin));
 
             //rencontre nutriment
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
@@ -137,7 +139,9 @@ void TwitchingBacterium::move(sf::Time dt)
         break;
 
         case RETRACT:
+        //rencontre ADN
         if(getAppEnv().getADNColliding(grapin) != nullptr) competence(getAppEnv().getADNColliding(grapin));
+
         if(distance(getPosition(), grapin.getPosition()) <= getRadius()){
             state = IDLE;
         } else {

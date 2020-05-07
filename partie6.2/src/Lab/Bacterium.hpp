@@ -44,6 +44,7 @@ public:
      *        make the bacteria eat nutriments
      *        make the bacteria divide (random)
      *        make the bacteria eat adn if it's the first one
+     *        make the bacteria unable to eat if contained in the light (energy decreases slower)
      *
      * @param dt (sf::Time)
      */
