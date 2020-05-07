@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/swarmTest.dir/Lab/CircularBody.cpp.o"
   "CMakeFiles/swarmTest.dir/Lab/Grip.cpp.o"
   "CMakeFiles/swarmTest.dir/Lab/Lab.cpp.o"
+  "CMakeFiles/swarmTest.dir/Lab/Lampe.cpp.o"
   "CMakeFiles/swarmTest.dir/Lab/Nutriment.cpp.o"
   "CMakeFiles/swarmTest.dir/Lab/NutrimentA.cpp.o"
   "CMakeFiles/swarmTest.dir/Lab/NutrimentB.cpp.o"

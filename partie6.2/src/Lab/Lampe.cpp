@@ -2,9 +2,10 @@
 #include "../Application.hpp"
 #include "SFML/Graphics.hpp"
 #include "Utility/Constants.hpp"
+#include "Utility/Utility.hpp"
 
 Lampe::Lampe(Vec2d centre, double rayon)
-    : CircularBody(getApp().getCentre(), rayon),
+    : CircularBody(centre, rayon),
       color(getConfig()["color"]),
       ON(false),
       direction(Vec2d::fromAngle(rayon))

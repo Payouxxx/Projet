@@ -297,9 +297,33 @@ CMakeFiles/application.dir/Lab/Lab.cpp.o.provides: CMakeFiles/application.dir/La
 CMakeFiles/application.dir/Lab/Lab.cpp.o.provides.build: CMakeFiles/application.dir/Lab/Lab.cpp.o
 
 
+CMakeFiles/application.dir/Lab/Lampe.cpp.o: CMakeFiles/application.dir/flags.make
+CMakeFiles/application.dir/Lab/Lampe.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/application.dir/Lab/Lampe.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/Lampe.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.cpp
+
+CMakeFiles/application.dir/Lab/Lampe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/application.dir/Lab/Lampe.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.cpp > CMakeFiles/application.dir/Lab/Lampe.cpp.i
+
+CMakeFiles/application.dir/Lab/Lampe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/application.dir/Lab/Lampe.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.cpp -o CMakeFiles/application.dir/Lab/Lampe.cpp.s
+
+CMakeFiles/application.dir/Lab/Lampe.cpp.o.requires:
+
+.PHONY : CMakeFiles/application.dir/Lab/Lampe.cpp.o.requires
+
+CMakeFiles/application.dir/Lab/Lampe.cpp.o.provides: CMakeFiles/application.dir/Lab/Lampe.cpp.o.requires
+	$(MAKE) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/Lab/Lampe.cpp.o.provides.build
+.PHONY : CMakeFiles/application.dir/Lab/Lampe.cpp.o.provides
+
+CMakeFiles/application.dir/Lab/Lampe.cpp.o.provides.build: CMakeFiles/application.dir/Lab/Lampe.cpp.o
+
+
 CMakeFiles/application.dir/Lab/Nutriment.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/Nutriment.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Nutriment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/application.dir/Lab/Nutriment.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/application.dir/Lab/Nutriment.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/Nutriment.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Nutriment.cpp
 
 CMakeFiles/application.dir/Lab/Nutriment.cpp.i: cmake_force
@@ -323,7 +347,7 @@ CMakeFiles/application.dir/Lab/Nutriment.cpp.o.provides.build: CMakeFiles/applic
 
 CMakeFiles/application.dir/Lab/NutrimentA.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/NutrimentA.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentA.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentA.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/NutrimentA.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentA.cpp
 
 CMakeFiles/application.dir/Lab/NutrimentA.cpp.i: cmake_force
@@ -347,7 +371,7 @@ CMakeFiles/application.dir/Lab/NutrimentA.cpp.o.provides.build: CMakeFiles/appli
 
 CMakeFiles/application.dir/Lab/NutrimentB.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/NutrimentB.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentB.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentB.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/NutrimentB.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentB.cpp
 
 CMakeFiles/application.dir/Lab/NutrimentB.cpp.i: cmake_force
@@ -371,7 +395,7 @@ CMakeFiles/application.dir/Lab/NutrimentB.cpp.o.provides.build: CMakeFiles/appli
 
 CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/NutrimentGenerator.cpp
 
 CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.i: cmake_force
@@ -395,7 +419,7 @@ CMakeFiles/application.dir/Lab/NutrimentGenerator.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/application.dir/Lab/PetriDish.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/PetriDish.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/PetriDish.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/application.dir/Lab/PetriDish.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/application.dir/Lab/PetriDish.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/PetriDish.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/PetriDish.cpp
 
 CMakeFiles/application.dir/Lab/PetriDish.cpp.i: cmake_force
@@ -419,7 +443,7 @@ CMakeFiles/application.dir/Lab/PetriDish.cpp.o.provides.build: CMakeFiles/applic
 
 CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/SimpleBacterium.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/SimpleBacterium.cpp
 
 CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.i: cmake_force
@@ -443,7 +467,7 @@ CMakeFiles/application.dir/Lab/SimpleBacterium.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/application.dir/Lab/Swarm.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/Swarm.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Swarm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/application.dir/Lab/Swarm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/application.dir/Lab/Swarm.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/Swarm.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Swarm.cpp
 
 CMakeFiles/application.dir/Lab/Swarm.cpp.i: cmake_force
@@ -467,7 +491,7 @@ CMakeFiles/application.dir/Lab/Swarm.cpp.o.provides.build: CMakeFiles/applicatio
 
 CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/SwarmBacterium.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/SwarmBacterium.cpp
 
 CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.i: cmake_force
@@ -491,7 +515,7 @@ CMakeFiles/application.dir/Lab/SwarmBacterium.cpp.o.provides.build: CMakeFiles/a
 
 CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/TwitchingBacterium.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/TwitchingBacterium.cpp
 
 CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.i: cmake_force
@@ -515,7 +539,7 @@ CMakeFiles/application.dir/Lab/TwitchingBacterium.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/DiffEqSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/DiffEqSolver.cpp
 
 CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.i: cmake_force
@@ -539,7 +563,7 @@ CMakeFiles/application.dir/Utility/DiffEqSolver.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/application.dir/Utility/MutableColor.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Utility/MutableColor.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/MutableColor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/application.dir/Utility/MutableColor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/application.dir/Utility/MutableColor.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Utility/MutableColor.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/MutableColor.cpp
 
 CMakeFiles/application.dir/Utility/MutableColor.cpp.i: cmake_force
@@ -563,7 +587,7 @@ CMakeFiles/application.dir/Utility/MutableColor.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/application.dir/Utility/MutableNumber.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Utility/MutableNumber.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/MutableNumber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/application.dir/Utility/MutableNumber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/application.dir/Utility/MutableNumber.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Utility/MutableNumber.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/MutableNumber.cpp
 
 CMakeFiles/application.dir/Utility/MutableNumber.cpp.i: cmake_force
@@ -587,7 +611,7 @@ CMakeFiles/application.dir/Utility/MutableNumber.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/application.dir/Utility/Utility.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Utility/Utility.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/Utility.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/application.dir/Utility/Utility.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/application.dir/Utility/Utility.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Utility/Utility.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/Utility.cpp
 
 CMakeFiles/application.dir/Utility/Utility.cpp.i: cmake_force
@@ -611,7 +635,7 @@ CMakeFiles/application.dir/Utility/Utility.cpp.o.provides.build: CMakeFiles/appl
 
 CMakeFiles/application.dir/Utility/Vec2d.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Utility/Vec2d.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/Vec2d.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/application.dir/Utility/Vec2d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/application.dir/Utility/Vec2d.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Utility/Vec2d.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Utility/Vec2d.cpp
 
 CMakeFiles/application.dir/Utility/Vec2d.cpp.i: cmake_force
@@ -635,7 +659,7 @@ CMakeFiles/application.dir/Utility/Vec2d.cpp.o.provides.build: CMakeFiles/applic
 
 CMakeFiles/application.dir/JSON/JSON.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/JSON/JSON.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSON.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/application.dir/JSON/JSON.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/application.dir/JSON/JSON.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/JSON/JSON.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSON.cpp
 
 CMakeFiles/application.dir/JSON/JSON.cpp.i: cmake_force
@@ -659,7 +683,7 @@ CMakeFiles/application.dir/JSON/JSON.cpp.o.provides.build: CMakeFiles/applicatio
 
 CMakeFiles/application.dir/JSON/JSONImpl.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/JSON/JSONImpl.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSONImpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/application.dir/JSON/JSONImpl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/application.dir/JSON/JSONImpl.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/JSON/JSONImpl.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSONImpl.cpp
 
 CMakeFiles/application.dir/JSON/JSONImpl.cpp.i: cmake_force
@@ -683,7 +707,7 @@ CMakeFiles/application.dir/JSON/JSONImpl.cpp.o.provides.build: CMakeFiles/applic
 
 CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSONSerialiser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/JSON/JSONSerialiser.cpp
 
 CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.i: cmake_force
@@ -707,7 +731,7 @@ CMakeFiles/application.dir/JSON/JSONSerialiser.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/application.dir/Random/Random.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Random/Random.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Random/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/application.dir/Random/Random.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/application.dir/Random/Random.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Random/Random.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Random/Random.cpp
 
 CMakeFiles/application.dir/Random/Random.cpp.i: cmake_force
@@ -731,7 +755,7 @@ CMakeFiles/application.dir/Random/Random.cpp.o.provides.build: CMakeFiles/applic
 
 CMakeFiles/application.dir/Random/RandomGenerator.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/Random/RandomGenerator.cpp.o: /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Random/RandomGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/application.dir/Random/RandomGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/application.dir/Random/RandomGenerator.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/application.dir/Random/RandomGenerator.cpp.o -c /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Random/RandomGenerator.cpp
 
 CMakeFiles/application.dir/Random/RandomGenerator.cpp.i: cmake_force
@@ -765,6 +789,7 @@ application_OBJECTS = \
 "CMakeFiles/application.dir/Lab/CircularBody.cpp.o" \
 "CMakeFiles/application.dir/Lab/Grip.cpp.o" \
 "CMakeFiles/application.dir/Lab/Lab.cpp.o" \
+"CMakeFiles/application.dir/Lab/Lampe.cpp.o" \
 "CMakeFiles/application.dir/Lab/Nutriment.cpp.o" \
 "CMakeFiles/application.dir/Lab/NutrimentA.cpp.o" \
 "CMakeFiles/application.dir/Lab/NutrimentB.cpp.o" \
@@ -798,6 +823,7 @@ application: CMakeFiles/application.dir/Lab/Bacterium.cpp.o
 application: CMakeFiles/application.dir/Lab/CircularBody.cpp.o
 application: CMakeFiles/application.dir/Lab/Grip.cpp.o
 application: CMakeFiles/application.dir/Lab/Lab.cpp.o
+application: CMakeFiles/application.dir/Lab/Lampe.cpp.o
 application: CMakeFiles/application.dir/Lab/Nutriment.cpp.o
 application: CMakeFiles/application.dir/Lab/NutrimentA.cpp.o
 application: CMakeFiles/application.dir/Lab/NutrimentB.cpp.o
@@ -822,7 +848,7 @@ application: /usr/local/lib/libsfml-graphics.so.2.5.1
 application: /usr/local/lib/libsfml-window.so.2.5.1
 application: /usr/local/lib/libsfml-system.so.2.5.1
 application: CMakeFiles/application.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable application"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/build-src-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable application"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/application.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -840,6 +866,7 @@ CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/Bacterium.cp
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/CircularBody.cpp.o.requires
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/Grip.cpp.o.requires
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/Lab.cpp.o.requires
+CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/Lampe.cpp.o.requires
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/Nutriment.cpp.o.requires
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/NutrimentA.cpp.o.requires
 CMakeFiles/application.dir/requires: CMakeFiles/application.dir/Lab/NutrimentB.cpp.o.requires

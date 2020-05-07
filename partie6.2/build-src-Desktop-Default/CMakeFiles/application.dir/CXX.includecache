@@ -260,6 +260,18 @@ ADN.hpp
 Lampe.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.hpp
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.cpp
+Lampe.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Application.hpp
+SFML/Graphics.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/SFML/Graphics.hpp
+Utility/Constants.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Utility/Constants.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Utility/Utility.hpp
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/Lampe.hpp
 CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.2/src/Lab/CircularBody.hpp

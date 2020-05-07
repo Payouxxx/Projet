@@ -7,7 +7,8 @@
 using namespace std;
 
 Lab::Lab()
-    : boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0)
+    : boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0),
+      lampe(getApp().getCentre(), 0.5*getApp().getLabSize().x/2.0)
 {}
 
 void Lab::drawOn(sf::RenderTarget &targetWindow) const
@@ -42,7 +43,7 @@ void Lab::addADN(ADN *a){
     if (!boite.addADN(a)) delete a;
 }
 
-void Lab::lightOn()
+bool Lab::lightOn() const
 {
     return lampe.isOn();
 }

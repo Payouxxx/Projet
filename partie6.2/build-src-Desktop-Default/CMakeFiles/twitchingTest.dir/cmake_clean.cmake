@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/twitchingTest.dir/Lab/CircularBody.cpp.o"
   "CMakeFiles/twitchingTest.dir/Lab/Grip.cpp.o"
   "CMakeFiles/twitchingTest.dir/Lab/Lab.cpp.o"
+  "CMakeFiles/twitchingTest.dir/Lab/Lampe.cpp.o"
   "CMakeFiles/twitchingTest.dir/Lab/Nutriment.cpp.o"
   "CMakeFiles/twitchingTest.dir/Lab/NutrimentA.cpp.o"
   "CMakeFiles/twitchingTest.dir/Lab/NutrimentB.cpp.o"

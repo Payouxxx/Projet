@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/application.dir/Lab/CircularBody.cpp.o"
   "CMakeFiles/application.dir/Lab/Grip.cpp.o"
   "CMakeFiles/application.dir/Lab/Lab.cpp.o"
+  "CMakeFiles/application.dir/Lab/Lampe.cpp.o"
   "CMakeFiles/application.dir/Lab/Nutriment.cpp.o"
   "CMakeFiles/application.dir/Lab/NutrimentA.cpp.o"
   "CMakeFiles/application.dir/Lab/NutrimentB.cpp.o"
