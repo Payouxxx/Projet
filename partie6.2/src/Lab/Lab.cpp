@@ -8,7 +8,7 @@ using namespace std;
 
 Lab::Lab()
     : boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0),
-      lampe(getApp().getCentre(), 0.5*getApp().getLabSize().x/2.0)
+      lampe(getApp().getCentre(), 0.18*getApp().getLabSize().x/2.0)
 {}
 
 void Lab::drawOn(sf::RenderTarget &targetWindow) const

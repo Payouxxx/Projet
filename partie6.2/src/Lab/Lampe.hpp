@@ -14,13 +14,13 @@ public:
     void drawOn(sf::RenderTarget& target) const override;
     void update(sf::Time dt) override;
     bool isOn() const;
-    void move();
+    void move(sf::Time dt);
     void setState(bool state);
 
 private:
-    MutableColor color; ///< color
-    bool ON;            ///< true if the lampe is on
-    Vec2d direction;    ///< random direction
+    sf::Color color; ///< color
+    bool ON;         ///< true if the lampe is on
+    Vec2d direction; ///< random direction
 };
 
 #endif // LAMPE_HPP
