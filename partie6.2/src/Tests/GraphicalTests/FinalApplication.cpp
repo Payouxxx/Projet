@@ -56,8 +56,8 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
             break;
 
         case sf::Keyboard::L:
-            if (getEnv().lightOn()) setState(false);
-            else setState(true);
+            if (getEnv().lightOn()) getEnv().setState(false);
+            else getEnv().setState(true);
             break;
 
         case sf::Keyboard::T:
