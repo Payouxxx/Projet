@@ -45,6 +45,11 @@ void Bacterium::update(sf::Time dt)
     if (getAppEnv().doesCollideWithDish(*this)) {
         direction = -(direction); //inverse direction
     }
+    if(getAppEnv().doesCollideWithLight(*this) and getAppEnv().lightOn()){
+        abstinence = true;
+    } else {
+        abstinence = false;
+    }
     if (getAppEnv().getNutrimentColliding(*this) != nullptr) {
         if (!abstinence and compteur>=getDelay()){
             //ajout à l'energie de la bactérie de la quantité
@@ -56,11 +61,7 @@ void Bacterium::update(sf::Time dt)
     if(getAppEnv().getADNColliding(*this) != nullptr and !evolved){
         competence(getAppEnv().getADNColliding(*this));
     }
-    if(getAppEnv().doesCollideWithLight(*this)){
-        abstinence = true;
-    } else {
-        abstinence = false;
-    }
+
     this->divide();
 }
 

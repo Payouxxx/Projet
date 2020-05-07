@@ -63,7 +63,7 @@
 	"consumption" : 0.5
     },
     "Lampe" : {
-	"speed" : 2,
+	"speed" : 1.5,
 	"consumption" : 0.2
     },
     "petri dish" : {

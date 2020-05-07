@@ -8,7 +8,7 @@ using namespace std;
 
 Lab::Lab()
     : boite(getApp().getCentre(), 0.95*getApp().getLabSize().x/2.0),
-      lampe(getApp().getCentre(), 0.18*getApp().getLabSize().x/2.0)
+      lampe(getApp().getCentre(), 0.2*getApp().getLabSize().x/2.0)
 {}
 
 void Lab::drawOn(sf::RenderTarget &targetWindow) const
@@ -22,17 +22,22 @@ void Lab::update(sf::Time dt)
     boite.update(dt);
     automatique.update(dt); //nutrimentGenerator
     time += dt.asSeconds();
-    lampe.update(dt);
+    if (lightOn()) lampe.update(dt);
 }
 
 void Lab::reset(){
     automatique.reset();
     boite.reset();
-    resetTime();
+    resetControls();
 }
 
 bool Lab::contains(const CircularBody& body) const {
     return boite.contains(body);
+}
+
+bool Lab::contains(const Vec2d &point) const
+{
+    return boite.contains(point);
 }
 
 void Lab::addNutriment(Nutriment* n){
@@ -131,6 +136,7 @@ void Lab::resetControls()
     resetTemperature();
     resetGradientExponent();
     resetTime();
+    resetLight();
 }
 
 Swarm* Lab::getSwarmWithId(string id)
@@ -156,4 +162,9 @@ double Lab::getTime() const
 void Lab::resetTime()
 {
     time = 0;
+}
+
+void Lab::resetLight()
+{
+    lampe.reset();
 }

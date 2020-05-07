@@ -85,9 +85,6 @@ void PetriDish::reset() {
     faune.clear();
     food.clear();
     adn.clear();
-
-    resetTemperature();
-    resetGradientExponent();
 }
 
 void PetriDish::resetTemperature(){

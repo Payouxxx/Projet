@@ -38,7 +38,7 @@ public:
     void reset();
 
     /*!
-     * @brief reset all the controls of the Lab (Temperature/Gradient exponent)
+     * @brief reset all the controls of the Lab (Temperature/Gradient exponent/Time/Light)
      */
     void resetControls();
 
@@ -50,6 +50,8 @@ public:
      * @return true if the PetriDish contains body
      */
     bool contains(const CircularBody& body) const;
+
+    bool contains(const Vec2d& point) const;
 
     /*!
      * @brief call the addNutriment method of its PetriDish
@@ -169,6 +171,11 @@ public:
      * @brief reset comptor of time
      */
     void resetTime();
+
+    /*!
+     * @brief switch off the light and put it in the center of the dish
+     */
+    void resetLight();
 
     /*!
      * @brief return current state of the light

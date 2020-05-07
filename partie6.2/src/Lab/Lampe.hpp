@@ -35,6 +35,7 @@ public:
     bool isOn() const;
     void move(sf::Time dt);
     void setState(bool state);
+    void reset();
 
 private:
     sf::Color color; ///< color

@@ -826,11 +826,18 @@ void Application::drawOneControl(sf::RenderWindow& target
         case HORLOGE:
             text = "Time : ";
             text += to_nice_string(mLab->getTime());
+            break;
+        case LIGHT:
+            text = "Light : ";
+            if(mLab->lightOn()){
+                text += "ON";
+            } else {
+                text += "OFF";
+            }
 		default:
 			/* nothing to do */
 			break;
 	}
-	
 	
 	auto legend = sf::Text(text, getAppFont(), font_size);
 	legend.setPosition(xcoord, ycoord);

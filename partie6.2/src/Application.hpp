@@ -133,7 +133,7 @@ public:
      */
     Vec2d getCursorPositionInView() const;
 	
-    enum Control { STATS, TEMPERATURE, GRADIENT, HORLOGE, NB_CONTROLS=4	};
+    enum Control { STATS, TEMPERATURE, GRADIENT, HORLOGE, LIGHT, NB_CONTROLS=4};
 protected:
 	/**
      *  @brief controls the display of statitics

@@ -64,7 +64,7 @@ void Nutriment::update(sf::Time dt)
 {
     if (quantite<=2*getConfig()["quantity"]["max"].toDouble()) {
         if((getAppEnv().getTemperature()<= getConfig()["growth"]["max temperature"].toDouble() and getAppEnv().getTemperature()>=getConfig()["growth"]["min temperature"].toDouble())
-                or getAppEnv().doesCollideWithLight(*this)) {
+                or (getAppEnv().doesCollideWithLight(*this) and getAppEnv().lightOn())) {
             double speed(getConfig()["growth"]["speed"].toDouble());
             auto growth = speed * dt.asSeconds();
             if(getAppEnv().contains(CircularBody(this->getPosition(), quantite+growth))) {

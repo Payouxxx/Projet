@@ -32,24 +32,27 @@ bool Lampe::isOn() const
 
 void Lampe::update(sf::Time dt)
 {
-    //move(dt);
+    move(dt);
 }
 
 void Lampe::move(sf::Time dt)
 {
     if(getAppEnv().doesCollideWithDish(*this)){
-        Vec2d dir(getPosition().fromRandomAngle());
-        for(int i(0); i<20; ++i){
-            Vec2d dir2(getPosition().fromRandomAngle());
-            if(distance(dir2, getApp().getCentre()) < distance(dir, getApp().getCentre())){
-                dir = dir2;
-            }
+        Vec2d dir(Vec2d::fromRandomAngle().normalised());
+        while (!(getAppEnv().contains(getPosition() + dir))){
+            dir = Vec2d::fromRandomAngle().normalised();
         }
         direction = dir;
     }
-    CircularBody::move(direction.normalised()*getConfig()["speed"].toDouble());
+    CircularBody::move(direction*getConfig()["speed"].toDouble());
 }
 void Lampe::setState(bool state)
 {
     ON = state;
+}
+
+void Lampe::reset()
+{
+    ON = false;
+    setPosition(getApp().getCentre());
 }
