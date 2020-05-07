@@ -182,6 +182,13 @@ public:
      */
     void setState(bool onOff);
 
+    /*!
+     * @brief call the doesCollideWithDish method of the PetriDish
+     * @param body (CircularBody)
+     * @return true if body and the lampe are colliding
+     */
+    bool doesCollideWithLight(const CircularBody &body) const;
+
 private:
     PetriDish boite;                ///< the PetriDish
     NutrimentGenerator automatique; ///< creation of new nutriments
