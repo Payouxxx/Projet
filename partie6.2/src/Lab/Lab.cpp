@@ -13,6 +13,7 @@ Lab::Lab()
 void Lab::drawOn(sf::RenderTarget &targetWindow) const
 {
     boite.drawOn(targetWindow);
+    if (lampe.isOn()) lampe.drawOn(targetWindow);
 }
 
 void Lab::update(sf::Time dt)
@@ -20,6 +21,7 @@ void Lab::update(sf::Time dt)
     boite.update(dt);
     automatique.update(dt); //nutrimentGenerator
     time += dt.asSeconds();
+    lampe.update(dt);
 }
 
 void Lab::reset(){
@@ -38,6 +40,16 @@ void Lab::addNutriment(Nutriment* n){
 
 void Lab::addADN(ADN *a){
     if (!boite.addADN(a)) delete a;
+}
+
+void Lab::lightOn()
+{
+    return lampe.isOn();
+}
+
+void Lab::setState(bool onOff)
+{
+    lampe.setState(onOff);
 }
 
 //TEMPERATURE

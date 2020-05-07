@@ -7,6 +7,7 @@
 #include "NutrimentGenerator.hpp"
 #include "Swarm.hpp"
 #include "ADN.hpp"
+#include "Lampe.hpp"
 
 /*!
  * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development and its nutriments
@@ -170,10 +171,23 @@ public:
      */
     void resetTime();
 
+    /*!
+     * @brief return current state of the light
+     * @return bool
+     */
+    bool lightOn() const;
+
+    /*!
+     * @brief make light on or off
+     * @param bool
+     */
+    void setState(bool onOff);
+
 private:
     PetriDish boite;                ///< the PetriDish
     NutrimentGenerator automatique; ///< creation of new nutriments
     double time;                    ///< comptor of time
+    Lampe lampe;                    ///< lampe moving in the lab
 };
 
 #endif // LAB_HPP

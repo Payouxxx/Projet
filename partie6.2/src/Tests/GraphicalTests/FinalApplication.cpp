@@ -55,6 +55,11 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
             getEnv().addADN(new ADN(30, getCursorPositionInView()));
             break;
 
+        case sf::Keyboard::L:
+            if (getEnv().lightOn()) setState(false);
+            else setState(true);
+            break;
+
         case sf::Keyboard::T:
             getEnv().addBacterium(new TwitchingBacterium(getCursorPositionInView()));
             break;
