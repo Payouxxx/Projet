@@ -14,7 +14,7 @@ Lampe::Lampe(Vec2d centre, double rayon)
       direction(Vec2d::fromRandomAngle())
 {}
 
-j::Value const& Lampe::getConfig() const
+j::Value const& Lampe::getConfig()
 {
     return getAppConfig()["Lampe"];
 }
@@ -32,7 +32,7 @@ bool Lampe::isOn() const
 
 void Lampe::update(sf::Time dt)
 {
-    move(dt);
+    //move(dt);
 }
 
 void Lampe::move(sf::Time dt)

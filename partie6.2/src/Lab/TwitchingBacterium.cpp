@@ -94,6 +94,8 @@ void TwitchingBacterium::moveGrip(Vec2d add)
 void TwitchingBacterium::move(sf::Time dt)
 {
     double vitesse_tentacule(getConfig()["tentacle"]["speed"]["initial"].toDouble());
+    double gain(1.0);
+    if(getAbstinence()) gain = Lampe::getConfig()["consumption"].toDouble();
     switch (state) {
         case IDLE: //tentacule au repos
             state = WAIT_TO_DEPLOY;
@@ -111,7 +113,7 @@ void TwitchingBacterium::move(sf::Time dt)
             grapin.move(getDirection() * vitesse_tentacule * dt.asSeconds());
 
             //perte d'énergie
-            consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+            consumeEnergy(gain*getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
 
             //rencontre nutriment
             if(getAppEnv().getNutrimentColliding(grapin) != nullptr){
@@ -128,18 +130,19 @@ void TwitchingBacterium::move(sf::Time dt)
         } else if(getAppEnv().getNutrimentColliding(*this) == nullptr and getAppEnv().getNutrimentColliding(grapin) != nullptr){
             Vec2d dir_tentacule((grapin.getPosition() - getPosition()).normalised());
             this->CircularBody::move(dir_tentacule* vitesse_tentacule * getEnergieMove() * dt.asSeconds());
-            consumeEnergy(getEnergieMove()*vitesse_tentacule * getEnergieMove() * dt.asSeconds());
+            consumeEnergy(gain*getEnergieMove()*vitesse_tentacule * getEnergieMove() * dt.asSeconds());
         } else {
             state = RETRACT;
         }
         break;
 
         case RETRACT:
+        if(getAppEnv().getADNColliding(grapin) != nullptr) competence(getAppEnv().getADNColliding(grapin));
         if(distance(getPosition(), grapin.getPosition()) <= getRadius()){
             state = IDLE;
         } else {
             grapin.move((getPosition() - grapin.getPosition()).normalised());
-            consumeEnergy(getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
+            consumeEnergy(gain*getEnergieTentacle() * vitesse_tentacule * dt.asSeconds());
         }
         break;
 

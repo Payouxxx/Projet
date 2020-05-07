@@ -53,11 +53,15 @@ void Bacterium::update(sf::Time dt)
             compteur = sf::Time::Zero;
         }
     }
-    this->divide();
     if(getAppEnv().getADNColliding(*this) != nullptr and !evolved){
         competence(getAppEnv().getADNColliding(*this));
     }
-
+    if(getAppEnv().doesCollideWithLight(*this)){
+        abstinence = true;
+    } else {
+        abstinence = false;
+    }
+    this->divide();
 }
 
 bool Bacterium::alive() const
@@ -196,4 +200,9 @@ bool Bacterium::getEvolution() const
 Quantity Bacterium::getEnergie() const
 {
     return energie;
+}
+
+bool Bacterium::getAbstinence() const
+{
+    return abstinence;
 }

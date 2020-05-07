@@ -59,49 +59,12 @@
     "ADN" : {
 	"texture" : "ADN.png",
   	"speed" : 1.5,
-	"recovery" : -1,
+	"recovery" : -0.8,
 	"consumption" : 0.5
     },
     "Lampe" : {
-	"color" : {
-                "a" : {
-                    "clamp max" : true,
-                    "clamp min" : true,
-                    "initial" : 1,
-                    "max" : 1,
-                    "min" : 0.5,
-                    "rate" : 0.3,
-                    "sigma" : 0.05
-                },
-                "b" : {
-                    "clamp max" : true,
-                    "clamp min" : true,
-                    "initial" : 0,
-                    "max" : 1,
-                    "min" : 0,
-                    "rate" : 0.95,
-                    "sigma" : 0.15
-                },
-                "g" : {
-                    "clamp max" : true,
-                    "clamp min" : true,
-                    "initial" : 1,
-                    "max" : 1,
-                    "min" : 0,
-                    "rate" : 0.8,
-                    "sigma" : 0.05
-                },
-                "r" : {
-                    "clamp max" : true,
-                    "clamp min" : true,
-                    "initial" : 1,
-                    "max" : 1,
-                    "min" : 0,
-                    "rate" : 0.5,
-                    "sigma" : 0.1
-                }
-	},
-	"speed" : 2
+	"speed" : 2,
+	"consumption" : 0.2
     },
     "petri dish" : {
         "gradient" : {

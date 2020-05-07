@@ -55,7 +55,7 @@ void Lab::setState(bool onOff)
 
 bool Lab::doesCollideWithLight(const CircularBody &body) const
 {
-    return (lampe.contains(body) and lampe.isColliding(body));
+    return (lampe.contains(body));
 }
 
 //TEMPERATURE

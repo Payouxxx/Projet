@@ -85,10 +85,14 @@ void SimpleBacterium::move(sf::Time dt)
     if(deplacement.lengthSquared() > 0.001){ //empêche tremblotements
         this->CircularBody::move(deplacement);
         double factor(getConsumption());
+        double gain(1.0);
         if (getEvolution()){
             factor *= ADN::getConfig()["consumption"].toDouble();
         }
-        consumeEnergy(factor*deplacement.length());
+        if (getAbstinence()){
+            gain = Lampe::getConfig()["consumption"].toDouble();
+        }
+        consumeEnergy(gain*factor*deplacement.length());
     }
     //La vitesse ne varie pas car la force est nulle
     //on utilise pas resultat.speed

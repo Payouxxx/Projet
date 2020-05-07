@@ -205,6 +205,8 @@ public:
      */
     Quantity getEnergie() const;
 
+    bool getAbstinence() const;
+
 private:
     Quantity energie;                                   ///< energy of the bacteria
     Vec2d direction;                                    ///< direction

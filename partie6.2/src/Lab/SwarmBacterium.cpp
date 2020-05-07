@@ -41,8 +41,10 @@ void SwarmBacterium::move(sf::Time dt)
     DiffEqResult resultat(stepDiffEq(getPosition(), getSpeedVector(), dt, *this));
     Vec2d deplacement(resultat.position - getPosition());
     if(deplacement.lengthSquared() > 0.01){ //empêche tremblotements
+        double gain(1.0);
+        if(getAbstinence()) gain = Lampe::getConfig()["consumption"].toDouble();
         this->CircularBody::move(deplacement);
-        consumeEnergy(getConsumption()*deplacement.length());
+        consumeEnergy(gain*getConsumption()*deplacement.length());
         setDirection(resultat.speed.normalised());
     }
     if (getPosition() == groupe->getPositionLeader()) newDirection();
