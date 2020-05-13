@@ -217,12 +217,14 @@ bool Bacterium::infection()
 {
     if (!infected){
         bool infect(bernoulli(getConfig()["infection"].toDouble()));
-        if (infect) energie=0;
+        if (infect) {
+            energie=0;
+            return true;
+        }
         else {
             mutate();
             infected = true;
         }
     } else return false;
-
     return infected;
 }

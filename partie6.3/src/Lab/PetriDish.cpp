@@ -28,7 +28,7 @@ bool PetriDish::addNutriment(Nutriment* n) {
 
 void PetriDish::update(sf::Time dt) {
         for(auto& nutriment : food) {
-            if (nutriment->getRadius()==0) {
+            if (nutriment->getRadius()<=0) {
                 delete nutriment;
                 nutriment=nullptr;
             } //si la quantité (=rayon) vaut zéro le nutriment est supprimé
