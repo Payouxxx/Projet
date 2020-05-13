@@ -183,3 +183,29 @@ Quantity SimpleBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
 }
+
+void SimpleBacterium::competence(ADN* adn)
+{
+    Bacterium::competence(adn);
+    compteur += 1;
+    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
+    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
+    compteur -= 1;
+    Mbetter = (Mbetter*(compteur+1) - getProperty("tumble better").get())/compteur;
+    Mworse = (Mworse*(compteur+1) - getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur+1)) - getProperty("speed").get())/compteur;
+}
+
+bool SimpleBacterium::infection()
+{
+    compteur += 1;
+    Mbetter = ((Mbetter*(compteur-1)) + getProperty("tumble better").get())/compteur;
+    Mworse = ((Mworse*(compteur-1)) + getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur-1)) + getProperty("speed").get())/compteur;
+    compteur -= 1;
+    Mbetter = (Mbetter*(compteur+1) - getProperty("tumble better").get())/compteur;
+    Mworse = (Mworse*(compteur+1) - getProperty("tumble worse").get())/compteur;
+    Mspeed = ((Mspeed*(compteur+1)) - getProperty("speed").get())/compteur;
+    return Bacterium::infection();
+}

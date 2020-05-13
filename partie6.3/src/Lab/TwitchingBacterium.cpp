@@ -185,3 +185,36 @@ void TwitchingBacterium::divide()
         setDirection(-getDirection());
     }
 }
+
+
+void TwitchingBacterium::competence(ADN* adn)
+{
+    Bacterium::competence(adn);
+    compteur -= 1;
+    if(compteur == 0){
+        Mlength = 0.0;
+        Mspeed = 0.0;
+    } else {
+        Mlength = (Mlength*(compteur+1) - getProperty("length tentacle").get())/compteur;
+        Mspeed = (Mspeed*(compteur+1) - getProperty("speed").get())/compteur;
+    }
+    compteur += 1;
+    Mlength = (Mlength*(compteur-1) + getProperty("length tentacle").get())/compteur;
+    Mspeed = (Mspeed*(compteur-1) + getProperty("speed").get())/compteur;
+}
+
+bool TwitchingBacterium::infection()
+{
+    compteur -= 1;
+    if(compteur == 0){
+        Mlength = 0.0;
+        Mspeed = 0.0;
+    } else {
+        Mlength = (Mlength*(compteur+1) - getProperty("length tentacle").get())/compteur;
+        Mspeed = (Mspeed*(compteur+1) - getProperty("speed").get())/compteur;
+    }
+    compteur += 1;
+    Mlength = (Mlength*(compteur-1) + getProperty("length tentacle").get())/compteur;
+    Mspeed = (Mspeed*(compteur-1) + getProperty("speed").get())/compteur;
+    return Bacterium::infection();
+}

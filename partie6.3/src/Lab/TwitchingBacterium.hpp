@@ -105,6 +105,8 @@ public:
      */
     virtual void divide();
 
+    virtual void competence(ADN* adn) override;
+    virtual bool infection() override;
 
 public:
     static double Mlength;   ///< average values of mutableNumber tenatcule length

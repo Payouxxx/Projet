@@ -192,7 +192,7 @@ public:
      * call the eaten method of the adn, indicate that the bacteria is now "competente"
      * @param adn
      */
-    void competence(ADN* adn);
+    virtual void competence(ADN* adn);
 
     /*!
      * @brief getEvolution methode
@@ -206,9 +206,18 @@ public:
      */
     Quantity getEnergie() const;
 
+    /*!
+     * @brief get bool abstinence state of the bacteria
+     * @return bool
+     */
     bool getAbstinence() const;
 
-    bool infection();
+    /*!
+     * @brief infect bacteria with differnt probability depending on the type
+     *        (use of getConfig())
+     * @return if infection succed (and always false if was already infected)
+     */
+    virtual bool infection();
 
 private:
     Quantity energie;                                   ///< energy of the bacteria
@@ -219,7 +228,7 @@ private:
     std::map<std::string, MutableNumber> parametres;    ///< list of parameters
     double angleDir;                                    ///< direction angle
     bool evolved;                                       ///< true = the bacteria has absorbed DNA
-    bool infected;
+    bool infected;                                      ///< true = the bacteria has been infected
 };
 
 

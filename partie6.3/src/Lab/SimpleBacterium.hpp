@@ -115,6 +115,8 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    virtual void competence(ADN* adn) override;
+    virtual bool infection() override;
 
 public:
     static double compteur;       ///< counter of created instances
