@@ -20,3 +20,4 @@ T    : add Twitching bacterium
 	  of type 1-2-3-4-5
 A	: add piece of DNA
 L  : switch on/off the light
+V : add a virus
