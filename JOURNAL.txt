@@ -42,3 +42,7 @@ SEMAINE 8
 Codage de la classe ADN qui ajoute des morceaux d'ADN dans le lab en appuyant sur le touche A. Absorber de l'ADN permet au Swarm de ne plus être sensibles au poison des nutriments bleus, aux Twtching de se diviser et les deux clones auront 2/3 de l'énergie initiale et les Simple vont plus vite mais ont un Consumption factor atténué qui leur permet de perdre moins d'énergie malgré leur vitesse accrue.
 -jeudi : création d'une lampe parcourant la boite de pétri. Possibilité de l'activer ou la désactiver avec la touche L.
 Le lab possède une lampe au même titre qu'une boite de pétri, c'est donc un attribut de la classe lab. Lorsque la lampe passe totalement au dessus des nutriments ceux ci se mettent à grossir peu importe la température, et le bactéries deviennent abstinentes et ne sont plus capable de se nourir.
+
+SEMAINE 9
+-mercredi : codage d'une nouvelle classe, modélisant des virus. Ceux ci ont une durée de vie limitée s'ils ne réussissent pas à infecter une bactérie. Les bactéries quant à elles, une fois infectées par un virus (si elles survivent) ne sont plus capables de se diviser et après une derniere mutation ne mutent plus.
+Nous avons aussi remplacé le graph des températures par celui du nombre de virus présents (cela nous semplait etre une meilleure idée).
