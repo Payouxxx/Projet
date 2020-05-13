@@ -44,13 +44,16 @@ public:
 
     /*!
      * @brief call the contains method of its PetriDish
-     *
      * @param body (CircularBody)
-     *
      * @return true if the PetriDish contains body
      */
     bool contains(const CircularBody& body) const;
 
+    /*!
+     * @brief call the contains method of its PetriDish
+     * @param point (Vec2d)
+     * @return true if the PetriDish contains the point
+     */
     bool contains(const Vec2d& point) const;
 
     /*!

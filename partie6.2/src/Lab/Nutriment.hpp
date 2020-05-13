@@ -55,6 +55,7 @@ public:
     /*!
      * @brief updatde nutriment simulation (make it grow if optimal temparature, new nutriment contained
      * in the petri dish and new quantity inferior than the double of the initial one)
+     *        nutriment also grow if it is contained in the light
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void update(sf::Time dt);
