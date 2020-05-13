@@ -8,45 +8,45 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="twitchingTest">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/twitchingTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/twitchingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -57,22 +57,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 twitchingTest"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 twitchingTest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="twitchingTest/fast">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/twitchingTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/twitchingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -83,32 +83,32 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 twitchingTest/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 twitchingTest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="application-run">
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application-run"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application-run"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simpleBactTest">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/simpleBactTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/simpleBactTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -119,22 +119,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 simpleBactTest"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 simpleBactTest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simpleBactTest/fast">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/simpleBactTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/simpleBactTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -145,22 +145,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 simpleBactTest/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 simpleBactTest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="application">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/application" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/application" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -171,22 +171,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="application/fast">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/application" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/application" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -197,22 +197,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 application/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="swarmTest">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/swarmTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/swarmTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -223,22 +223,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 swarmTest"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 swarmTest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="swarmTest/fast">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/swarmTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/swarmTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -249,22 +249,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 swarmTest/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 swarmTest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="nutrimentTest">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/nutrimentTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/nutrimentTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -275,22 +275,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 nutrimentTest"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 nutrimentTest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="nutrimentTest/fast">
-				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/nutrimentTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default"/>
+				<Option output="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/nutrimentTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include"/>
-					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include"/>
+					<Add directory="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -301,467 +301,467 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 nutrimentTest/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 nutrimentTest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Application.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Application.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Application.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Application.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Config.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Config.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Config.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Config.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Interface/Drawable.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Interface/Drawable.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Interface/Updatable.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Interface/Updatable.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSON.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSON.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSON.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSON.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSONImpl.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSONImpl.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSONImpl.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSONImpl.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSONSerialiser.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSONSerialiser.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/JSON/JSONSerialiser.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/JSON/JSONSerialiser.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/ADN.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/ADN.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/ADN.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Bacterium.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Bacterium.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Bacterium.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Bacterium.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/CircularBody.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/CircularBody.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/CircularBody.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/CircularBody.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Grip.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Grip.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Grip.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Grip.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Lab.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Lab.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Lab.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Lab.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Nutriment.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Nutriment.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Nutriment.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Nutriment.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentA.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentA.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentA.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentB.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentB.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentB.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentGenerator.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentGenerator.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/NutrimentGenerator.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/NutrimentGenerator.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/PetriDish.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/PetriDish.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/PetriDish.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/PetriDish.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SimpleBacterium.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/SimpleBacterium.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SimpleBacterium.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/SimpleBacterium.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Swarm.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Swarm.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/Swarm.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/Swarm.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SwarmBacterium.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/SwarmBacterium.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/SwarmBacterium.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/SwarmBacterium.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/TwitchingBacterium.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/TwitchingBacterium.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Lab/TwitchingBacterium.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Lab/TwitchingBacterium.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Random/Random.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Random/Random.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Random/Random.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Random/Random.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Random/RandomGenerator.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Random/RandomGenerator.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Random/RandomGenerator.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Random/RandomGenerator.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Stats/Graph.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Stats/Graph.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Stats/Graph.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Stats/Graph.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Stats/Stats.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Stats/Stats.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Stats/Stats.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Stats/Stats.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/FinalApplication.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/FinalApplication.cpp">
 			<Option target="application"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/FinalApplication.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/FinalApplication.hpp">
 			<Option target="application"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/NutrimentTest.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/NutrimentTest.cpp">
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/SimpleBacteriaTest.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/SimpleBacteriaTest.cpp">
 			<Option target="simpleBactTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/SwarmBacteriaTest.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/SwarmBacteriaTest.cpp">
 			<Option target="swarmTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests/GraphicalTests/TwitchingBacteriaTest.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests/GraphicalTests/TwitchingBacteriaTest.cpp">
 			<Option target="twitchingTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Constants.hpp">
-			<Option target="twitchingTest"/>
-			<Option target="simpleBactTest"/>
-			<Option target="application"/>
-			<Option target="swarmTest"/>
-			<Option target="nutrimentTest"/>
-		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/DiffEqSolver.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Constants.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/DiffEqSolver.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/DiffEqSolver.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/MutableColor.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/DiffEqSolver.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/MutableColor.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/MutableColor.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/MutableNumber.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/MutableColor.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/MutableNumber.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/MutableNumber.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Types.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/MutableNumber.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Utility.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Types.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Utility.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Utility.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Vec2d.cpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Utility.hpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Utility/Vec2d.hpp">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Vec2d.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>
 			<Option target="application"/>
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/CMakeLists.txt">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Utility/Vec2d.hpp">
+			<Option target="twitchingTest"/>
+			<Option target="simpleBactTest"/>
+			<Option target="application"/>
+			<Option target="swarmTest"/>
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../../../../../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>

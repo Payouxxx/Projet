@@ -53,6 +53,7 @@ void FinalApplication::onEvent(sf::Event event, sf::RenderWindow&)
 
         case sf::Keyboard::A:
             getEnv().addADN(new ADN(30, getCursorPositionInView()));
+            std::cout << "ADN" << std::endl;
             break;
 
         case sf::Keyboard::L:

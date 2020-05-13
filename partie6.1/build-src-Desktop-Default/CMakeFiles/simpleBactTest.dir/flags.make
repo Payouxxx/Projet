@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/../extlib/Catch/include -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6/src/Tests -isystem /usr/local/include 
+CXX_INCLUDES = -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/../extlib/Catch/include -I/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.1/src/Tests -isystem /usr/local/include 
 
