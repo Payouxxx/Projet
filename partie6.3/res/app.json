@@ -68,7 +68,8 @@
     },
     "Virus" : {
 	"life time" : 10,
-	"texture" : "virus.png"
+	"texture" : "virus.png",
+	"speed" : 1.5
     },
     "petri dish" : {
         "gradient" : {
@@ -144,6 +145,7 @@
             "rate" : 0.8,
             "sigma" : 0.4
         },
+	"infection" : 0.7,
         "tumble" : {
             "algo" : "best of N",
             "better" : {
@@ -217,7 +219,8 @@
         },
         "speed" : {
             "initial" : 30
-        }
+        },
+	"infection" : 0.5
     },
     "swarms" : {
         "1" : {
@@ -483,6 +486,7 @@
             "min" : 10
         },
         "speed factor" : 0.75,
+	"infection" : 0.9,
         "tentacle" : {
             "length" : {
                 "initial" : 120,
