@@ -46,3 +46,4 @@ Le lab possède une lampe au même titre qu'une boite de pétri, c'est donc un a
 SEMAINE 9
 -mercredi : codage d'une nouvelle classe, modélisant des virus. Ceux ci ont une durée de vie limitée s'ils ne réussissent pas à infecter une bactérie. Les bactéries quant à elles, une fois infectées par un virus (si elles survivent) ne sont plus capables de se diviser et après une derniere mutation ne mutent plus.
 Nous avons aussi remplacé le graph des températures par celui du nombre de virus présents (cela nous semplait etre une meilleure idée).
+-dimanche : codage de la dégradation des nutriments en fonction du temps, et les swarms sont maintenant capable de créer du poison qui consumme l'énergie des bactéries non swarm touchées, puis disparait (le poison disparait aussi quand il touche le bord de la boite et avance en ligne droite depuis son lieu d'émission qui est le leader, il est émis au bout d'un certain temps qui est défini dans le fichier app.json)
