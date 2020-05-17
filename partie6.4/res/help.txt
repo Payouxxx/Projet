@@ -1,0 +1,23 @@
+--------- Help ----------------
+CC : current control (in red)
+MW : mouse wheel
+-------------------------------
+Space	: toggle pause
+D	: toggle debug mode
+R	: resets simulation
+MW	: Zoom
+Esc	: close window
+C	: refresh config
+Arrows : move simulation view
+Tab  : switch to next control
+PageUp	: increase CC
+PageDown  : decrease CC
+N    : add green nutriment
+Shift-N : add blue nutriment
+S    : add simple bacterium
+T    : add Twitching bacterium
+1-2-3-4-5  : add swarm bacterium
+	  of type 1-2-3-4-5
+A	: add piece of DNA
+L  : switch on/off the light
+V : add a virus

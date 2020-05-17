@@ -1,4 +1,4 @@
- #ifndef GRIP_HPP
+#ifndef GRIP_HPP
 #define GRIP_HPP
 
 #include "CircularBody.hpp"
