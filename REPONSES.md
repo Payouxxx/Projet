@@ -290,7 +290,6 @@
 
 
 - Le destructeur de PetrDish se charge d'éliminer les bactéries de l'assiette mais le destructeur de Swarm doit se charger d'éliminer les bactéries de son swarm s'il disparait avant la PetriDish.
-- Si le Swarm meurt seulement quand il n'y a plus de bactéries dedans, cependant, alors l'assiette s'est déjà occupée de l'élimination des bactéries.
 
 *************************************************
 ##Q4.11
