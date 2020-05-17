@@ -62,6 +62,7 @@ void Nutriment::drawOn(sf::RenderTarget& target) const{
 
 void Nutriment::update(sf::Time dt)
 {
+    compteur += dt.asSeconds();
     if (quantite<=2*getConfig()["quantity"]["max"].toDouble()) {
         if((getAppEnv().getTemperature()<= getConfig()["growth"]["max temperature"].toDouble() and getAppEnv().getTemperature()>=getConfig()["growth"]["min temperature"].toDouble())
                 or (getAppEnv().doesCollideWithLight(*this) and getAppEnv().lightOn())) {
@@ -74,8 +75,8 @@ void Nutriment::update(sf::Time dt)
             }
         }
     }
-    if (compteur > getConfig()["degradation time"].toDouble()){
-        takeQuantity(getConfig()["degradation factor"].toDouble()*(compteur-getConfig()["degradation time"].toDouble()));
+    if (compteur > getConfig()["time"].toDouble()){
+        takeQuantity(getConfig()["degradation factor"].toDouble()*(compteur-getConfig()["time"].toDouble()));
     }
 }
 

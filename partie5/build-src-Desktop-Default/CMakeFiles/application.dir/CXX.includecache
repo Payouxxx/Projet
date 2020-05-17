@@ -353,8 +353,6 @@ SwarmBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/SwarmBacterium.hpp
 TwitchingBacterium.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/TwitchingBacterium.hpp
-../Config.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Config.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Lab/PetriDish.hpp
 iostream
@@ -585,12 +583,12 @@ Lab/SwarmBacterium.hpp
 -
 Lab/TwitchingBacterium.hpp
 -
+Lab/NutrimentA.hpp
+-
+Lab/NutrimentB.hpp
+-
 FinalApplication.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/FinalApplication.hpp
-Lab/NutrimentA.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/Lab/NutrimentA.hpp
-Lab/NutrimentB.hpp
-/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie5/src/Tests/GraphicalTests/Lab/NutrimentB.hpp
 cassert
 -
 iostream

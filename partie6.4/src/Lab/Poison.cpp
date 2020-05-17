@@ -1,9 +1,10 @@
 #include "Poison.hpp"
 #include "SFML/Graphics.hpp"
 #include "Utility/Utility.hpp"
+#include "../Application.hpp"
 
-Poison::Poison(Vec2d centre, double rayon, Vec2d dir)
-    : CircularBody(centre, rayon), color(233, 21, 218), direction(dir)
+Poison::Poison(Vec2d centre, double rayon, Vec2d dir, std::string id)
+    : CircularBody(centre, rayon), color(233, 21, 218), direction(dir), vanished(false), identificateur(id)
 {}
 
 void Poison::drawOn(sf::RenderTarget &target) const
@@ -14,5 +15,31 @@ void Poison::drawOn(sf::RenderTarget &target) const
 
 void Poison::move()
 {
+    if(getAppEnv().doesCollideWithDish(*this)){
+        vanished = true;
+    }
+    CircularBody::move(direction);
+}
 
+Poison::~Poison()
+{}
+
+void Poison::update(sf::Time dt)
+{
+    move();
+}
+
+bool Poison::isVanished() const
+{
+    return vanished;
+}
+
+void Poison::setVanished(bool b)
+{
+    vanished = b;
+}
+
+std::string Poison::getId() const
+{
+    return identificateur;
 }

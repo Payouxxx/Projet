@@ -219,6 +219,8 @@ public:
      */
     virtual bool infection();
 
+    virtual void poisonned() =0;
+
 private:
     Quantity energie;                                   ///< energy of the bacteria
     Vec2d direction;                                    ///< direction

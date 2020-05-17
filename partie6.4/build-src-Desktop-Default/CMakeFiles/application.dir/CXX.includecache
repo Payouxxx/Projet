@@ -197,6 +197,8 @@ iostream
 -
 Random/Random.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Random/Random.hpp
+Poison.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Bacterium.hpp
 ../Interface/Drawable.hpp
@@ -444,11 +446,23 @@ Virus.hpp
 Poison.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.hpp
 
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.cpp
+Poison.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.hpp
+SFML/Graphics.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/SFML/Graphics.hpp
+Utility/Utility.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Utility/Utility.hpp
+../Application.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Application.hpp
+
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.hpp
 CircularBody.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/CircularBody.hpp
 Interface/Drawable.hpp
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Interface/Drawable.hpp
+Interface/Updatable.hpp
+/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Interface/Updatable.hpp
 
 /home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/SimpleBacterium.cpp
 SimpleBacterium.hpp

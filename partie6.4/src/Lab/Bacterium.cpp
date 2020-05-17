@@ -10,6 +10,7 @@
 #include "ADN.hpp"
 #include <iostream>
 #include "Random/Random.hpp"
+#include "Poison.hpp"
 
 using namespace std;
 
@@ -64,6 +65,7 @@ void Bacterium::update(sf::Time dt)
         competence(getAppEnv().getADNColliding(*this));
     }
 
+    poisonned();
     this->divide();
 }
 
@@ -114,14 +116,6 @@ Quantity Bacterium::getEnergieMin() const
 
 MutableNumber Bacterium::getProperty(const string &name) const
 {
-    /*try{
-        auto paire = parametres.find(name);
-        return paire->second;
-    } catch(out_of_range){
-        cerr << "out of range";
-    } catch(invalid_argument){
-        cerr << "invalid argument";
-    }*/
     auto paire = parametres.find(name);
     return paire->second;
 }

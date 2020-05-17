@@ -18,7 +18,8 @@ SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp) //uniform fait automa
                 Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
                 grp->getOriginalColor()),
       groupe(grp),
-      directionPoison(Vec2d::fromRandomAngle())
+      directionPoison(Vec2d::fromRandomAngle()),
+      timePoison(0.0)
 {
     groupe->addSwarmBacterium(this);
     //pas de caractéristiques mutables autre que couleur
@@ -82,7 +83,6 @@ Vec2d SwarmBacterium::getSpeedVector() const
     return getDirection().normalised()*getConfig()["speed"]["initial"].toDouble();
 }
 
-
 Quantity SwarmBacterium::eatableQuantity(NutrimentB& nutriment)
 {
     return nutriment.eatenBy(*this);
@@ -100,9 +100,19 @@ Quantity SwarmBacterium::getMaxEatableQuantity() const
 
 void SwarmBacterium::update(sf::Time dt)
 {
-    if(groupe->getSize() > getConfig()["size"].toDouble()){
+    timePoison += dt.asSeconds();
+    if(groupe->getSize() > getConfig()["size"].toDouble() and timePoison > getConfig()["poison time"].toDouble()){
         directionPoison = Vec2d::fromAngle(directionPoison.angle()+dt.asSeconds());
-        getAppEnv().addPoison(new Poison (groupe->getPositionLeader(), getConfig()["poison radius"].toDouble(), directionPoison.normalised()));
+        getAppEnv().addPoison(new Poison(groupe->getPositionLeader(), getConfig()["poison radius"].toDouble(), directionPoison.normalised(), groupe->getIdentificator()));
+        timePoison = 0.0;
        }
     Bacterium::update(dt);
+}
+
+void SwarmBacterium::poisonned()
+{
+    if(getAppEnv().getPoisonColliding(*this) != nullptr and getAppEnv().getPoisonColliding(*this)->getId() != groupe->getIdentificator()){
+        consumeEnergy(getConfig()["poison"].toDouble());
+        getAppEnv().getPoisonColliding(*this)->setVanished(true);
+    }
 }

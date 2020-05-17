@@ -209,3 +209,11 @@ bool SimpleBacterium::infection()
     Mspeed = ((Mspeed*(compteur+1)) - getProperty("speed").get())/compteur;
     return Bacterium::infection();
 }
+
+void SimpleBacterium::poisonned()
+{
+    if(getAppEnv().getPoisonColliding(*this) != nullptr) {
+        getAppEnv().getPoisonColliding(*this)->setVanished(true);
+        consumeEnergy(getConfig()["poison"].toDouble());
+    }
+}

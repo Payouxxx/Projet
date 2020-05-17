@@ -117,6 +117,7 @@ public:
 
     virtual void competence(ADN* adn) override;
     virtual bool infection() override;
+    virtual void poisonned() override;
 
 public:
     static double compteur;       ///< counter of created instances

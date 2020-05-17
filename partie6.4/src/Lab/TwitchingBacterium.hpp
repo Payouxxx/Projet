@@ -107,6 +107,8 @@ public:
 
     virtual void competence(ADN* adn) override;
     virtual bool infection() override;
+    virtual void poisonned() override;
+
 
 public:
     static double Mlength;   ///< average values of mutableNumber tenatcule length

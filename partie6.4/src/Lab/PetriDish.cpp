@@ -69,6 +69,15 @@ void PetriDish::update(sf::Time dt) {
             if (v != nullptr) v->update(dt);
         }
         phages.erase(remove(phages.begin(), phages.end(), nullptr), phages.end());
+
+        for (auto& p : poison){
+            if (p->isVanished()){
+                delete p;
+                p = nullptr;
+            }
+            if(p != nullptr) p->update(dt);
+        }
+        poison.erase(remove(poison.begin(), poison.end(), nullptr), poison.end());
 }
 
 void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
@@ -87,6 +96,9 @@ void PetriDish::drawOn(sf::RenderTarget &targetWindow) const{
     for (auto& v : phages){
         if(v != nullptr) v->drawOn(targetWindow);
     }
+    for (auto& p : poison){
+        if(p != nullptr) p->drawOn(targetWindow);
+    }
 }
 
 void PetriDish::reset() {
@@ -94,11 +106,13 @@ void PetriDish::reset() {
     for (auto& nutriment : food) delete nutriment;
     for (auto& a : adn) delete a;
     for (auto& v : phages) delete v;
+    for (auto& p : poison) delete p;
 
     faune.clear();
     food.clear();
     adn.clear();
     phages.clear();
+    poison.clear();
 }
 
 void PetriDish::resetTemperature(){
@@ -134,6 +148,10 @@ PetriDish::~PetriDish(){
     for (auto& v : phages){
         delete v;
         v = nullptr;
+    }
+    for (auto& p : poison){
+        delete p;
+        p = nullptr;
     }
 }
 
@@ -243,8 +261,6 @@ void PetriDish::resetGradientExponent()
 {
     puissance = (getAppConfig()["petri dish"]["gradient"]["exponent"]["max"].toDouble() + getAppConfig()["petri dish"]["gradient"]["exponent"]["min"].toDouble())/2;
 }
-
-
 
 Swarm* PetriDish::getSwarmWithId(string id)
 {

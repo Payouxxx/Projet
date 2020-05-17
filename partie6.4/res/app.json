@@ -40,7 +40,7 @@
             },
             "texture" : "foodA.png",
 	    "time" : 20,
-	    "degradatation factor" : 0.3
+	    "degradation factor" : 0.01
         },
         "B" : {
             "growth" : {
@@ -57,7 +57,7 @@
             "resistance factor" : 5,
             "texture" : "foodB.png",
 	    "time" : 25,
-	    "degradatation factor" : 0.3
+	    "degradation factor" : 0.03
         }
     },
     "ADN" : {
@@ -150,6 +150,7 @@
             "sigma" : 0.4
         },
 	"infection" : 0.3,
+	"poison" : 10,
         "tumble" : {
             "algo" : "best of N",
             "better" : {
@@ -226,7 +227,9 @@
         },
 	"infection" : 0.1,
 	"size" : 15,
-	"poison radius" : 15
+	"poison radius" : 9,
+	"poison time" : 2,
+	"poison" : 5
     },
     "swarms" : {
         "1" : {
@@ -493,6 +496,7 @@
         },
         "speed factor" : 0.75,
 	"infection" : 0.5,
+	"poison" : 15,
         "tentacle" : {
             "length" : {
                 "initial" : 120,

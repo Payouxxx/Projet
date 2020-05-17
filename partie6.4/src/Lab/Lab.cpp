@@ -47,6 +47,11 @@ void Lab::addNutriment(Nutriment* n){
     }
 }//si pas possible d'ajouter alors supprimé de la zone mémoire
 
+void Lab::addSwarm(Swarm *s)
+{
+    boite.addSwarm(s);
+}
+
 void Lab::addADN(ADN *a){
     if (!boite.addADN(a)) {
         delete a;
@@ -67,6 +72,13 @@ void Lab::addPoison(Poison *p){
         p = nullptr;
     }
 }
+
+void Lab::addBacterium(Bacterium *b)
+{
+    if (!boite.addBacterium(b)) {
+        delete b;
+    }
+} //si pas possible d'ajouter alors supprimé de la zone mémoire
 
 bool Lab::lightOn() const
 {
@@ -99,17 +111,7 @@ void Lab::decreaseTemperature(){
 
 void Lab::resetTemperature() {
     boite.resetTemperature();
-};
-
-
-void Lab::addBacterium(Bacterium *b)
-{
-    if (!boite.addBacterium(b)) {
-        delete b;
-        b = nullptr;
-    }
-} //si pas possible d'ajouter alors supprimé de la zone mémoire
-
+}
 
 bool Lab::doesCollideWithDish(CircularBody const& body) const
 {
@@ -179,11 +181,6 @@ void Lab::resetControls()
 Swarm* Lab::getSwarmWithId(string id)
 {
     return boite.getSwarmWithId(id);
-}
-
-void Lab::addSwarm(Swarm *s)
-{
-    boite.addSwarm(s);
 }
 
 unordered_map<string, double> Lab::fetchData(const string & name) const

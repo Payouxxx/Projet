@@ -546,6 +546,20 @@
 			<Option target="swarmTest"/>
 			<Option target="nutrimentTest"/>
 		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.cpp">
+			<Option target="twitchingTest"/>
+			<Option target="simpleBactTest"/>
+			<Option target="application"/>
+			<Option target="swarmTest"/>
+			<Option target="nutrimentTest"/>
+		</Unit>
+		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/Poison.hpp">
+			<Option target="twitchingTest"/>
+			<Option target="simpleBactTest"/>
+			<Option target="application"/>
+			<Option target="swarmTest"/>
+			<Option target="nutrimentTest"/>
+		</Unit>
 		<Unit filename="/home/payoux/Desktop/myfiles/Programmation/cpp/Projet/partie6.4/src/Lab/SimpleBacterium.cpp">
 			<Option target="twitchingTest"/>
 			<Option target="simpleBactTest"/>

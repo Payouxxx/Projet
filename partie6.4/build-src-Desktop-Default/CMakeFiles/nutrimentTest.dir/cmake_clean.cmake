@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/nutrimentTest.dir/Lab/NutrimentB.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/NutrimentGenerator.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/PetriDish.cpp.o"
+  "CMakeFiles/nutrimentTest.dir/Lab/Poison.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/SimpleBacterium.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/Swarm.cpp.o"
   "CMakeFiles/nutrimentTest.dir/Lab/SwarmBacterium.cpp.o"
