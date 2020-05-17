@@ -63,12 +63,18 @@ public:
      */
     ~Swarm();
 
-    int getSize() const;
+    /*!
+     * @brief getConfig to access to some values in the app.json file associated to the swarms
+     * @return
+     */
+    j::Value& getConfig() const;
 
 private:
     std::string identificateur;                ///< number of the swarm
     std::vector<SwarmBacterium*> bacteries;    ///< bacteria which are part of the swarm
     SwarmBacterium* leader;                    ///< leader of the swarm (attracts others)
+    Vec2d directionPoison;                     ///< direction the poisons thrown will take
+    double timePoison;                         ///< time before throwing another piece of poison
 };
 
 #endif // SWARM_HPP

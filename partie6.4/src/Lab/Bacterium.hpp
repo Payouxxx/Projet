@@ -43,8 +43,9 @@ public:
      *        make the bacteria move thanks to call to the move method
      *        make the bacteria eat nutriments
      *        make the bacteria divide (random)
-     *        make the bacteria eat adn if it's the first one
+     *        make the bacteria eat adn if not evolved
      *        make the bacteria unable to eat if contained in the light (energy decreases slower)
+     *        call the poisonned method of each subclass if it collides with a piece of poison
      *
      * @param dt (sf::Time)
      */
@@ -163,7 +164,7 @@ public:
     sf::Color getColor() const;
 
     /*!
-     * @brief select best of 20 randow direction depending on score and set it as the new direction
+     * @brief select best of 20 randow direction depending on nutriment score and set it as the new direction
      */
     void newDirection();
 
@@ -219,6 +220,9 @@ public:
      */
     virtual bool infection();
 
+    /*!
+     * @brief poisonned method, virtual pure, each subclass has to redefine it
+     */
     virtual void poisonned() =0;
 
 private:

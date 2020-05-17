@@ -56,6 +56,7 @@ public:
      * @brief updatde nutriment simulation (make it grow if optimal temparature, new nutriment contained
      * in the petri dish and new quantity inferior than the double of the initial one)
      *        nutriment also grow if it is contained in the light
+     *        nutriment starts to degrade after a time defined in the app.json file
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void update(sf::Time dt);
@@ -96,7 +97,7 @@ public:
 
 private:
     Quantity quantite; ///< quantity of the nutriment
-    double compteur;
+    double compteur;   ///< counter since its creation
 };
 
 

@@ -20,7 +20,6 @@
 /*!
  * @brief the PetriDish class modeling a petridish and all that it contains
  */
-
 class PetriDish : public CircularBody, public Drawable, public Updatable
 {
 public:
@@ -46,12 +45,17 @@ public:
     bool addADN(ADN* a);
 
     /*!
-     * @brief add an virus in the petridish (if contained)
+     * @brief add a virus in the petridish (if contained)
      * @param virus we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
     bool addVirus(Virus* v);
 
+    /*!
+     * @brief add a poison in the petridish (if contained)
+     * @param poison we want to add (pointer)
+     * @return booleen indicating if adding was successful or not
+     */
     bool addPoison(Poison* p);
 
     /*!
@@ -71,7 +75,6 @@ public:
      * @brief reset petridish simulation (erase everything contained and reset temperature and gradient exponent)
      */
     void reset();
-
 
     /*!
       * @brief get current temperature of the petri dish
@@ -132,8 +135,20 @@ public:
      */
     ADN* getADNcolliding(CircularBody const& body) const;
 
+    /*!
+     * @brief get the first Poison colliding with the circular body we chose
+     * @param circular body which can collide a piece of poison
+     * @return nullprr if the body isn't colliding with any poison,
+     * else a pointer toward the poison the body is collinding with
+     */
     Poison* getPoisonColliding(CircularBody const& body) const;
 
+    /*!
+     * @brief get the first Bacterium colliding with the circular body we chose
+     * @param circular body which can collide a bacterium
+     * @return nullprr if the body isn't colliding with any bacterium,
+     * else a pointer toward the bacterium the body is collinding with
+     */
     Bacterium* getBacteriumColliding(CircularBody const& body) const;
 
     /*!
@@ -200,14 +215,14 @@ public:
     enum statistic {NUTRIMENT_QUANTITY, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};
 
 private:
-    std::vector<Bacterium*> faune;   ///< the whole bacteria in the petri dish
-    std::vector<Nutriment*> food;    ///< the whole nutriments in the petri dish
+    std::vector<Bacterium*> faune;   ///< all the bacteria in the petri dish
+    std::vector<Nutriment*> food;    ///< all the nutriments in the petri dish
     double temperature;              ///< temperature of the petri dish
     double puissance;                ///< used to calculate gradient exponent
-    std::vector<Swarm*> groupes;     ///< the whole swarms in the petri dish
-    std::vector<ADN*> adn;           ///< the whole ADN in the petri dish
-    std::vector<Virus*> phages;      ///< the whole virus in the petri dish
-    std::vector<Poison*> poison;
+    std::vector<Swarm*> groupes;     ///< all the swarms in the petri dish
+    std::vector<ADN*> adn;           ///< all the ADN in the petri dish
+    std::vector<Virus*> phages;      ///< all the virus in the petri dish
+    std::vector<Poison*> poison;     ///< all the poison in the petri dish
 
 };
 

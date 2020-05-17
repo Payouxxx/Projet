@@ -105,8 +105,23 @@ public:
      */
     virtual void divide();
 
+    /*!
+     * @brief after eating a piece of ADN, the bacterium has new parameters we have to take them into account
+     * when calculating different stats, also it calls the Bacterium method competence
+     * @param adn
+     */
     virtual void competence(ADN* adn) override;
+
+    /*!
+     * @brief after colliding with a virus, the bacterium has new parameters we have to take them into account
+     * when calculating different stats, also it calls the Bacterium method infection
+     * @return true if the bacterium has been infected
+     */
     virtual bool infection() override;
+
+    /*!
+     * @brief if the bacterium collides with a piece of poison it is infected and loses some enregy
+     */
     virtual void poisonned() override;
 
 

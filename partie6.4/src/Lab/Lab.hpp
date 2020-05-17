@@ -81,6 +81,10 @@ public:
      */
     void addVirus(Virus* v);
 
+    /*!
+     * @brief call the addPoison method of its PetriDish
+     * @param p (poison pointer)
+     */
     void addPoison(Poison *p);
 
     /*!
@@ -153,8 +157,18 @@ public:
      */
     ADN* getADNColliding(CircularBody const& body) const;
 
+    /*!
+     * @brief call the getPoisonColliding method of the PetriDish
+     * @param body (CircularBody)
+     * @return a pointer on the Poison if they are colliding otherwise it returns a nullptr
+     */
     Poison* getPoisonColliding(CircularBody const& body) const;
 
+    /*!
+     * @brief call the getBacteriumColliding method of the PetriDish
+     * @param body (CircularBody)
+     * @return a pointer on the Bacterium if they are colliding otherwise it returns a nullptr
+     */
     Bacterium* getBacteriumColliding(CircularBody const& body) const;
 
     /*!

@@ -92,15 +92,16 @@ public:
      */
     Quantity getMaxEatableQuantity() const;
 
+    /*!
+     * @brief if the bacterium collides with a piece of poison (which is not thrown by one of the bacteria
+     * belonging to the same swarm)it is infected and loses some enregy
+     */
     void poisonned() override;
-
-    void update(sf::Time dt) override;
 
     static double compteur; ///< counter of created instances
 private:
     Swarm* groupe;          ///< knowledge of the swarm where it belongs
-    Vec2d directionPoison;
-    double timePoison;
+
 
 };
 

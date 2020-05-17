@@ -4,7 +4,7 @@
 #include "../Application.hpp"
 
 Poison::Poison(Vec2d centre, double rayon, Vec2d dir, std::string id)
-    : CircularBody(centre, rayon), color(233, 21, 218), direction(dir), vanished(false), identificateur(id)
+    : CircularBody(centre, rayon), color(210, 21, 230), direction(dir), vanished(false), identificateur(id)
 {}
 
 void Poison::drawOn(sf::RenderTarget &target) const

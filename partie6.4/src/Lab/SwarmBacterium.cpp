@@ -17,9 +17,7 @@ SwarmBacterium::SwarmBacterium(Vec2d position, Swarm* grp) //uniform fait automa
     : Bacterium(uniform(getConfig()["energy"]), position,
                 Vec2d::fromRandomAngle(), uniform(getConfig()["radius"]),
                 grp->getOriginalColor()),
-      groupe(grp),
-      directionPoison(Vec2d::fromRandomAngle()),
-      timePoison(0.0)
+      groupe(grp)
 {
     groupe->addSwarmBacterium(this);
     //pas de caractéristiques mutables autre que couleur
@@ -96,17 +94,6 @@ Quantity SwarmBacterium::eatableQuantity(NutrimentA& nutriment)
 Quantity SwarmBacterium::getMaxEatableQuantity() const
 {
     return (getConfig()["meal"]["max"].toDouble());
-}
-
-void SwarmBacterium::update(sf::Time dt)
-{
-    timePoison += dt.asSeconds();
-    if(groupe->getSize() > getConfig()["size"].toDouble() and timePoison > getConfig()["poison time"].toDouble()){
-        directionPoison = Vec2d::fromAngle(directionPoison.angle()+dt.asSeconds());
-        getAppEnv().addPoison(new Poison(groupe->getPositionLeader(), getConfig()["poison radius"].toDouble(), directionPoison.normalised(), groupe->getIdentificator()));
-        timePoison = 0.0;
-       }
-    Bacterium::update(dt);
 }
 
 void SwarmBacterium::poisonned()

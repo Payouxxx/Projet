@@ -8,7 +8,8 @@
 
 using namespace std;
 
-Swarm::Swarm(string id) : identificateur(id), leader(nullptr)
+Swarm::Swarm(string id)
+    : identificateur(id), leader(nullptr), directionPoison(Vec2d::fromRandomAngle()), timePoison(0.0)
 {}
 
 void Swarm::addSwarmBacterium(SwarmBacterium* bacteria)
@@ -30,7 +31,7 @@ Vec2d Swarm::getPositionLeader() const
 
 MutableColor Swarm::getOriginalColor() const
 {
-    return MutableColor(getAppConfig()["swarms"][identificateur]["color"]);
+    return MutableColor(getConfig()["color"]);
 }
 
 void Swarm::update(sf::Time dt)
@@ -43,6 +44,12 @@ void Swarm::update(sf::Time dt)
         }
     }
     if (bacteries.size() == 1) leader = bacteries[0];
+    timePoison += dt.asSeconds();
+    if(bacteries.size() >= getConfig()["size"].toDouble() and timePoison > getConfig()["poison time"].toDouble()){
+        directionPoison = Vec2d::fromAngle(directionPoison.angle()+dt.asSeconds());
+        getAppEnv().addPoison(new Poison(getPositionLeader(), getAppConfig()["swarms"]["poison radius"].toDouble(), directionPoison.normalised(), identificateur));
+        timePoison = 0.0;
+       }
 }
 
 
@@ -57,7 +64,7 @@ Swarm::~Swarm()
     bacteries.clear();
 }
 
-int Swarm::getSize()const
+j::Value& Swarm::getConfig() const
 {
-    return bacteries.size();
+    return getAppConfig()["swarms"][identificateur];
 }

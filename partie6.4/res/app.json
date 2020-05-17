@@ -13,7 +13,7 @@
     "generator" : {
         "nutriment" : {
             "delay" : 1,
-            "prob" : 0.5
+            "prob" : 0.8
         }
     },
     "map" : "map.json",
@@ -226,12 +226,10 @@
             "initial" : 30
         },
 	"infection" : 0.1,
-	"size" : 15,
-	"poison radius" : 9,
-	"poison time" : 2,
-	"poison" : 5
+	"poison" : 20
     },
     "swarms" : {
+	"poison radius" : 9,
         "1" : {
             "color" : {
                 "a" : {
@@ -271,7 +269,9 @@
                     "sigma" : 0.1
                 }
             },
-            "force factor" : 2.5
+            "force factor" : 2.5,
+	    "size" : 15,
+	    "poison time" : 3
         },
         "2" : {
             "color" : {
@@ -312,7 +312,9 @@
                     "sigma" : 0.1
                 }
             },
-            "force factor" : 5
+            "force factor" : 5,
+	    "size" : 12,
+	    "poison time" : 3
         },
 	"3" : {
             "color" : {
@@ -353,7 +355,9 @@
                     "sigma" : 0.1
                 }
             },
-            "force factor" : 1
+            "force factor" : 1,
+	    "size" : 17,
+	    "poison time" : 5
         },
 	"4" : {
             "color" : {
@@ -394,7 +398,9 @@
                     "sigma" : 0.1
                 }
             },
-            "force factor" : 10
+            "force factor" : 10,
+	    "size" : 15,
+	    "poison time" : 5
         },
 	"5" : {
             "color" : {
@@ -435,7 +441,9 @@
                     "sigma" : 0.1
                 }
             },
-            "force factor" : 3
+            "force factor" : 3,
+	    "size" : 15,
+	    "poison time" : 3
         }
     },
     "twitching bacterium" : {
