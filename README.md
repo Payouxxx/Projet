@@ -12,6 +12,18 @@ Dans le cadre de ce projet, nous avons construit trois types de bactéries, se d
 Chaque bactérie dépend de paramètres lui permettant de plus ou moins s'adapter au milieu : se déplacer, se nourrir, mourir, se faire infecter (poison et virus), se diviser.
 
 
+##COMPILATION ET EXÉCUTION:
+
+Ce projet utilise  [Cmake](https://cmake.org/) pour compiler
+
+* en ligne de commande :
+    - dans le dossier build: cmake ../src
+    - make nom_cible pour la génération de la cible
+
+* Dans QTCreator:
+       - mise en place du projet : ouvrir le fichier src/CmakeLists.txt
+       - choisir la cible à exécuter
+
 ##CIBLES PRINCIPALES
 
 - application : correspond à la version finale du projet (visualisation de toutes les bactéries et nutriments et ajouts d'extensions et graphes)
@@ -24,7 +36,7 @@ et d'autres tests qui sont moins pertinents graphiquement et en terme d'évoluti
 
 ##COMMANDES
 
-Les commandes sont indiquées dans une fenêtre d'aide à gauche de la simulation.
+Les commandes d'une cible particulière sont indiquées dans une fenêtre d'aide à gauche de la simulation.
 Elles permettent de changer la température, le gradient (sensibilité aux nutriments), les courbes affichées, d'ajouter des objets dans la boite (bactérie, nutriments, virus, adn...)
 
 
@@ -36,6 +48,9 @@ L'énoncé initial du projet a été intégralement réalisé. Cepandant, des aj
 - des virus qui ont une probabilité différente d'infecter selon le type de bactérie (si l'infection est réussie, la bactérie meurt et le virus se clone, sinon la bactérie survit et ne pourra plus être infectée et le virus meurt)
 - les nutriments se dégradent d'eux mêmes au bout d'un certain temps, différent selon le type de nutriment
 - les Swarm sont maintenant capables, si l'essaim atteint une certaine taille, de projeter du poison qui atteint toutes les bactéries qui ne sont pas du swarm qui l'a émis. 
+- trois types de Swarm supplémetaires ont été ajoutés dans le fichier app.json
+
+De plus, nous avons également remplacé dans le graphe général la température par le nombre de virus présents, et ajouté des touches dans le FinalApplication pour modéliser ce que nous voulions faire lors des extensions.
 
 
 ##FICHIER DE CONFIGURATION
