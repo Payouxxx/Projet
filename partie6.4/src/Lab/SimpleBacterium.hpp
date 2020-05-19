@@ -5,75 +5,70 @@
 #include "Utility/DiffEqSolver.hpp"
 
 /*!
- * @brief The SimpleBacterium class, a subclass of Bacterium and DiffEgFunction
+ * @brief The SimpleBacterium class, a subclass of Bacterium and DiffEqFunction
  */
 class SimpleBacterium : public Bacterium, public DiffEqFunction
 {
 public:
     /*!
-     * @brief Constructor, increments statics attributs
+     * @brief Constructor, increments static attributs
      * @param position (Vec2d)
      */
     SimpleBacterium(Vec2d position);
 
     /*!
-     * @brief Destructor, decrement static attributs
+     * @brief Destructor, decrements static attributs
      */
     ~SimpleBacterium();
 
     /*!
-     * @brief redefinition of the virtual method getConfig to access the SimpleBacterium datas in the app.json file
+     * @brief redefinition of the virtual method getConfig to access the SimpleBacterium data in the app.json file
      * @return getAppConfig()["simple bacterium"]
      */
     j::Value& getConfig() const override;
 
     /*!
      * @brief redefinition of the virtual method clone
-     *        creation of a new pointer of a new bacteria based on the current instance
-     *        increments statics attributs
-     *
-     * @return a bacteria pointer to a clone of the current instance
+     *        creation of a new pointer on a new bacterium based on the current instance
+     *        increments static attributs
+     * @return a bacterium pointer to a clone of the current instance
      */
     Bacterium* clone() const override;
 
     /*!
      * @brief redefinition of the virtual method move
-     *
-     * Change the position of the bacteria thanks to a DiffEq
+     * Change the position of the bacterium thanks to a DiffEq
      * Withdraw of the necessary amount of energy to move
-     * Call the basculement method to make the bacteria failover randomly
-     *
-     * if the bacteria has evolved it goes faster but with lesser loss of energy
-     *
+     * Call the basculement method to make the bacterium failover randomly
+     * if the bacterium has evolved it goes faster but with lesser loss of energy
+     * if the bacterium is under the light, energy decreases slower
      * @param dt
      */
     void move(sf::Time dt) override;
 
     /*!
-     * @brief call the drawOn method of the Bacteria class, and the drawFlagelle method to display the "flagelle"
+     * @brief call the drawOn method of the Bacterium class, and the drawFlagelle method to display the "flagelle"
      * @param targetWindow (display window)
      */
     void drawOn(sf::RenderTarget& targetWindow) const override;
 
     /*!
-     * @brief call the update method of the Bacteria class, and the updateFlagelle method
+     * @brief call the update method of the Bacterium class, and the updateFlagelle method
      * @param dt (sf::Time)
      */
     void update(sf::Time dt) override;
 
     /*!
-     * @brief redefinition of the f method of DiffEqFunction, which calculate the force exerced on the bacteria
+     * @brief redefinition of the f method of DiffEqFunction, which calculates the force exerced on the bacterium
      *        and influences the speed
-     *
      * @param position (Vec2d)
      * @param speed (double)
-     *
-     * @return 0 (always for a SimpleBacterium)
+     * @return (0,0) (always for a SimpleBacterium)
      */
     Vec2d f(Vec2d position, Vec2d speed) const override;
 
     /*!
-     * @brief draw the "Flagelle" at the end of the bacteria
+     * @brief draw the "Flagelle" at the back of the bacterium
      * @param targetWindow (display window)
      */
     void drawFlagelle(sf::RenderTarget& targetWindow) const;
@@ -91,27 +86,27 @@ public:
     Vec2d getSpeedVector() const;
 
     /*!
-     * @brief make randomly the bacteria change its direction
+     * @brief make the bacterium randomly change its direction
      */
     void basculement();
 
     /*!
-     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @brief polymorphic method, redefinition, calls nutriment method "eatenBy"
      * @param nutriment eaten
-     * @return quantity eatable by the bacteria with nutriment A
+     * @return quantity eatable by the bacterium with nutriment A
      */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) override;
 
     /*!
-     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @brief polymorphic method, redefinition, calls nutriment method "eatenBy"
      * @param nutriment eaten
-     * @return quantity eatable by the bacteria with nutriment B
+     * @return quantity eatable by the bacterium with nutriment B
      */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) override;
 
     /*!
-     * @brief get in app.json the max eatable quantity for this bacteria
-     * @return max quantity eatable by this bacteria
+     * @brief get in app.json the max eatable quantity for this bacterium
+     * @return max quantity eatable by this bacterium
      */
     Quantity getMaxEatableQuantity() const;
 
@@ -130,7 +125,7 @@ public:
     virtual bool infection() override;
 
     /*!
-     * @brief if the bacterium collides with a piece of poison it is infected and loses some enregy
+     * @brief if the bacterium collides with a piece of poison it is infected and loses some energy
      */
     virtual void poisonned() override;
 
@@ -144,7 +139,6 @@ private:
     double t;              ///< counter to draw the "flagelle"
     sf::Time dt;           ///< counter between 2 failover
     double pBasculement;   ///< failover probability (random change of direction)
-    double speed;          ///< speed as a double
 
 };
 

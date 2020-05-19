@@ -10,7 +10,7 @@
 class SwarmBacterium;
 
 /*!
- * @brief Class Swarm sub class of Updatable, modeling a group of SwarmBacterium
+ * @brief Class Swarm, subclass of Updatable, modeling a group of SwarmBacterium
  */
 
 class Swarm : public Updatable
@@ -18,24 +18,24 @@ class Swarm : public Updatable
 public:
     /*!
      * @brief Constructor
-     * @param number of the swarm (identificator, std::string)
+     * @param id of the swarm (std::string)
      */
     Swarm(std::string id);
 
     /*!
-     * @brief add a bacteria in the swarm
+     * @brief add a bacterium in the swarm
      * @param pointer on SwarmBacterium added
      */
-    void addSwarmBacterium(SwarmBacterium* bacteria);
+    void addSwarmBacterium(SwarmBacterium* bacterium);
 
     /*!
-     * @brief remove a bacteria from the swarm
+     * @brief remove a bacterium from the swarm
      * @param pointer on SwarmBacterium removed
      */
-    void removeSwarmBacterium(const SwarmBacterium *bacteria);
+    void removeSwarmBacterium(const SwarmBacterium *bacterium);
 
     /*!
-     * @brief get the position of the leader bacteria in the group
+     * @brief get the position of the leader bacterium in the group
      * @return leader position (Vec2d)
      */
     Vec2d getPositionLeader() const;
@@ -47,30 +47,30 @@ public:
     MutableColor getOriginalColor() const;
 
     /*!
-     * @brief redefinition of the virtual method update, changes leader
+     * @brief redefinition of the virtual method update, changes leader depending on score
      * @param dt (sf::Time), intervall of evolution
      */
     void update(sf::Time dt) override;
 
     /*!
-     * @brief get number of the swarm
+     * @brief get id of the swarm
      * @return identifcator (std::string)
      */
     std::string getIdentificator() const;
 
     /*!
-     * @brief virtual destructor (delete all abcteria and clear tab)
+     * @brief virtual destructor (delete all the bacteria and clear tab)
      */
     ~Swarm();
 
     /*!
      * @brief getConfig to access to some values in the app.json file associated to the swarms
-     * @return
+     * @return getAppConfig()["swarms"][identificateur]
      */
     j::Value& getConfig() const;
 
 private:
-    std::string identificateur;                ///< number of the swarm
+    std::string identificateur;                ///< id of the swarm
     std::vector<SwarmBacterium*> bacteries;    ///< bacteria which are part of the swarm
     SwarmBacterium* leader;                    ///< leader of the swarm (attracts others)
     Vec2d directionPoison;                     ///< direction the poisons thrown will take

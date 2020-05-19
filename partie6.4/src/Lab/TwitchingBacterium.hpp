@@ -11,39 +11,41 @@ class TwitchingBacterium : public Bacterium
 {
 public:
     /*!
-     * @brief Constructor, increments statics attributs
+     * @brief Constructor, increments static attributs
      * @param position (Vec2d)
      */
     TwitchingBacterium(Vec2d position);
 
     /*!
-     * @brief Desstructor, decreses statics attributs
+     * @brief Destructor, decreases static attributs
      */
     ~TwitchingBacterium();
 
     /*!
-     * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium datas in the app.json file
-     * @return getAppConfig()
+     * @brief redefinition of the virtual method getConfig to access the TwitchingBacterium data in the app.json file
+     * @return getAppConfig()["twitching bacterium"]
      */
     j::Value& getConfig() const override;
 
     /*!
      * @brief redefinition of the virtual method move
+     * depending on the state of the bacterium, the grip deploys or retracts, or attracts the bacterium
+     * if it collides with a nutriment
      * @param dt (sf::Time)
      */
     void move(sf::Time dt) override;
 
     /*!
      * @brief redefinition of the virtual method clone
-     *        the clone does not have tentacle and its position is a bit different of the initial one
-     *        increments statics attributs
-     * the grip can absorb DNA if it encounters one
-     * @return a bacteria pointer to a clone of the current instance
+     *        its position is a bit different of the initial one
+     *        increments static attributs
+     *        the grip can absorb DNA if it encounters one
+     * @return a bacterium pointer to a clone of the current instance
      */
     Bacterium* clone() const override;
 
     /*!
-     * @brief call the drawOn method of the Bacteria class, and the drawTentacle method
+     * @brief call the drawOn method of the Bacterium class, and the drawTentacle method
      * @param targetWindow (display window)
      */
     void drawOn(sf::RenderTarget& targetWindow) const override;
@@ -73,40 +75,40 @@ public:
     void moveGrip(Vec2d add);
 
     /*!
-     * @brief The etat enum of the differents states of the bacteria
+     * @brief The etat enum of the different states of the bacteria
      */
     enum etat {IDLE, WAIT_TO_DEPLOY, DEPLOY, ATTRACT, RETRACT, EAT};
 
 
     /*!
-     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @brief polymorphic method, redefinition, calls nutriment method "eatenBy"
      * @param nutriment eaten
-     * @return quantity eatable by the bacteria with nutriment A
+     * @return quantity eatable by the bacterium with nutriment A
      */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) override;
 
     /*!
-     * @brief polymorphic method, redefinition, calls nutriment fonction "eatenBy"
+     * @brief polymorphic method, redefinition, calls nutriment method "eatenBy"
      * @param nutriment eaten
-     * @return quantity eatable by the bacteria with nutriment B
+     * @return quantity eatable by the bacterium with nutriment B
      */
     virtual Quantity eatableQuantity(NutrimentB& nutriment) override;
 
     /*!
-     * @brief get in app.json the max eatable quantity for this bacteria
-     * @return max quantity eatable by this bacteria
+     * @brief get in app.json the max eatable quantity for this bacterium
+     * @return max quantity eatable by this bacterium
      */
     Quantity getMaxEatableQuantity() const;
 
     /*!
-     * @brief if the bacteria has enough energy, it can produce a copy of itself with clone
-     *        then the bacteria changes its direction to the opposite
-     * if the bacteria has evolved the clones have 2/3 of the initial energy
+     * @brief if the bacterium has enough energy, it can produce a copy of itself with clone
+     *        then the bacterium changes its direction to the opposite
+     * if the bacterium has evolved the clone has 2/3 of the initial energy
      */
     virtual void divide();
 
     /*!
-     * @brief after eating a piece of ADN, the bacterium has new parameters we have to take them into account
+     * @brief after eating a piece of DNA, the bacterium has new parameters we have to take them into account
      * when calculating different stats, also it calls the Bacterium method competence
      * @param adn
      */
@@ -120,7 +122,7 @@ public:
     virtual bool infection() override;
 
     /*!
-     * @brief if the bacterium collides with a piece of poison it is infected and loses some enregy
+     * @brief if the bacterium collides with a piece of poison it is infected and loses some energy
      */
     virtual void poisonned() override;
 
@@ -130,8 +132,8 @@ public:
     static double Mspeed;    ///< average values of mutableNumber tentacule speed
     static double compteur;  ///< counter of created instances
 private:
-    Grip grapin;            ///< grip of the twitching bacteria (CircularBody)
-    etat state;             ///< state of the bacteria
+    Grip grapin;             ///< grip of the twitching bacterium (CircularBody)
+    etat state;              ///< state of the bacterium
 
 };
 

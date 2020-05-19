@@ -15,7 +15,7 @@ class SimpleBacterium;
 
 
 /*!
- * @brief the Nutriment class modeling a nutriment
+ * @brief the Nutriment class modeling a nutriment, a subClass of CircularBody, Drawable and Updatable
  */
 
 class Nutriment : public CircularBody, public Drawable, public Updatable
@@ -53,22 +53,23 @@ public:
     void drawOn(sf::RenderTarget& target) const;
 
     /*!
-     * @brief updatde nutriment simulation (make it grow if optimal temparature, new nutriment contained
-     * in the petri dish and new quantity inferior than the double of the initial one)
-     *        nutriment also grow if it is contained in the light
+     * @brief updatde nutriment simulation (make it grow if it is optimal temperature,
+     * if the new nutriment is contained in the petri dish and
+     * if new quantity inferior than the double of the initial one)
+     *        nutriment also grows if it is contained in the light
      *        nutriment starts to degrade after a time defined in the app.json file
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void update(sf::Time dt);
 
     /*!
-     * @brief shortcut to a location in the file app.json
+     * @brief shortcut to a location in the file app.json (must be overrided)
      * @return shortcut
      */
     virtual j::Value const& getConfig() const =0;
 
     /*!
-     * @brief fist call to differenciate nutriment (virtual pure here)
+     * @brief first call to differenciate nutriment (virtual pure here)
      * @param bacterium eating the current nutriment
      * @return Quantity eaten
      */
@@ -97,7 +98,7 @@ public:
 
 private:
     Quantity quantite; ///< quantity of the nutriment
-    double compteur;   ///< counter since its creation
+    double compteur;   ///< counter of time since its creation
 };
 
 

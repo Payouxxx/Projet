@@ -7,7 +7,7 @@
 #include "Utility/MutableColor.hpp"
 
 /*!
- * @brief The Lampe class, a subclass of CircularBody, drawable and Updatable
+ * @brief The Lampe class, a subclass of CircularBody, Drawable and Updatable
  */
 class Lampe : public CircularBody, public Drawable, public Updatable
 {
@@ -33,7 +33,7 @@ public:
     void drawOn(sf::RenderTarget& target) const override;
 
     /*!
-     * @brief updatde Lamp simulation (make it move)
+     * @brief update Lampe simulation (make it move)
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void update(sf::Time dt) override;
@@ -45,7 +45,7 @@ public:
     bool isOn() const;
 
     /*!
-     * @brief make light move, choosing random direction when collide with the petridish
+     * @brief make light move, choosing random direction when it collides with the petridish
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void move(sf::Time dt);
@@ -63,7 +63,7 @@ public:
     void reset();
 
 private:
-    sf::Color color; ///< color
+    sf::Color color; ///< color of the light
     bool ON;         ///< true if the lampe is on
     Vec2d direction; ///< random direction
 };

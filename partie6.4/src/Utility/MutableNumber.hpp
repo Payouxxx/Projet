@@ -13,7 +13,7 @@ public:
      *
      * @param val (double)
      * @param p (mutation probability)
-     * @param std (standard deviation and variance = écart type)
+     * @param std (standard deviation and variance)
      * @param Inf (is there a lower bound ?)
      * @param min (lower bound)
      * @param Sup (is there an upper bound ?)
@@ -50,23 +50,18 @@ public:
     void mutate();
 
     /*!
-     * @brief create a new MutableNumber with a value between 0 and 1 as like probability and other parameters
-     *        are the arguments of the method
-     *
+     * @brief create a new MutableNumber with a value between 0 and 1 (like a probability)
      * @param initialValue
      * @param mutation probability
      * @param sigma (standard deviation variance)
-     *
      * @return a MutableNumber
      */
     static MutableNumber probability(double initialValue, double mutationProbability, double sigma);
 
     /*!
-     * @brief create a new MutableNumber with a value between 0 and 1 as like probability and other parameters
-     *        are taken from the app.json file
-     *
+     * @brief create a new MutableNumber with a value between 0 and 1 (like a probability)
+     *        and other parameters are taken from the app.json file
      * @param config (j::Value)
-     *
      * @return a MutableNumber
      */
     static MutableNumber probability(j::Value const& config);
@@ -98,7 +93,7 @@ public:
 private:
     double value;       ///< value of the MutableNumber
     double pMutation;   ///< mutation probability
-    double sigma;       ///< standard deviation variance (écart type)
+    double sigma;       ///< standard deviation variance
     bool borneInf;      ///< true = activation of the lower bound
     double min;         ///< lower bound
     bool borneSup;      ///< true = activation of the upper bound

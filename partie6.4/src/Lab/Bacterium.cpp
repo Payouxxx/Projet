@@ -95,8 +95,6 @@ void Bacterium::divide()
 { //si assez énergie ajoute copie d'elle même à l'assiette, nrj/2 et mutation possible pour la nouvelle +inverse dir
     if(energie > getEnergieMin() and !infected){
         consumeEnergy(energie/2.0);
-        //notre solution pour ajouter bacterie
-        //solution prof : taleau annexe à ajouter avec append(v1, v2)
         getAppEnv().addBacterium(clone()->mutate());
         direction = -direction;
     }

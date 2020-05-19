@@ -5,7 +5,7 @@
 
 
 /*!
- * @brief the NutrimentA class modeling a green nutriment
+ * @brief the NutrimentA class modeling a green nutriment, a subClass of Nutriment
  */
 
 class NutrimentA : public Nutriment
@@ -20,12 +20,12 @@ public:
 
     /*!
      * @brief shortcut to a location in the file app.json
-     * @return shortcut
+     * @return getAppConfig()["nutriment A"]
      */
     j::Value const& getConfig() const;
 
     /*!
-     * @brief fist call to differenciate nutriment (redefinition)
+     * @brief first call to differenciate nutriment (redefinition)
      *        call method "eatableQuantity" of the bacteria
      * @param bacterium eating the current nutriment
      * @return Quantity eaten
@@ -35,21 +35,21 @@ public:
     /*!
      * @brief case of SimpleBacterium (redefinition)
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max aetable)
+     * @return Quantity eaten (here max eatable)
      */
     virtual Quantity eatenBy(SimpleBacterium& bact) override;
 
     /*!
      * @brief case of TwitchingBacterium (redefinition)
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max aetable)
+     * @return Quantity eaten (here max eatable)
      */
     virtual Quantity eatenBy(TwitchingBacterium& bact) override;
 
     /*!
      * @brief case of SwarmBacterium (redefinition)
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max aetable)
+     * @return Quantity eaten (here max eatable)
      */
     virtual Quantity eatenBy(SwarmBacterium& bact) override;
 

@@ -12,16 +12,16 @@ Swarm::Swarm(string id)
     : identificateur(id), leader(nullptr), directionPoison(Vec2d::fromRandomAngle()), timePoison(0.0)
 {}
 
-void Swarm::addSwarmBacterium(SwarmBacterium* bacteria)
+void Swarm::addSwarmBacterium(SwarmBacterium* bacterium)
 {
-    if(bacteria != nullptr) bacteries.push_back(bacteria);
+    if(bacterium != nullptr) bacteries.push_back(bacterium);
     if (bacteries.size() == 1) leader = bacteries[0];
 }
 
 
-void Swarm::removeSwarmBacterium(const SwarmBacterium *bacteria)
+void Swarm::removeSwarmBacterium(const SwarmBacterium *bacterium)
 {
-    bacteries.erase(remove(bacteries.begin(), bacteries.end(), bacteria), bacteries.end());
+    bacteries.erase(remove(bacteries.begin(), bacteries.end(), bacterium), bacteries.end());
 }
 
 Vec2d Swarm::getPositionLeader() const

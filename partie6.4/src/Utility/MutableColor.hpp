@@ -23,7 +23,7 @@ public:
 
     /*!
      * @brief access to the color for SFML
-     * @return the traduction in SFML
+     * @return the traduction in SFML color
      */
     sf::Color get() const;
 

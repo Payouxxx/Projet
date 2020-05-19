@@ -18,8 +18,8 @@ public:
     NutrimentGenerator();
 
     /*!
-     * @brief updatde nutriment genertor simulation (create new nutriment randomly after a certain amount of time
-     * then add it to the current lab)
+     * @brief updatde nutriment generator simulation (create new nutriment randomly after a certain
+     * amount of time then add it to the current lab)
      * @param amount of time making simulation evolve
      */
     void update(sf::Time dt) override;
@@ -28,6 +28,7 @@ public:
      * @brief reset time
      */
     void reset();
+
 private:
     sf::Time dt; ///< time running (indicates time between two generations of nutriments)
 };

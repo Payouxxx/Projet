@@ -6,7 +6,8 @@
 #include "Interface/Updatable.hpp"
 
 /*!
- * @brief The Poison class a subclass of Circular body, modeling a poison thrown by swarmbacteria
+ * @brief The Poison class a subclass of Circular body, Updatable and Drawable
+ * modeling a poison thrown by swarmbacteria
  */
 class Poison : public CircularBody, public Drawable, public Updatable
 {
@@ -21,8 +22,8 @@ public:
     Poison(Vec2d centre, double rayon, Vec2d dir, std::string id);
 
     /*!
-     * @brief redefinition of the drawOn method inhereted from the Drawable Class
-     * each piece of poison is a cricle
+     * @brief redefinition of the drawOn method inherited from the Drawable Class
+     * each piece of poison is a circle
      * @param target
      */
     void drawOn(sf::RenderTarget& target) const override;
@@ -38,7 +39,7 @@ public:
     void move();
 
     /*!
-     * @brief update method, just call the move method each dt
+     * @brief update method, just call the move method
      * @param dt
      */
     void update(sf::Time dt);
@@ -50,7 +51,7 @@ public:
     bool isVanished() const;
 
     /*!
-     * @brief set the vanished attribute to the value in parmaeters
+     * @brief set the vanished attribute to the value in parameters
      * @param booleen
      */
     void setVanished(bool b);
@@ -60,6 +61,7 @@ public:
      * @return the identificator associated to the poison
      */
     std::string getId() const;
+
 private:
     sf::Color color;            ///< color of the poison
     Vec2d direction;            ///< direction it's gonna take

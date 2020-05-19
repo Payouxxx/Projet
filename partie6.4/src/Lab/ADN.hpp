@@ -17,7 +17,7 @@ class ADN : public CircularBody, public Drawable
 {
 public:
     /*!
-     * @brief constructo
+     * @brief constructor
      * @param rayon
      * @param centre
      */

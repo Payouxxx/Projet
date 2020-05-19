@@ -11,18 +11,20 @@
 #include "Poison.hpp"
 
 /*!
- * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development and its nutriments
+ * @brief The Lab class, a subclass of Drawable and Updatable, managing one PetriDish development
  */
-class Lab : public Drawable, public Updatable{
+class Lab : public Drawable, public Updatable
+{
 public:
     /*!
-     * @brief Constructor
+     * @brief Constructor (initialize the dish at the center of the environment)
      */
     Lab();
 
     /*!
-     * @brief update of the PetriDish and the Nutriments (vitual method inherited from the abstract Updatable class)
-     *        update attribute time
+     * @brief update of the PetriDish and the Nutriments (automatic generation of nutriments)
+     *        update attributes "time" and "lampe"
+     * (vitual method inherited from the abstract Updatable class)
      * @param dt (sf::Time)
      */
     void update(sf::Time dt) override;
@@ -89,7 +91,7 @@ public:
 
     /*!
      * @brief call the getTemperature method of the PetriDish
-     * @return Temperature
+     * @return Temperature (double)
      */
     double getTemperature() const;
 
@@ -108,12 +110,6 @@ public:
      */
     void resetTemperature();
 
-    /*!
-     * @brief call the getPositionBact method of the PetriDish
-     * @param p (Vec2d)
-     * @return the score of the position p
-     */
-    double getPositionBact(const Vec2d &p) const;
 
     /*!
      * @brief  call the getGradientExponent method of the PetriDish
@@ -179,22 +175,29 @@ public:
     double getPositionScore(const Vec2d&p) const;
 
     /*!
-     * @brief call the getPositionScore method of the PetriDish
+     * @brief call the getPositionBact method of the PetriDish
+     * @param p (Vec2d)
+     * @return the score of the position p
+     */
+    double getPositionBact(const Vec2d &p) const;
+
+    /*!
+     * @brief call the getSwarmWithId method of the PetriDish
      * @param string id
      * @return pointer on swarm or nullptr if swarm not found
      */
     Swarm *getSwarmWithId(std::string id);
 
     /*!
-     * @brief call the getPositionScore method of the PetriDish
+     * @brief call the addSwarm method of the PetriDish
      * @param pointer on Swarm
      */
     void addSwarm(Swarm* s);
 
     /*!
-     * @brief call the getPositionScore method of the PetriDish
+     * @brief call the fetchData method of the PetriDish
      * @param string name (of the graph)
-     * @return unordered_map<std::string, double>
+     * @return unordered_map<std::string, double> (set of all graph names and corresponding value)
      */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
@@ -205,7 +208,7 @@ public:
     double getTime() const;
 
     /*!
-     * @brief reset comptor of time
+     * @brief reset counter of time
      */
     void resetTime();
 
@@ -227,7 +230,7 @@ public:
     void setState(bool onOff);
 
     /*!
-     * @brief call the doesCollideWithDish method of the PetriDish
+     * @brief call the doesCollideWithLight method of the PetriDish
      * @param body (CircularBody)
      * @return true if body and the lampe are colliding
      */
@@ -236,8 +239,8 @@ public:
 private:
     PetriDish boite;                ///< the PetriDish
     NutrimentGenerator automatique; ///< creation of new nutriments
-    double time;                    ///< comptor of time
-    Lampe lampe;                    ///< lampe moving in the lab
+    double time;                    ///< counter of time
+    Lampe lampe;                    ///< light moving in the lab
 };
 
 #endif // LAB_HPP

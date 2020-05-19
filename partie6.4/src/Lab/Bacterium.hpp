@@ -64,7 +64,7 @@ public:
     virtual Bacterium* clone() const =0;
 
     /*!
-     * @brief shortcut to access to getAppEnv() which must be overrided by subClasses to be used
+     * @brief shortcut to access to getAppConfig() which must be overrided by subClasses to be used
      * @return a j::Value stored in the app.json file
      */
     virtual j::Value& getConfig() const =0;
@@ -90,15 +90,14 @@ public:
 
     /*!
      * @brief access to a property thanks to its name
-     *
      * @param name (string)
-     *
-     * @return a MutableNumber linked to the name
+     * @return the MutableNumber linked to the name
      */
     MutableNumber getProperty(const std::string& name) const;
 
     /*!
-     * @brief call the mutate method of the MutableNumber class on each element of parametres and also on the couleur
+     * @brief call the mutate method of the MutableNumber class on each element of parametres
+     *        and also on the couleur
      * @return a pointer on the new bacteria (either modified or not)
      */
     Bacterium* mutate();
@@ -146,7 +145,7 @@ public:
     double getAngleDir()const;
 
     /*!
-     * @brief method to change the angle of direction from the subClasses as its a private attribute
+     * @brief method to change the angle of direction from the subClasses as it's a private attribute
      * @param new angle
      */
     void setAngleDir(double angle);
@@ -164,7 +163,7 @@ public:
     sf::Color getColor() const;
 
     /*!
-     * @brief select best of 20 randow direction depending on nutriment score and set it as the new direction
+     * @brief select best of 20 random direction depending on nutriment score and set it as the new direction
      */
     void newDirection();
 
@@ -175,14 +174,14 @@ public:
     void eat(Nutriment& nutriment);
 
     /*!
-     * @brief polymorphic method, virtual pure here
+     * @brief polymorphic method, virtual pure here, must be overrieded by each subclass
      * @param nutriment eaten
      * @return quantity eatable by the bacteria with nutriment A
      */
     virtual Quantity eatableQuantity(NutrimentA& nutriment) = 0;
 
     /*!
-     * @brief polymorphic method, virtual pure here
+     * @brief polymorphic method, virtual pure here, must be overrieded by each subclass
      * @param nutriment eaten
      * @return quantity eatable by the bacteria with nutriment B
      */
@@ -196,8 +195,8 @@ public:
     virtual void competence(ADN* adn);
 
     /*!
-     * @brief getEvolution methode
-     * @return true if the bacteria has already ate a piece of adn
+     * @brief getEvolution method
+     * @return true if the bacteria has already eaten a piece of adn
      */
     bool getEvolution() const;
 
@@ -214,9 +213,9 @@ public:
     bool getAbstinence() const;
 
     /*!
-     * @brief infect bacteria with differnt probability depending on the type
+     * @brief infect bacteria with different probability depending on the type
      *        (use of getConfig())
-     * @return if infection succed (and always false if was already infected)
+     * @return if infection succed (and always false if it was already infected)
      */
     virtual bool infection();
 
@@ -227,11 +226,11 @@ public:
 
 private:
     Quantity energie;                                   ///< energy of the bacteria
-    Vec2d direction;                                    ///< direction
+    Vec2d direction;                                    ///< current direction
     MutableColor couleur;                               ///< color
     bool abstinence;                                    ///< true = the bacteria can eat
     sf::Time compteur;                                  ///< time between 2 meals
-    std::map<std::string, MutableNumber> parametres;    ///< list of parameters
+    std::map<std::string, MutableNumber> parametres;    ///< list of mutable parameters
     double angleDir;                                    ///< direction angle
     bool evolved;                                       ///< true = the bacteria has absorbed DNA
     bool infected;                                      ///< true = the bacteria has been infected

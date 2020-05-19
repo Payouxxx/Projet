@@ -19,40 +19,41 @@
 
 /*!
  * @brief the PetriDish class modeling a petridish and all that it contains
+ * a subClass of CircularBody, Drawable and Updatable
  */
 class PetriDish : public CircularBody, public Drawable, public Updatable
 {
 public:
     /*!
-     * @brief add a bacteria in the petri dish (if contained)
-     * @param bacteria we want to add (pointer)
+     * @brief add a bacterium in the petri dish (if it is contained in the dish)
+     * @param bacterium we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
     bool addBacterium(Bacterium* b);
 
     /*!
-     * @brief add a nutriment in the petri dish (if contained)
+     * @brief add a nutriment in the petri dish (if it is contained in the dish)
      * @param nutriment we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
     bool addNutriment(Nutriment* n);
 
     /*!
-     * @brief add an ADN in the petridish (if contained)
+     * @brief add an ADN in the petridish (if it is contained in the dish)
      * @param adn we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
     bool addADN(ADN* a);
 
     /*!
-     * @brief add a virus in the petridish (if contained)
+     * @brief add a virus in the petridish (if it is contained in the dish)
      * @param virus we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
     bool addVirus(Virus* v);
 
     /*!
-     * @brief add a poison in the petridish (if contained)
+     * @brief add a poison in the petridish (if it is contained in the dish)
      * @param poison we want to add (pointer)
      * @return booleen indicating if adding was successful or not
      */
@@ -65,14 +66,15 @@ public:
     void update(sf::Time dt) override;
 
     /*!
-     * @brief draw a circle (border of the petridish) and call for drawOn of every bacteria and nutriment contained
-     * (if not null pointers)
+     * @brief draw a circle (border of the petridish) and call for drawOn of every bacterium,
+     * nutriment, DNA, Virus and Poison contained (if it is not nullptr)
      * @param amount of time making simulation evolve (sf::Time dt)
      */
     void drawOn(sf::RenderTarget& targetWindow) const override;
 
    /*!
-     * @brief reset petridish simulation (erase everything contained and reset temperature and gradient exponent)
+     * @brief reset petridish simulation (erase everything contained and
+     * reset temperature, gradient exponent and graphs)
      */
     void reset();
 
@@ -122,7 +124,7 @@ public:
     /*!
       * @brief get the first nutriment colliding with the circular body we chose
       * @param circular body which can collide a nutriment
-      * @return nullprr if the body isn't colliding with any nutriment,
+      * @return nullptr if the body isn't colliding with any nutriment,
       * else a pointer toward the nutriment the body is collinding with
       */
     Nutriment* getNutrimentColliding(CircularBody const& body) const;
@@ -130,7 +132,7 @@ public:
     /*!
      * @brief get the first ADN colliding with the circular body we chose
      * @param circular body which can collide a piece of adn
-     * @return nullprr if the body isn't colliding with any adn,
+     * @return nullptr if the body isn't colliding with any adn,
      * else a pointer toward the adn the body is collinding with
      */
     ADN* getADNcolliding(CircularBody const& body) const;
@@ -138,7 +140,7 @@ public:
     /*!
      * @brief get the first Poison colliding with the circular body we chose
      * @param circular body which can collide a piece of poison
-     * @return nullprr if the body isn't colliding with any poison,
+     * @return nullptr if the body isn't colliding with any poison,
      * else a pointer toward the poison the body is collinding with
      */
     Poison* getPoisonColliding(CircularBody const& body) const;
@@ -146,24 +148,24 @@ public:
     /*!
      * @brief get the first Bacterium colliding with the circular body we chose
      * @param circular body which can collide a bacterium
-     * @return nullprr if the body isn't colliding with any bacterium,
+     * @return nullptr if the body isn't colliding with any bacterium,
      * else a pointer toward the bacterium the body is collinding with
      */
     Bacterium* getBacteriumColliding(CircularBody const& body) const;
 
     /*!
-      * @brief get position score depending on the formula where s is bacteria source and p a position:
+      * @brief get position score depending on the formula where "s" is bacteria source and "p" a position:
       * score(p) = taille(s) / (distance(p,centre(s))puissance
       * @param position where we want the score to be calculated
-      * @return gradient exponent for this position (double)
+      * @return score (of bacteria) for this position (double)
       */
     double getPositionBact(const Vec2d &p) const;
 
     /*!
-      * @brief get position score depending on the formula where s is nutriment source and p a position:
+      * @brief get position score depending on the formula where "s" is nutriment source and "p" a position:
       * score(p) = taille(s) / (distance(p,centre(s))puissance
       * @param position where we want the score to be calculated
-      * @return gradient exponent for this position (double)
+      * @return score (of nutriments) for this position (double)
       */
     double getPositionScore(const Vec2d& p) const;
 
@@ -203,14 +205,14 @@ public:
     Swarm *getSwarmWithId(std::string id);
 
     /*!
-     * @brief for a graph given, return the name of one curve and a new point on it
+     * @brief for a graph given, return the name of each curve and a new point on it
      * @param string name (of the graph)
      * @return unordered_map<std::string, double>
      */
     std::unordered_map<std::string, double> fetchData(const std::string &name) const;
 
     /*!
-     * @brief The statistic enumerate type to handle the differents states of a twitching
+     * @brief The statistic enumerate type to handle the different type of graphs
      */
     enum statistic {NUTRIMENT_QUANTITY, GENERAL, SIMPLE_BACTERIA, TWITCHING_BACTERIA, BACTERIA};
 

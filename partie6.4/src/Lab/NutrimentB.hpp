@@ -5,7 +5,7 @@
 
 
 /*!
- * @brief the NutrimentB class modeling a green nutriment
+ * @brief the NutrimentB class modeling a blue nutriment, a subClass of Nutriment
  */
 
 class NutrimentB : public Nutriment
@@ -20,12 +20,12 @@ public:
 
     /*!
      * @brief shortcut to a location in the file app.json
-     * @return shortcut
+     * @return getAppConfig()["nutriment B"]
      */
     j::Value const& getConfig() const override;
 
     /*!
-     * @brief fist call to differenciate nutriment (redefinition)
+     * @brief first call to differenciate nutriment (redefinition)
      *        call method "eatableQuantity" of the bacteria
      * @param bacterium eating the current nutriment
      * @return Quantity eaten
@@ -35,22 +35,22 @@ public:
     /*!
      * @brief case of SimpleBacterium (redefinition)
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max quantity divided by a resistance factor)
+     * @return Quantity eaten (here max eatable quantity divided by a resistance factor)
      */
     virtual Quantity eatenBy(SimpleBacterium& bact) override;
 
     /*!
      * @brief case of TwitchingBacterium (redefinition)
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max aetable multiplied by a nutritive factor)
+     * @return Quantity eaten (here max eatable quantity multiplied by a nutritive factor)
      */
     virtual Quantity eatenBy(TwitchingBacterium& bact) override;
 
     /*!
      * @brief case of SwarmBacterium (redefinition), make bacteria loose energy
-     *        if the bacteria has evolved it gain resistance to poison
+     *        if the bacteria has evolved it gains resistance to poison
      * @param bacterium eating the current nutriment
-     * @return Quantity eaten (here max aetable multiplied by a poison factor)
+     * @return Quantity eaten (here max eatable quantity multiplied by a poison factor)
      */
     virtual Quantity eatenBy(SwarmBacterium& bact) override;
 };
